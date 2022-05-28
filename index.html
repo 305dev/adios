@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Adios</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Bank">
+        <link rel="apple-touch-icon" href="/icon.png">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios@0.26.0"></script>
+        
+        <meta charset="UTF-8">
+        
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
+        
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+        
+        <style>
+          
+            body {
+              background: #222;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+            }
+            
+            h1 {
+              font-size: 1.8rem;
+              padding: 0;
+              margin: 0 10px 0 0;
+            }
+            
+            h3 {
+              font-size: 1.3rem;
+              padding: 0;
+              margin: 5px 0 15px 0;
+              color: darkred;
+            }
+
+            .button {
+              font-size: 21px;
+              background: #3498db;
+              padding: 10px;
+              border-radius: 7px;
+              margin: 15px 0 10px 0;
+              color: #FFF;
+              position: relative;
+            }
+            
+            p {
+              padding: 0;
+              margin: 0;
+              font-size: 20px;
+              line-height: 1.5rem;
+              color: #000;
+            }
+            
+            .swiper-container {
+              width: 100%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+            }
+            
+            .swiper-slide {
+              width: 400px;
+              height: 500px;
+              padding: 5px;
+            }
+            
+            .swiper-content {
+              background-color: #fff;
+              width: 100%;
+              /*height: 100%;*/
+            }
+            .swiper-content .hero {
+              width: 100%;
+              height: 175px;
+              position: relative;
+              background-color: gray;
+            }
+            .swiper-content .hero .calendar {
+              width: 60px;
+              height: 60px;
+              float: right;
+              background-color: darkred;
+              border-radius: 50%;
+              margin-right: 15px;
+              margin-top: 15px;
+              color: #fff;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            .swiper-content .hero .calendar .date {
+              font-size: 1.2rem;
+              line-height: 1.3rem;
+            }
+            .swiper-content .hero .calendar .month {
+              font-size: 0.8rem;
+            }
+            .swiper-content .hero .photo-btn {
+              position: absolute;
+              bottom: 0;
+              width: 100px;
+              height: 40px;
+              background-color: darkred;
+              border: none;
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #fff;
+              transition: 0.2s all;
+              cursor: pointer;
+              display: flex;
+              align-content: center;
+              justify-content: center;
+            }
+            .swiper-content .hero .photo-btn:hover {
+              width: 100%;
+              height: 100%;
+              transition: 0.2s all;
+            }
+            .swiper-content .hero .photo-btn:hover .text {
+              display: none;
+            }
+            .swiper-content .hero .photo-btn:hover .gallery {
+              display: flex;
+            }
+            .swiper-content .hero .photo-btn .text {
+              text-align: center;
+              line-height: 40px;
+            }
+            .swiper-content .hero .photo-btn .gallery {
+              width: 100%;
+              display: none;
+              flex-direction: column;
+            }
+            .swiper-content .hero .photo-btn .gallery .row {
+              width: 100%;
+              height: 34%;
+              display: flex;
+            }
+            .swiper-content .hero .photo-btn .gallery .row .image {
+              opacity: 0.6;
+              width: 34%;
+              height: 100%;
+              display: inline-block;
+              transition: 0.2s all;
+            }
+            .swiper-content .hero .photo-btn .gallery .row .image:hover {
+              opacity: 1;
+              transition: 0.2s all;
+            }
+
+            .swiper-content .copy {
+              padding: 20px;
+              padding-top: 45px;
+              text-align: center;
+            }
+            .swiper-content .footer {
+      margin: 15px 0 5px 0;
+    color: graytext;
+            }
+            .swiper-content .footer .time {
+              display: inline-block;
+            }
+            .swiper-content .footer .comments {
+              display: inline-block;
+              margin-left: 20px;
+              cursor: pointer;
+              transition: 0.2s all;
+            }
+            .swiper-content .footer .comments:hover {
+              color: darkred;
+              transition: 0.2s all;
+            }
+            .swiper-container {
+                zoom: 0.8
+            }
+            .profile {
+    width: 140px;
+    height: 140px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+        background-size: cover;
+    background-position: center;
+            }
+            .logo {
+                position: absolute;
+                top: 5vh;
+                max-width: 130px;
+            }
+
+            .logo img {
+              width: 100%;
+            }
+            .popup {
+              color: #000;
+              top: -165px;
+              position: absolute;
+              width: 100%;
+              background: #ffffff;
+              left: 0;
+              box-sizing: border-box;
+              padding: 10px;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              box-shadow: 1px 1px 17px #3498db61;
+            }
+            .popup > div:hover {
+              background: #0000000a;
+            }
+            .popup > div {
+              cursor: pointer;
+              color: black;
+              padding: 10px;
+            }
+            .popup > div:not(:last-child) {
+    border-bottom: 1px solid;
+
+            }
+        </style>
+    </head>
+    
+    <body style="display: flex;align-items: center;justify-content: center;height: 100vh; overflow: hidden;">
+        <!-- partial:index.partial.html -->
+        <!-- Swiper -->
+        <div class="logo">
+          <img src="assets/logo.png" alt="">
+        </div>
+        <div id="app" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="i in items">
+                    <div class="swiper-content">
+                        <div class="hero new-york">
+                            <div class="calendar"><span class="month">{{ i.next_election ? i.next_election.split(' ')[1] : 'N/A' }}</span><span class="date">{{ i.next_election ? i.next_election.split(' ')[0] : 'N/A' }}</span></div>
+                            <div class="profile" :style="`background-image:url('${i.image_url}')`"></div>
+                        </div>
+                        <div class="copy">
+                            <h1>{{ i.name }}</h1>
+                            <h3>{{ i.title }}</h3>
+                            <p>{{ i.description ? i.description.slice(0, 200) : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aliquam porro perspiciatis, blanditiis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing.'.slice(0, 200) }}</p>
+                            <div v-if="i.next_election" class="button" @click="i.showCalendar = !i.showCalendar; $forceUpdate()">
+                              + Add to Calendar
+                              <div class="popup" v-if="i.showCalendar">
+                                <div @click="add2Calendar('ical', i)">Apple Calendar</div>
+                                <div @click="add2Calendar('google', i)">Google Calendar</div>
+                                <div @click="add2Calendar('outlook', i)">Microsoft Outlook</div>
+                              </div>
+                            </div>
+                              <div class="footer" v-if="false">
+                                <div class="time">
+                                    <div><i class="fas fa-clock fa-fw"></i> 6 mins ago</div>
+                                </div>
+                                <div class="comments">
+                                    <div><i class="fas fa-comments fa-fw"></i> 39 comments</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div style="position: ABSOLUTE;max-width: 30px;bottom: 2.5vh;opacity: 0.2;">
+          <a href="https://twitter.com/nano2dev" target="_blank" style="display: flex;align-items: center;justify-content: center;color: #FFF;text-decoration: none;font-size: 20px;margin-left: 7px;padding-left: 0px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" style="width: 100%;margin-right: 3px;">nano2dev
+          </a>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script>
+          var app = new Vue({
+            el: '#app',
+            data: { message: 'Hello', items: [] },
+            mounted() {
+              console.log("Ready")
+                axios.get('/dataset.json').then((res) => {
+                  this.items = res.data
+                  setTimeout(() => {
+                    this.SwiperYesSwiping()
+                  }, 200)
+                })
+            },
+            watch: {},
+            computed: {},
+            methods: {
+              add2Calendar(type) {
+                return `https://addtocalendar.com/atc/${type}?utz=-240&uln=en-US&vjs=1.5&e[0][date_start]=2016-12-09%2012%3A00%3A00&e[0][date_end]=2016-12-09%2014%3A00%3A00&e[0][timezone]=Europe%2FLondon&e[0][title]=Eurospin-viaggi%20Offerte%20neve&e[0][description]=Le%20offerte%20neve%20sono%20arrivate%20su%20http%3A%2F%2Fwww.eurospin-viaggi.it&e[0][location]=www.eurospin-viaggi.it&e[0][organizer]=Eurospin%20Viaggi&e[0][organizer_email]=`
+              },
+              SwiperYesSwiping() {
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                });
+              }
+            },
+          })
+        </script>
+    </body>
+
+</html>
