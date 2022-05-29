@@ -1,6 +1,6 @@
 ## Adios.to
 
-A simple website, dedicated to some politicians.
+A simple website, dedicated to Miami politicians.
 
 Transparency is the key.
 
