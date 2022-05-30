@@ -2,3 +2,4 @@ build.js
 package-lock.json
 package.json
 node_modules
+.DS_Store
