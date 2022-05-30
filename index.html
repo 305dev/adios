@@ -2,8 +2,16 @@
 <html lang="en">
 
     <head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+             <meta name="apple-mobile-web-app-capable" content="yes">
+             <meta name="apple-mobile-web-app-status-bar-style" content="black">
+             <meta name="apple-mobile-web-app-title" content="Bank">
+             <link rel="apple-touch-icon" href="/icon.png">
+
         <meta charset="UTF-8">
         <title>Adios.to</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@0.26.0"></script>
@@ -327,7 +335,7 @@
             .main-container {
               display: flex;
               flex-grow: 1;
-              padding-top: 30px;
+              padding-top: 35px;
             }
 
             .search-type {
@@ -373,6 +381,19 @@
               font-size: 13px;
               font-weight: 600;
               margin-top: 14px;
+
+                  font-weight: bold !important;
+                  zoom: 1.2;
+                  letter-spacing: 0.2px;
+
+            }
+
+            .search-buttons.rep {
+              background: #cb0000;
+            }
+
+            .search-buttons.dem {
+              background: #0878f7;
             }
 
             .job-wrapper {
@@ -537,7 +558,7 @@
             }
             .job-card-subtitle {
               color: var(--subtitle-color);
-              font-size: 13px;
+              font-size: 16px;
               margin-top: 14px;
               line-height: 1.6em;
             }
@@ -723,6 +744,13 @@
               background-color: var(--header-bg-color);
               margin-left: 40px;
               border-radius: 0 0 8px 8px;
+              width: 100%;
+            }
+
+
+            .job-bg-wr {
+              min-height: 180px;
+              background-size: cover;
             }
 
             .job-bg {
@@ -730,7 +758,6 @@
               -o-object-fit: cover;
                  object-fit: cover;
               width: 100%;
-              height: 180px;
               transition: 0.3s;
               position: relative;
             }
@@ -778,11 +805,25 @@
             .job-explain-content {
               padding: 50px 25px 30px;
             }
-
+            .h-body {
+              font-size: 17px;
+              letter-spacing: 1px;
+              opacity: 0.9;
+              margin-bottom: 10px;
+              margin-top: 8px;
+              font-weight: 300;
+            }
+            .h-title {
+              font-size: 34px;
+              color: #0861ff;
+              letter-spacing: 1px;
+              font-weight: bold;
+            }
             .job-subtitle-wrapper {
-              display: flex;
+              /* display: flex; */
               align-items: center;
-              margin-top: 20px;
+              margin-top: 5px;
+              margin-bottom: 18px;
             }
             .job-subtitle-wrapper .posted {
               margin-left: auto;
@@ -869,7 +910,7 @@ color: #e9e9e9;
               margin-bottom: 25px;
             }
             .overview-text-subheader {
-              font-size: 13px;
+              font-size: 16px;
               line-height: 2em;
             }
             .overview-text-item {
@@ -1091,6 +1132,52 @@ color: #e9e9e9;
               letter-spacing: 1px;
               top: 20px;
               right: 20px;
+              zoom: 1.1;
+            }
+            @media (max-width: 768px) {
+              .traitor {
+                zoom: 1.4;
+                opacity: 0.4;
+              }
+              ul {
+                font-size: 14px;
+              }
+            }
+            .warned {
+              color: red;
+              border: 2px solid;
+              padding: 17px;
+              margin: 20px 0 27px 0;
+              border-radius: 7px;
+              font-size: 16px;
+            }
+            .warned a {
+              text-decoration: none;
+              color: #e0e0e0;
+              word-break: break-all;
+            }
+            ul {
+              padding-left: 15px;
+            }
+            .h-body {
+              font-weight: bold;
+    font-size: 20px;
+    opacity: 0.9;
+    margin-top: 10px;
+            }
+            .back {
+              position: fixed;
+                  top: 0;
+                  display: flex;
+                  align-items: center;
+                  font-size: 28px;
+                  color: #000;
+                  zoom: 0.6;
+                  z-index: 9;
+                  background: #ffffffd6;
+                  padding: 15px 40px 15px 35px;
+                  filter: invert(1);
+                  cursor: pointer;
             }
         </style>
     </head>
@@ -1100,7 +1187,7 @@ color: #e9e9e9;
         <div id="app" class="job">
             <div class="header">
                 <div @click="logoClick" class="logo">
-                    <svg :style="`${active ? 'transform: rotate(-90deg);margin-bottom: 0px;' : 'transform: rotate(0);'}`" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path xmlns="http://www.w3.org/2000/svg" d="M512 503.5H381.7a48 48 0 01-45.3-32.1L265 268.1l-9-25.5 2.7-124.6L338.2 8.5l23.5 67.1L512 503.5z"
                         fill="#0473ff" data-original="#28b446" />
                         <path xmlns="http://www.w3.org/2000/svg" fill="#0473ff" data-original="#219b38"
@@ -1119,35 +1206,12 @@ color: #e9e9e9;
                   <div class="controlla" style="max-width: 28px;" @click="share()">
                     <img src="assets/share3.png" alt="">
                   </div>
-                    <!-- <div class="user-menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-square">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                        </svg>
-                    </div> -->
-                    <!-- <img class="user-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png" alt=""> -->
-                    <!-- <div class="user-name">Suhayel Nasim</div> -->
                 </div>
             </div>
             <div class="wrapper">
                 <div class="search-menu">
                     <div class="search-bar">
                         <input type="text" class="search-box" placeholder="Search by Keyword" autofocus v-model="filter"/>
-                        <!-- <div class="search item">Product Designer
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-x">
-                                <path d="M18 6L6 18M6 6l12 12" />
-                            </svg>
-                        </div>
-                        <div class="search item">UI Designer
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-x">
-                                <path d="M18 6L6 18M6 6l12 12" />
-                            </svg>
-                        </div> -->
                     </div>
                     <div v-if="false" class="search-location">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -1179,7 +1243,7 @@ color: #e9e9e9;
                         </svg>
                         <input type="text" placeholder="Salary Range">
                     </div>
-                    <button class="search-button">Search</button>
+                    <button @click="clickSearch()" class="search-button">{{ this.filter ? 'Clear' : 'Search' }}</button>
                 </div>
                 <div class="main-container">
                     <div class="search-type">
@@ -1187,7 +1251,7 @@ color: #e9e9e9;
                             <div class="job-time-title">{{ _filter.label }}</div>
                             <div class="job-wrapper">
                                 <div class="type-container" v-for="(__filter, index) in _filter.filters">
-                                    <input type="radio" :id="'filterBy-' + index + '-' + group" class="job-style" @click="filterBy(__filter)" :checked="checked.includes(__filter.label)">
+                                    <input type="radio" :id="'filterBy-' + index + '-' + group" class="job-style" @click="filterBy(__filter)" :checked="checked.includes(__filter.label) || filter.includes(__filter.label)">
                                     <label :for="'filterBy-' + index + '-' + group">{{ __filter.label }}</label> <span class="job-number">{{ __filter.dataset.length }}</span>
                                 </div>
                             </div>
@@ -1204,19 +1268,19 @@ color: #e9e9e9;
                             </div>
                         </div>
                         <div class="job-cards">
-                            <div v-for="person in filteredPeople" class="job-card" @click="show(person)" style="position: relative">
-                                <div class="traitor" v-if="person.tags && person.tags.includes('Traitor')">Traitor</div>
-                                <div class="job-card-header">
+                            <div v-for="person in filteredPeople" class="job-card" style="position: relative">
+                                <div @click="show(person)" class="traitor" v-if="person.accused_treason">Traitor</div>
+                                <div @click="show(person)" class="job-card-header">
                                     <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
                                     <!-- <div class="menu-dot"></div> -->
                                 </div>
-                                <div class="job-card-name">{{ person.name }}</div>
-                                <div class="job-card-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.state_name }} {{ person.title }}</div>
-                                <div class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }}</div>
-                                <div class="job-detail-buttons" v-for="tag in person.tags.filter(a => a !== 'Traitor')">
-                                    <button :class="`search-buttons detail-button`">{{ tag }}</button>
+                                <div @click="show(person)" class="job-card-name">{{ person.name }}</div>
+                                <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.state_name }} {{ person.title }}</div> -->
+                                <div @click="show(person)" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }}</div>
+                                <div class="job-detail-buttons">
+                                    <button @click="navTo(tag)" v-for="tag in person.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button ${tag && tag.toLowerCase() === 'democrat' ? 'dem' : ''} ${tag && tag.toLowerCase() === 'republican' ? 'rep' : ''}`">{{ tag }}</button>
                                 </div>
-                                <div class="job-card-buttons">
+                                <div v-if="false" class="job-card-buttons">
                                     <button class="search-buttons card-buttons">Apply Now</button>
                                     <button class="search-buttons card-buttons-msg">Messages</button>
                                 </div>
@@ -1224,12 +1288,12 @@ color: #e9e9e9;
                         </div>
                         <div class="job-overview">
                             <div class="job-overview-cards">
-                                <div class="job-overview-card" v-for="person in filteredPeople" @click="show(person)">
+                                <div class="job-overview-card" v-for="person in recommended" @click="show(person)">
                                     <div class="job-card overview-card">
                                         <div class="overview-wrapper">
                                             <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
                                             <div class="overview-detail">
-                                                <div class="job-card-title">{{ person.name }}</div>
+                                                <div class="job-card-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.name }}</div>
                                                 <div class="job-card-subtitle">{{ person.state_name }} {{ person.title }}</div>
                                             </div>
                                             <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -1239,7 +1303,7 @@ color: #e9e9e9;
                                                 />
                                             </svg>
                                         </div>
-                                        <div class="job-overview-buttons">
+                                        <div v-if="false" class="job-overview-buttons">
                                             <div class="search-buttons time-button">Full Time</div>
                                             <div class="search-buttons level-button">Senior Level</div>
                                             <div class="job-stat">New</div>
@@ -1249,14 +1313,17 @@ color: #e9e9e9;
                                 </div>
                             </div>
                             <div class="job-explain" v-if="active">
-                                <img class="job-bg" alt="">
+                                <div class="back" @click="logoClick">
+                                  <img src="assets/back.svg" alt="" style=" margin-right: 10px; max-width: 40px">
+                                  BACK
+                                </div>
+                                <div class="job-bg-wr" :style="`background-image: url('${active.cover_url || 'assets/us-flag.jpeg'}'); ${active.accused_treason ? 'filter: grayscale(1)' : ''}`"></div>
                                 <div class="job-logos">
                                     <div class="bg-profile" :style="`background-image: url('${active.photo_url || 'assets/missing.jpg'}')`"></div>
                                 </div>
                                 <div class="job-explain-content">
                                     <div class="job-title-wrapper">
-                                        <div class="job-card-title">{{ active.name }}</div>
-                                        <div class="job-action">
+                                        <div v-if="false" class="job-action">
                                             <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" class="feather feather-heart">
@@ -1274,11 +1341,23 @@ color: #e9e9e9;
                                         </div>
                                     </div>
                                     <div class="job-subtitle-wrapper">
-                                        <div class="company-name">{{ active.title }} <span class="comp-location">{{ active.state_name }}</span>
-                                        </div>
-                                        <!-- <div class="posted">Posted 8 days ago<span class="app-number">98 Application</span></div> -->
+                                      <div class="h-title" style="color: #FFF">{{ active.name }}</div>
+                                      <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`"></div> -->
+                                      <div class="job-detail-buttons">
+                                          <button @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button ${tag && tag.toLowerCase() === 'democrat' ? 'dem' : ''} ${tag && tag.toLowerCase() === 'republican' ? 'rep' : ''}`">{{ tag }}</button>
+                                      </div>
                                     </div>
-                                    <div class="explain-bar">
+                                    <div class="warned" v-if="active.accused_treason" style="zoom: 0.9">
+                                      <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://bensguide.gpo.gov/j-oath-office?highlight=WyJjb25zdGl0dXRpb24iLCJjb25zdGl0dXRpb24ncyJd#:~:text=The%20Oath%2C%20as%20stated%20in,Constitution%20of%20the%20United%20States.%22" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
+                                      <ul>
+                                        <li><a :href="active.accused_treason" target="_blank">
+                                          <b style="font-size: 20px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
+                                          <br>
+                                          <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
+                                        </a></li>
+                                      </ul>
+                                    </div>
+                                    <div v-if="false" class="explain-bar">
                                         <div class="explain-contents">
                                             <div class="explain-title">Experience</div>
                                             <div class="explain-subtitle">Minimum 1 Year</div>
@@ -1297,16 +1376,10 @@ color: #e9e9e9;
                                         </div>
                                     </div>
                                     <div class="overview-text">
-                                        <div class="overview-text-header">Overview</div>
-                                        <div class="overview-text-subheader">We believe that design (and you) will be critical to the company's success.
-                                            You will work with our founders and our early customers to help define
-                                            and build our product functionality, while maintaining the quality bar
-                                            that customers have come to expect from modern SaaS applications. You have
-                                            a strong background in product design with a quantitavely anf qualitatively
-                                            analytical mindset. You will also have the opportunity to craft our overall
-                                            product and visual identity and should be comfortable to flex into working.</div>
+                                        <!-- <div class="overview-text-header">About</div> -->
+                                        <div class="overview-text-subheader">{{ active.description }}</div>
                                     </div>
-                                    <div class="overview-text">
+                                    <div v-if="false" class="overview-text">
                                         <div class="overview-text-header">Job Description</div>
                                         <div class="overview-text-item">3+ years working as a product designer.</div>
                                         <div class="overview-text-item">A portfolio that highlights your approach to problem solving, as well
@@ -1378,13 +1451,15 @@ color: #e9e9e9;
           message: 'Hello',
         },
         mounted() {
-          // console.log("Ready")
+
+          // if (window.location.pathname !== '/') {
+          //   this.filter = window.location.pathname.replace('/', '')
+          // }
+
           axios.get('/dataset.json').then((res) => {
             this.people = res.data
-            // setTimeout(() => {
-            //   // this.SwiperYesSwiping()
-            // }, 200)
           })
+
           // if (!localStorage.getItem('darkMode'))
           var hours = new Date().getHours();
 
@@ -1417,6 +1492,9 @@ color: #e9e9e9;
           // }
         },
         computed: {
+          recommended() {
+            return _.sampleSize(this.people, 30)
+          },
           senators() {
             return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('senator'))
           },
@@ -1483,6 +1561,15 @@ color: #e9e9e9;
           },
         },
         methods: {
+          navTo(string) {
+            this.logoClick()
+            this.filter = string
+            // window.history.pushState('page2', string, '/' + string);
+          },
+          clickSearch() {
+              this.filter ? this.filter = '' : ''
+              this.$forceUpdate();
+          },
           filterBy(i) {
             this.checked.includes(i.label) ? this.checked = this.checked.filter(a => a !== i.label) : this.checked.push(i.label)
             !this.filter.includes(i.label) ? this.filter += ' ' + i.label : this.filter = this.filter.split(i.label).join('')
@@ -1514,6 +1601,7 @@ color: #e9e9e9;
             wrapper.scrollTop = 0;
             // jobBg.style.background = bg;
             this.active = false
+            this.filter = ''
             this.$forceUpdate()
           },
           show(person) {

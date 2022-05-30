@@ -1,14 +1,36 @@
 [
     {
+        "name": "Yvette Herrell",
+        "title": "Representative",
+        "state_name": "New Mexico",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "",
+        "party": "",
+        "accused_treason": "",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Yvette_Herrell_official_photo%2C_117th_Congress.jpg/440px-Yvette_Herrell_official_photo%2C_117th_Congress.jpg",
+        "slug": "yvette-herrell",
+        "tags": [
+            "New Mexico"
+        ]
+    },
+    {
         "name": "Don Young",
         "title": "Representative",
         "state_name": "Alaska",
         "entered_office": "1973-01-03",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/don-young.jpg",
-        "slug": "don-young"
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/don-young.jpg",
+        "slug": "don-young",
+        "tags": [
+            "Republican",
+            "Alaska"
+        ]
     },
     {
         "name": "Jerry Carl",
@@ -16,10 +38,16 @@
         "state_name": "Alabama",
         "entered_office": "2021-01-03",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "1",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/jerry-carl.jpg",
-        "slug": "jerry-carl"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jerry-carl.jpg",
+        "slug": "jerry-carl",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Felix Moore",
@@ -27,10 +55,16 @@
         "state_name": "Alabama",
         "entered_office": "2021-01-03",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "2",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/felix-moore.jpg",
-        "slug": "felix-moore"
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/felix-moore.jpg",
+        "slug": "felix-moore",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Mike Rogers",
@@ -38,10 +72,16 @@
         "state_name": "Alabama",
         "entered_office": "2003-01-07",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "3",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/mike-rogers.jpg",
-        "slug": "mike-rogers"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-rogers.jpg",
+        "slug": "mike-rogers",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Robert Aderholt",
@@ -49,10 +89,16 @@
         "state_name": "Alabama",
         "entered_office": "1997-01-07",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "4",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/robert-aderholt.jpg",
-        "slug": "robert-aderholt"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/robert-aderholt.jpg",
+        "slug": "robert-aderholt",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Mo Brooks",
@@ -60,10 +106,16 @@
         "state_name": "Alabama",
         "entered_office": "2011-01-05",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "5",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/mo-brooks.jpg",
-        "slug": "mo-brooks"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mo-brooks.jpg",
+        "slug": "mo-brooks",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Gary Palmer",
@@ -71,21 +123,16 @@
         "state_name": "Alabama",
         "entered_office": "2015-01-06",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "6",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/gary-palmer.jpg",
-        "slug": "gary-palmer"
-    },
-    {
-        "name": "Terri Sewell",
-        "title": "Representative",
-        "state_name": "Alabama",
-        "entered_office": "2011-01-05",
-        "term_end": "2023-01-03",
-        "district": "7",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/terri-sewell.jpg",
-        "slug": "terri-sewell"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/gary-palmer.jpg",
+        "slug": "gary-palmer",
+        "tags": [
+            "Republican",
+            "Alabama"
+        ]
     },
     {
         "name": "Rick Crawford",
@@ -93,10 +140,16 @@
         "state_name": "Arkansas",
         "entered_office": "2011-01-05",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "1",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/rick-crawford.jpg",
-        "slug": "rick-crawford"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/rick-crawford.jpg",
+        "slug": "rick-crawford",
+        "tags": [
+            "Republican",
+            "Arkansas"
+        ]
     },
     {
         "name": "French Hill",
@@ -104,10 +157,16 @@
         "state_name": "Arkansas",
         "entered_office": "2015-01-06",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "2",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/french-hill.jpg",
-        "slug": "french-hill"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/french-hill.jpg",
+        "slug": "french-hill",
+        "tags": [
+            "Republican",
+            "Arkansas"
+        ]
     },
     {
         "name": "Steve Womack",
@@ -115,10 +174,16 @@
         "state_name": "Arkansas",
         "entered_office": "2011-01-05",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "3",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/steve-womack.jpg",
-        "slug": "steve-womack"
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/steve-womack.jpg",
+        "slug": "steve-womack",
+        "tags": [
+            "Republican",
+            "Arkansas"
+        ]
     },
     {
         "name": "Bruce Westerman",
@@ -126,43 +191,16 @@
         "state_name": "Arkansas",
         "entered_office": "2015-01-06",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "4",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/bruce-westerman.jpg",
-        "slug": "bruce-westerman"
-    },
-    {
-        "name": "Tom O'Halleran",
-        "title": "Representative",
-        "state_name": "Arizona",
-        "entered_office": "2017-01-03",
-        "term_end": "2023-01-03",
-        "district": "1",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/tom-ohalleran.jpg",
-        "slug": "tom-ohalleran"
-    },
-    {
-        "name": "Ann Kirkpatrick",
-        "title": "Representative",
-        "state_name": "Arizona",
-        "entered_office": "2019-01-03",
-        "term_end": "2023-01-03",
-        "district": "2",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/ann-kirkpatrick.jpg",
-        "slug": "ann-kirkpatrick"
-    },
-    {
-        "name": "Raul Grijalva",
-        "title": "Representative",
-        "state_name": "Arizona",
-        "entered_office": "2003-01-07",
-        "term_end": "2023-01-03",
-        "district": "3",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/raul-grijalva.jpg",
-        "slug": "raul-grijalva"
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/bruce-westerman.jpg",
+        "slug": "bruce-westerman",
+        "tags": [
+            "Republican",
+            "Arkansas"
+        ]
     },
     {
         "name": "Paul Gosar",
@@ -170,10 +208,16 @@
         "state_name": "Arizona",
         "entered_office": "2011-01-05",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "4",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/paul-gosar.jpg",
-        "slug": "paul-gosar"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/paul-gosar.jpg",
+        "slug": "paul-gosar",
+        "tags": [
+            "Republican",
+            "Arizona"
+        ]
     },
     {
         "name": "Andy Biggs",
@@ -181,10 +225,16 @@
         "state_name": "Arizona",
         "entered_office": "2017-01-03",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "5",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/andy-biggs.jpg",
-        "slug": "andy-biggs"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/andy-biggs.jpg",
+        "slug": "andy-biggs",
+        "tags": [
+            "Republican",
+            "Arizona"
+        ]
     },
     {
         "name": "David Schweikert",
@@ -192,43 +242,33 @@
         "state_name": "Arizona",
         "entered_office": "2011-01-05",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "6",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/david-schweikert.jpg",
-        "slug": "david-schweikert"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-schweikert.jpg",
+        "slug": "david-schweikert",
+        "tags": [
+            "Republican",
+            "Arizona"
+        ]
     },
     {
-        "name": "Ruben Gallego",
-        "title": "Representative",
-        "state_name": "Arizona",
-        "entered_office": "2015-01-06",
-        "term_end": "2023-01-03",
-        "district": "7",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/ruben-gallego.jpg",
-        "slug": "ruben-gallego"
-    },
-    {
-        "name": "Debbie  Lesko",
+        "name": "Debbie Lesko",
         "title": "Representative",
         "state_name": "Arizona",
         "entered_office": "2018-05-07",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "8",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/debbie-lesko.jpg",
-        "slug": "debbie-lesko"
-    },
-    {
-        "name": "Greg Stanton",
-        "title": "Representative",
-        "state_name": "Arizona",
-        "entered_office": "2019-01-03",
-        "term_end": "2023-01-03",
-        "district": "9",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/greg-stanton.jpg",
-        "slug": "greg-stanton"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/debbie-lesko.jpg",
+        "slug": "debbie-lesko",
+        "tags": [
+            "Republican",
+            "Arizona"
+        ]
     },
     {
         "name": "Doug LaMalfa",
@@ -236,32 +276,16 @@
         "state_name": "California",
         "entered_office": "2013-01-03",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "1",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/doug-lamalfa.jpg",
-        "slug": "doug-lamalfa"
-    },
-    {
-        "name": "Jared Huffman",
-        "title": "Representative",
-        "state_name": "California",
-        "entered_office": "2013-01-03",
-        "term_end": "2023-01-03",
-        "district": "2",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/jared-huffman.jpg",
-        "slug": "jared-huffman"
-    },
-    {
-        "name": "John Garamendi",
-        "title": "Representative",
-        "state_name": "California",
-        "entered_office": "2009-11-03",
-        "term_end": "2023-01-03",
-        "district": "3",
-        "party": "democrat",
-        "photo_url": "https://adios.to/headshots/john-garamendi.jpg",
-        "slug": "john-garamendi"
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/doug-lamalfa.jpg",
+        "slug": "doug-lamalfa",
+        "tags": [
+            "Republican",
+            "California"
+        ]
     },
     {
         "name": "Tom McClintock",
@@ -269,10 +293,135 @@
         "state_name": "California",
         "entered_office": "2009-01-06",
         "term_end": "2023-01-03",
+        "next_election": "",
         "district": "4",
         "party": "republican",
-        "photo_url": "https://adios.to/headshots/tom-mcclintock.jpg",
-        "slug": "tom-mcclintock"
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/tom-mcclintock.jpg",
+        "slug": "tom-mcclintock",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Jay Obernolte",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "8",
+        "party": "republican",
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jay-obernolte.jpg",
+        "slug": "jay-obernolte",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "David Valadao",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "21",
+        "party": "republican",
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-valadao.jpg",
+        "slug": "david-valadao",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Devin Nunes",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2003-01-07",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "22",
+        "party": "republican",
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/devin-nunes.jpg",
+        "slug": "devin-nunes",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Kevin McCarthy",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2007-01-04",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "23",
+        "party": "republican",
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/kevin-mccarthy.jpg",
+        "slug": "kevin-mccarthy",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Mike Garcia",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2020-05-12",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "25",
+        "party": "republican",
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-garcia.jpg",
+        "slug": "mike-garcia",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Young Kim",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "39",
+        "party": "republican",
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/young-kim.jpg",
+        "slug": "young-kim",
+        "tags": [
+            "Republican",
+            "California"
+        ]
+    },
+    {
+        "name": "Ken Calvert",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "1993-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "42",
+        "party": "republican",
+        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ken-calvert.jpg",
+        "slug": "ken-calvert",
+        "tags": [
+            "Republican",
+            "California"
+        ]
     },
     {
         "name": "Ron DeSantis",
@@ -280,8 +429,8 @@
         "entered_office": "2019",
         "term_end": "2023",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/ron-desantis.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ron_DeSantis__Official_Portrait__113th_Congress-7_fixed.jpg",
         "yearly_salary": "$130,273",
         "term_length": "4",
         "won_with": "49.60%",
@@ -290,7 +439,11 @@
         "description": "Ron DeSantis (Republican Party) is the Governor of Florida. He assumed office on January 8, 2019. His current term ends on January 3, 2023.",
         "position_link": "https://ballotpedia.org/Governor_of_Florida",
         "state_name": "Florida",
-        "slug": "ron-desantis"
+        "slug": "ron-desantis",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Jeanette M. Nuñez",
@@ -298,8 +451,8 @@
         "entered_office": "2019",
         "term_end": "2023",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/jeanette-m-nunez.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeanette-Nunez.jpg",
         "yearly_salary": "$124,851",
         "term_length": "4",
         "won_with": "",
@@ -308,7 +461,11 @@
         "description": "Jeanette Nuñez (Republican Party) is the Lieutenant Governor of Florida. She assumed office on January 8, 2019. Her current term ends on January 3, 2023.",
         "position_link": "https://ballotpedia.org/Lieutenant_Governor_of_Florida",
         "state_name": "Florida",
-        "slug": "jeanette-m-nunez"
+        "slug": "jeanette-m-nunez",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Cord Byrd",
@@ -316,8 +473,8 @@
         "entered_office": "May 13, 2022",
         "term_end": "2023",
         "next_election": "August 23, 2022",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/cord-byrd.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/secretary-laurel-lee.jpg",
         "yearly_salary": "$141,000",
         "term_length": "4",
         "won_with": "",
@@ -326,7 +483,11 @@
         "description": "Cord Byrd is the acting Florida Secretary of State. Byrd was appointed by Gov. Ron DeSantis (R) to replace Laurel Lee (R), who resigned in May 2022. Byrd's confirmation is pending Senate confirmation.\n",
         "position_link": "https://ballotpedia.org/Florida_Secretary_of_State",
         "state_name": "Florida",
-        "slug": "cord-byrd"
+        "slug": "cord-byrd",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Ashley Moody",
@@ -334,8 +495,8 @@
         "entered_office": "2019",
         "term_end": "2023",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/ashley-moody.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/200/Ashley-B-Moody.jpg",
         "yearly_salary": "$128,972",
         "term_length": "4",
         "won_with": "",
@@ -344,7 +505,11 @@
         "description": "Ashley B. Moody (Republican Party) is the Attorney General of Florida. She assumed office on January 8, 2019. Her current term ends on January 3, 2023.",
         "position_link": "https://ballotpedia.org/Attorney_General_of_Florida",
         "state_name": "Florida",
-        "slug": "ashley-moody"
+        "slug": "ashley-moody",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Jimmy Patronis",
@@ -352,8 +517,8 @@
         "entered_office": "2017",
         "term_end": "2023",
         "next_election": "August 23, 2022",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/jimmy-patronis.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/19511619_10155267445045168_4749611409490774327_n.jpg",
         "yearly_salary": "$128,972",
         "term_length": "4",
         "won_with": "",
@@ -362,7 +527,11 @@
         "description": "Jimmy Patronis (Republican Party) is the Florida Chief Financial Officer. He assumed office in 2017. His current term ends on January 3, 2023.",
         "position_link": "https://ballotpedia.org/Florida_Chief_Financial_Officer",
         "state_name": "Florida",
-        "slug": "jimmy-patronis"
+        "slug": "jimmy-patronis",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Richard Corcoran",
@@ -371,7 +540,7 @@
         "term_end": "",
         "next_election": "",
         "party": "",
-        "photo_url": "https://adios.to/headshots/richard-corcoran.jpg",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Richard_Corcoran.jpg",
         "yearly_salary": "$276,000",
         "term_length": "",
         "won_with": "",
@@ -380,7 +549,10 @@
         "description": "Richard Corcoran was the Florida Commissioner of Education. Corcoran assumed office in 2018. Corcoran left office on April 30, 2022.",
         "position_link": "https://ballotpedia.org/Florida_Commissioner_of_Education",
         "state_name": "Florida",
-        "slug": "richard-corcoran"
+        "slug": "richard-corcoran",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Nicole Fried",
@@ -388,8 +560,8 @@
         "entered_office": "2019",
         "term_end": "2023",
         "next_election": "August 23, 2022",
-        "party": "Democrat",
-        "photo_url": "https://adios.to/headshots/nicole-fried.jpg",
+        "party": "democrat",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nicole__22Nikki_22_Fried_fixed.png",
         "yearly_salary": "$128,972",
         "term_length": "",
         "won_with": "",
@@ -398,7 +570,11 @@
         "description": "Nikki Fried (Democratic Party) is the Florida Commissioner of Agriculture and Consumer Services. She assumed office on January 8, 2019. Her current term ends on January 3, 2023.",
         "position_link": "https://ballotpedia.org/Florida_Commissioner_of_Agriculture_and_Consumer_Services",
         "state_name": "Florida",
-        "slug": "nicole-fried"
+        "slug": "nicole-fried",
+        "tags": [
+            "Democrat",
+            "Florida"
+        ]
     },
     {
         "name": "Katherine Fernandez Rundle",
@@ -407,7 +583,7 @@
         "term_end": "",
         "next_election": "",
         "party": "",
-        "photo_url": "https://adios.to/headshots/katherine-fernandez-rundle.jpg",
+        "photo_url": "https://miamisao.com/wp-content/webpc-passthru.php?src=https://miamisao.com/wp-content/uploads/2021/03/miammisao.jpg&nocache=1",
         "yearly_salary": "$54,331",
         "term_length": "",
         "won_with": "",
@@ -416,13 +592,19 @@
         "description": "Katherine Fernandez Rundle (born March 1, 1950) is the current State Attorney for Miami-Dade County in Florida.",
         "position_link": "N/A",
         "state_name": "Florida",
-        "slug": "katherine-fernandez-rundle"
+        "slug": "katherine-fernandez-rundle",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Carlos J. Martinez",
         "title": "Public Defender",
         "state_name": "Florida",
-        "slug": "carlos-j-martinez"
+        "slug": "carlos-j-martinez",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Shevrin D. Jones",
@@ -430,8 +612,8 @@
         "entered_office": "2020",
         "term_end": "",
         "next_election": "",
-        "party": "Democrat",
-        "photo_url": "https://adios.to/headshots/shevrin-d-jones.jpg",
+        "party": "democrat",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/200/ShevrinJones.jpg",
         "yearly_salary": "$29,697",
         "term_length": "3",
         "won_with": "99.70%",
@@ -440,7 +622,11 @@
         "description": "Shevrin Jones (Democratic Party) (also known as Shev) is a member of the Florida State Senate, representing District 35. He assumed office on November 3, 2020. His current term ends on November 8, 2022.",
         "position_link": "https://ballotpedia.org/Florida_State_Senate_District_35",
         "state_name": "Florida",
-        "slug": "shevrin-d-jones"
+        "slug": "shevrin-d-jones",
+        "tags": [
+            "Democrat",
+            "Florida"
+        ]
     },
     {
         "name": "Manny Diaz, Jr.",
@@ -448,8 +634,8 @@
         "entered_office": "2018",
         "term_end": "2022",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/manny-diaz-jr.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/200/s36_5343.jpg",
         "yearly_salary": "$29,697",
         "term_length": "3",
         "won_with": "54.10%",
@@ -458,7 +644,11 @@
         "description": "Manny Diaz Jr. is a Republican member of the Florida State Senate, representing District 36. He was first elected to the chamber in 2018.",
         "position_link": "https://ballotpedia.org/Florida_State_Senate_District_36",
         "state_name": "Florida",
-        "slug": "manny-diaz-jr"
+        "slug": "manny-diaz-jr",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Ileana Garcia",
@@ -466,8 +656,8 @@
         "entered_office": "",
         "term_end": "",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/ileana-garcia.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/_Ileana_Garcia_.jpg",
         "yearly_salary": "$29,697",
         "term_length": "3",
         "won_with": "48.50%",
@@ -476,7 +666,11 @@
         "description": "Ileana Garcia (Republican Party) is a member of the Florida State Senate, representing District 37. She assumed office on November 3, 2020. Her current term ends on November 8, 2022.",
         "position_link": "https://ballotpedia.org/Florida_State_Senate_District_37",
         "state_name": "Florida",
-        "slug": "ileana-garcia"
+        "slug": "ileana-garcia",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Jason Pizzo",
@@ -484,8 +678,8 @@
         "entered_office": "2018",
         "term_end": "2022",
         "next_election": "",
-        "party": "Democrat",
-        "photo_url": "https://adios.to/headshots/jason-pizzo.jpg",
+        "party": "democrat",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/s38_5345.jpg",
         "yearly_salary": "$29,697",
         "term_length": "3",
         "won_with": "54.10%",
@@ -494,7 +688,11 @@
         "description": "Jason Pizzo is a Democratic member of the Florida State Senate, representing District 38. He was first elected to the chamber in 2018.",
         "position_link": "https://ballotpedia.org/Florida_State_Senate_District_38",
         "state_name": "Florida",
-        "slug": "jason-pizzo"
+        "slug": "jason-pizzo",
+        "tags": [
+            "Democrat",
+            "Florida"
+        ]
     },
     {
         "name": "Ana Maria Rodriguez",
@@ -502,8 +700,8 @@
         "entered_office": "2020",
         "term_end": "",
         "next_election": "",
-        "party": "Republican",
-        "photo_url": "https://adios.to/headshots/ana-maria-rodriguez.jpg",
+        "party": "republican",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AnaMariaRodriguez.jpg",
         "yearly_salary": "$29,697",
         "term_length": "3",
         "won_with": "55.60%",
@@ -512,7 +710,11 @@
         "description": "Ana Maria Rodriguez (Republican Party) is a member of the Florida State Senate, representing District 39. She assumed office on November 3, 2020. Her current term ends on November 8, 2022.",
         "position_link": "https://ballotpedia.org/Florida_State_Senate_District_39",
         "state_name": "Florida",
-        "slug": "ana-maria-rodriguez"
+        "slug": "ana-maria-rodriguez",
+        "tags": [
+            "Republican",
+            "Florida"
+        ]
     },
     {
         "name": "Annette Taddeo",
@@ -520,69 +722,103 @@
         "entered_office": "2017",
         "term_end": "",
         "next_election": "August 23, 2022",
-        "party": "Democrat",
-        "photo_url": "https://adios.to/headshots/annette-taddeo.jpg",
+        "party": "democrat",
+        "photo_url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Annette_Taddeo.jpg",
         "state_name": "Florida",
-        "slug": "annette-taddeo"
+        "slug": "annette-taddeo",
+        "tags": [
+            "Democrat",
+            "Florida"
+        ]
     },
     {
         "name": "Joseph S. Geller",
         "title": "State House of Representatives District 100:",
         "state_name": "Florida",
-        "slug": "joseph-s-geller"
+        "slug": "joseph-s-geller",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Felicia Simone Robinson",
         "title": "State House of Representatives District 102:",
         "state_name": "Florida",
-        "slug": "felicia-simone-robinson"
+        "slug": "felicia-simone-robinson",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Tom Fabricio",
         "title": "State House of Representatives District 103:",
         "state_name": "Florida",
-        "slug": "tom-fabricio"
+        "slug": "tom-fabricio",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "David Borrero",
         "title": "State House of Representatives District 105:",
         "state_name": "Florida",
-        "slug": "david-borrero"
+        "slug": "david-borrero",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Christopher Benjamin",
         "title": "State House of Representatives District 107:",
         "state_name": "Florida",
-        "slug": "christopher-benjamin"
+        "slug": "christopher-benjamin",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Dotie Joseph",
         "title": "State House of Representatives District 108:",
         "state_name": "Florida",
-        "slug": "dotie-joseph"
+        "slug": "dotie-joseph",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "James Bush, III",
         "title": "State House of Representatives District 109:",
         "state_name": "Florida",
-        "slug": "james-bush-iii"
+        "slug": "james-bush-iii",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Alex Rizo",
         "title": "State House of Representatives District 110:",
         "state_name": "Florida",
-        "slug": "alex-rizo"
+        "slug": "alex-rizo",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Bryan Avila",
         "title": "State House of Representatives District 111:",
         "state_name": "Florida",
-        "slug": "bryan-avila"
+        "slug": "bryan-avila",
+        "tags": [
+            "Florida"
+        ]
     },
     {
         "name": "Nicholas X. Duran",
         "title": "State House of Representatives District 112:",
         "state_name": "Florida",
-        "slug": "nicholas-x-duran"
+        "slug": "nicholas-x-duran",
+        "tags": [
+            "Florida"
+        ]
     }
 ]
