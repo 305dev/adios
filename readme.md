@@ -1,15 +1,13 @@
 ## Adios.to
 
-A simple website, dedicated to politicians everywhere.
+A website by the people, for the people.
 
-Transparency is the solution.
+\- 305dev
 
-\- Mr 305
+## Free Dataset
 
-## Dataset
-
-On this page you will find a file named ```dataset.json```. This includes all data used by Adios.to. In the ```headshots``` folder, you will find all photos.
-
+- In the code you will find ```dataset.json```. This includes a JSON file used by Adios.to.
+- In the ```/headshots``` folder, you will find all photos used be the website.
 
 ## License
 
