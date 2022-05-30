@@ -4,10 +4,21 @@ A website for the people, by the people.
 
 \- 305dev
 
+----
+
+## About Project
+
+**Link:** https://adios.to
+
+This website is hosted on Github from this repository.
+
+
 ## Free Dataset
 
 - In the code you will find ```dataset.json```. This includes a JSON file used by Adios.to.
 - In the ```/headshots``` folder, you will find all photos used be the website.
+
+> This dataset and website is journalism in-progress. Data should NOT be relied upon. Most places, we link to external news sources for further reading.
 
 ## License
 
