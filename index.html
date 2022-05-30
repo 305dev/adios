@@ -290,6 +290,18 @@
               color: var(--button-color);
               cursor: pointer;
               margin-left: auto;
+              color: #FFF !important;
+              font-weight: bold;
+              /* font-family: inherit; */
+            }
+
+            .detail-button {
+              font-size: 14px !important;
+              color: #FFF !important
+            }
+
+            .warn {
+              background: #c0392b !important;
             }
 
             .search.item {
@@ -1069,6 +1081,17 @@ color: #e9e9e9;
               zoom: 2;
               margin-top: -40px;
             }
+            .traitor {
+              color: red;
+              position: absolute;
+              right: 25px;
+              border: 2px solid;
+              padding: 5px 15px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              top: 20px;
+              right: 20px;
+            }
         </style>
     </head>
 
@@ -1181,18 +1204,17 @@ color: #e9e9e9;
                             </div>
                         </div>
                         <div class="job-cards">
-                            <div v-for="person in filteredPeople" class="job-card" @click="show(person)">
+                            <div v-for="person in filteredPeople" class="job-card" @click="show(person)" style="position: relative">
+                                <div class="traitor" v-if="person.tags && person.tags.includes('Traitor')">Traitor</div>
                                 <div class="job-card-header">
                                     <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
-                                    <div class="menu-dot"></div>
+                                    <!-- <div class="menu-dot"></div> -->
                                 </div>
                                 <div class="job-card-name">{{ person.name }}</div>
                                 <div class="job-card-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.state_name }} {{ person.title }}</div>
                                 <div class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }}</div>
-                                <div class="job-detail-buttons">
-                                    <button class="search-buttons detail-button">Full Time</button>
-                                    <button class="search-buttons detail-button">Min. 1 Year</button>
-                                    <button class="search-buttons detail-button">Senior Level</button>
+                                <div class="job-detail-buttons" v-for="tag in person.tags.filter(a => a !== 'Traitor')">
+                                    <button :class="`search-buttons detail-button`">{{ tag }}</button>
                                 </div>
                                 <div class="job-card-buttons">
                                     <button class="search-buttons card-buttons">Apply Now</button>
@@ -1433,8 +1455,7 @@ color: #e9e9e9;
               filters: []
             }
 
-            this.filteredPeople.map(a => {
-              // console.log( a )
+            this.filteredPeople.filter(a => a.state_name).map(a => {
               if (!states.filters.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
                 states.filters.push(
                   {
