@@ -1,6 +1,6 @@
 ## Adios.to
 
-A website by the people, for the people.
+A website for the people, by the people.
 
 \- 305dev
 
