@@ -3,7 +3,7 @@
 
     <head>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
              <meta name="apple-mobile-web-app-capable" content="yes">
              <meta name="apple-mobile-web-app-status-bar-style" content="black">
              <meta name="apple-mobile-web-app-title" content="Bank">
@@ -380,10 +380,10 @@
               border-radius: 6px;
               font-size: 13px;
               font-weight: 600;
-              margin-top: 14px;
+              margin-top: 7px;
 
                   font-weight: bold !important;
-                  zoom: 1.2;
+                  /* zoom: 1.11; */
                   letter-spacing: 0.2px;
 
             }
@@ -516,6 +516,7 @@
               grid-row-gap: 25px;
               -webkit-animation: slideY 0.6s both;
                       animation: slideY 0.6s both;
+                      overflow: hidden;
             }
             @media screen and (max-width: 1212px) {
               .job-cards {
@@ -544,17 +545,20 @@
               border-radius: 8px;
             }
             .job-card-name {
-              font-size: 18px;
+              font-size: 22px;
               margin-bottom: 5px;
               margin-top: 17px;
               letter-spacing: 0.5px;
               font-weight: bold;
+              color:
             }
             .job-card-title {
               color: #0861ff;
-              margin: 0;
-              font-size: 15px;
-              margin-top: 3px;
+                  margin: 0;
+                  font-size: 21px;
+                  margin-top: 3px;
+                  margin-bottom: 2px;
+                  letter-spacing: 0.2px;
             }
             .job-card-subtitle {
               color: var(--subtitle-color);
@@ -599,15 +603,17 @@
             }
 
             .detail-button {
-              background-color: var(--active-light-color);
+              background-color: #000;
               color: var(--active-color);
               font-size: 11px;
               font-weight: 500;
               padding: 6px 8px;
               border-radius: 4px;
             }
+
+
             .detail-button + .detail-button {
-              margin-left: 4px;
+              margin-left: 6px;
             }
 
             .job-card-buttons {
@@ -1108,8 +1114,8 @@ color: #e9e9e9;
               width: 100%;
             }
             .bg-profile {
-              width: 70px;
-              height: 70px;
+              width: 100px;
+              height: 100px;
               background-size: cover;
               background-position: center;
               border-radius: 10px;
@@ -1133,11 +1139,24 @@ color: #e9e9e9;
               top: 20px;
               right: 20px;
               zoom: 1.1;
+
+              color: red;
+              position: absolute;
+              border: 3px solid;
+              padding: 5px 15px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              top: 20px;
+              right: -5px;
+              zoom: 2.3;
+              transform: rotate(29deg);
+              opacity: 0.4;
+              z-index: 9
+
             }
             @media (max-width: 768px) {
               .traitor {
-                zoom: 1.4;
-                opacity: 0.4;
+                /* zoom: 1.4; */
               }
               ul {
                 font-size: 14px;
@@ -1146,10 +1165,11 @@ color: #e9e9e9;
             .warned {
               color: red;
               border: 2px solid;
-              padding: 17px;
+              padding: 25px;
               margin: 20px 0 27px 0;
               border-radius: 7px;
               font-size: 16px;
+              margin-top: 40px
             }
             .warned a {
               text-decoration: none;
@@ -1161,9 +1181,9 @@ color: #e9e9e9;
             }
             .h-body {
               font-weight: bold;
-    font-size: 20px;
-    opacity: 0.9;
-    margin-top: 10px;
+              font-size: 20px;
+              opacity: 0.9;
+              margin-top: 10px;
             }
             .back {
               position: fixed;
@@ -1178,6 +1198,18 @@ color: #e9e9e9;
                   padding: 15px 40px 15px 35px;
                   filter: invert(1);
                   cursor: pointer;
+            }
+            .job-overview-card .search-buttons {
+              zoom: 0.9
+            }
+            .date {
+              zoom: 1.2;
+position: absolute;
+right: 21px;
+text-align: center;
+background: #0878f7;
+padding: 7px;
+border-radius: 3px;
             }
         </style>
     </head>
@@ -1269,16 +1301,20 @@ color: #e9e9e9;
                         </div>
                         <div class="job-cards">
                             <div v-for="person in filteredPeople" class="job-card" style="position: relative">
-                                <div @click="show(person)" class="traitor" v-if="person.accused_treason">Traitor</div>
+                              <div class="date" :style="`background-color: ${color(person.party)}`">
+                                <div class="">APR</div>
+                                <div style=" font-size: 11px; font-weight: bold; ">2022</div>
+                              </div>
+                                <!-- <div @click="show(person)" class="traitor" v-if="person.accused_treason">Traitor</div> -->
                                 <div @click="show(person)" class="job-card-header">
                                     <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
                                     <!-- <div class="menu-dot"></div> -->
                                 </div>
-                                <div @click="show(person)" class="job-card-name">{{ person.name }}</div>
-                                <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.state_name }} {{ person.title }}</div> -->
-                                <div @click="show(person)" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }}</div>
+                                <div @click="show(person)" class="job-card-name" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
+                                <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`">{{ person.state_name }} {{ person.title }}</div> -->
+                                <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div>
                                 <div class="job-detail-buttons">
-                                    <button @click="navTo(tag)" v-for="tag in person.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button ${tag && tag.toLowerCase() === 'democrat' ? 'dem' : ''} ${tag && tag.toLowerCase() === 'republican' ? 'rep' : ''}`">{{ tag }}</button>
+                                    <button :style="`background-color: ${color(person.party)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
                                 </div>
                                 <div v-if="false" class="job-card-buttons">
                                     <button class="search-buttons card-buttons">Apply Now</button>
@@ -1293,10 +1329,14 @@ color: #e9e9e9;
                                         <div class="overview-wrapper">
                                             <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
                                             <div class="overview-detail">
-                                                <div class="job-card-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`">{{ person.name }}</div>
-                                                <div class="job-card-subtitle">{{ person.state_name }} {{ person.title }}</div>
+                                                <div class="job-card-title" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
+                                                <!-- <div class="job-card-subtitle">{{ person.title }}</div> -->
+                                                <!-- <div class="job-card-subtitle">{{ person.state_name }}</div> -->
+                                                <div class="job-detail-buttons">
+                                                  <button :style="`background-color: ${color(person.party)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                                </div>
                                             </div>
-                                            <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            <svg v-if="false" class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" class="feather feather-heart">
                                                 <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"
@@ -1313,9 +1353,14 @@ color: #e9e9e9;
                                 </div>
                             </div>
                             <div class="job-explain" v-if="active">
+                                <div @click="show(person)" class="traitor" v-if="active.accused_treason">Traitor</div>
                                 <div class="back" @click="logoClick">
                                   <img src="assets/back.svg" alt="" style=" margin-right: 10px; max-width: 40px">
                                   BACK
+                                </div>
+                                <div class="date" :style="`background-color: ${color(active.party)}; top: 170px;right: 15px;`">
+                                  <div class="">APR</div>
+                                  <div style=" font-size: 11px; font-weight: bold; ">2022</div>
                                 </div>
                                 <div class="job-bg-wr" :style="`background-image: url('${active.cover_url || 'assets/us-flag.jpeg'}'); ${active.accused_treason ? 'filter: grayscale(1)' : ''}`"></div>
                                 <div class="job-logos">
@@ -1341,17 +1386,17 @@ color: #e9e9e9;
                                         </div>
                                     </div>
                                     <div class="job-subtitle-wrapper">
-                                      <div class="h-title" style="color: #FFF">{{ active.name }}</div>
-                                      <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : 'red'}`"></div> -->
+                                      <div class="h-title" :style="`color: ${color(active.party)}`">{{ active.name }}</div>
+                                      <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`"></div> -->
                                       <div class="job-detail-buttons">
-                                          <button @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button ${tag && tag.toLowerCase() === 'democrat' ? 'dem' : ''} ${tag && tag.toLowerCase() === 'republican' ? 'rep' : ''}`">{{ tag }}</button>
+                                          <button :style="`background-color: ${color(active.party)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
                                       </div>
                                     </div>
-                                    <div class="warned" v-if="active.accused_treason" style="zoom: 0.9">
-                                      <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://bensguide.gpo.gov/j-oath-office?highlight=WyJjb25zdGl0dXRpb24iLCJjb25zdGl0dXRpb24ncyJd#:~:text=The%20Oath%2C%20as%20stated%20in,Constitution%20of%20the%20United%20States.%22" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
+                                    <div class="warned" v-if="active.accused_treason" style="zoom: 0.8;">
+                                      <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://www.law.cornell.edu/uscode/text/5/3331" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
                                       <ul>
                                         <li><a :href="active.accused_treason" target="_blank">
-                                          <b style="font-size: 20px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
+                                          <b style="font-size: 25px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
                                           <br>
                                           <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
                                         </a></li>
@@ -1496,7 +1541,7 @@ color: #e9e9e9;
             return _.sampleSize(this.people, 30)
           },
           senators() {
-            return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('senator'))
+            return this.filteredPeople.filter(a => a.title && a.title.toLowerCase() === 'senator')
           },
           representatives() {
             return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('representative'))
@@ -1561,6 +1606,13 @@ color: #e9e9e9;
           },
         },
         methods: {
+          color(party) {
+            if (!party) return
+            if (party.toLowerCase() === 'democrat') return '#0861ff'
+            if (party.toLowerCase() === 'republican') return '#cb0000'
+            if (party.toLowerCase() === 'independent') return '#20bf6b'
+            // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
+          },
           navTo(string) {
             this.logoClick()
             this.filter = string
