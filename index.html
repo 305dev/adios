@@ -4,10 +4,10 @@
     <head>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-             <meta name="apple-mobile-web-app-capable" content="yes">
-             <meta name="apple-mobile-web-app-status-bar-style" content="black">
-             <meta name="apple-mobile-web-app-title" content="Bank">
-             <link rel="apple-touch-icon" href="/icon.png">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     <meta name="apple-mobile-web-app-title" content="Bank">
+     <link rel="apple-touch-icon" href="/icon.png">
 
         <meta charset="UTF-8">
         <title>Adios.to</title>
@@ -1301,7 +1301,7 @@ border-radius: 3px;
                         </div>
                         <div class="job-cards">
                             <div v-for="person in filteredPeople" class="job-card" style="position: relative">
-                              <div class="date" :style="`background-color: ${color(person.party)}`">
+                              <div class="date" :style="`background-color: ${background(person)}`">
                                 <div class="">APR</div>
                                 <div style=" font-size: 11px; font-weight: bold; ">2022</div>
                               </div>
@@ -1312,9 +1312,9 @@ border-radius: 3px;
                                 </div>
                                 <div @click="show(person)" class="job-card-name" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
                                 <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`">{{ person.state_name }} {{ person.title }}</div> -->
-                                <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div>
+                                <!-- <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div> -->
                                 <div class="job-detail-buttons">
-                                    <button :style="`background-color: ${color(person.party)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                    <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
                                 </div>
                                 <div v-if="false" class="job-card-buttons">
                                     <button class="search-buttons card-buttons">Apply Now</button>
@@ -1333,7 +1333,7 @@ border-radius: 3px;
                                                 <!-- <div class="job-card-subtitle">{{ person.title }}</div> -->
                                                 <!-- <div class="job-card-subtitle">{{ person.state_name }}</div> -->
                                                 <div class="job-detail-buttons">
-                                                  <button :style="`background-color: ${color(person.party)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                                  <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
                                                 </div>
                                             </div>
                                             <svg v-if="false" class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -1606,11 +1606,18 @@ border-radius: 3px;
           },
         },
         methods: {
+          background(person) {
+            if (!party) return
+            if (person.party && person.party.toLowerCase() === 'democrat') return '#0861ff'
+            if (person.party && person.party.toLowerCase() === 'republican') return '#cb0000'
+            if (person.party && person.party.toLowerCase() === 'independent') return '#00b053'
+            // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
+          },
           color(party) {
             if (!party) return
             if (party.toLowerCase() === 'democrat') return '#0861ff'
             if (party.toLowerCase() === 'republican') return '#cb0000'
-            if (party.toLowerCase() === 'independent') return '#20bf6b'
+            if (party.toLowerCase() === 'independent') return '#00b053'
             // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
           },
           navTo(string) {
