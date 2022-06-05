@@ -1352,10 +1352,17 @@
                     <div class="searched-bar">
                         <div class="searched-show">Showing {{ filteredPeople.length }}</div>
                         <div class="searched-sort ghost">
-                          <select name="" id="">
-                            <option value="newest">Newest</option>
+                          <select v-model="filter">
+                            <option value="">National</option>
+                            <option value="Senator">Senators</option>
+                            <option value="Representative">Representatives</option>
+                            <option disabled>------------</option>
+                            <option value="Democrat">Democrat</option>
+                            <option value="Republican">Republican</option>
+                            <option disabled>------------</option>
+                            <option v-for="state in states" :value="state.label">{{ state.label }}</option>
                           </select>
-                          Sort by: <span class="post-time">Newest </span><span class="menu-icon">▼</span>
+                          Sort by: <span class="post-time">{{ filter || 'ALL' }} </span><span class="menu-icon">▼</span>
                         </div>
                     </div>
                     <div class="job-cards">
@@ -1560,6 +1567,25 @@
               // }
             },
             computed: {
+
+              states() {
+
+                var states = []
+
+                this.filteredPeople.filter(a => a.state_name).map(a => {
+                  if (!states.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
+                    states.push(
+                      {
+                        label: a.state_name,
+                      },
+                    )
+                  }
+                })
+
+                return states
+
+              },
+
               recommended() {
                 return _.sampleSize(this.people, 30)
               },
@@ -1595,24 +1621,6 @@
                   }
                 ]
 
-                var states = {
-                  id: 1,
-                  label: "Filter by State",
-                  filters: []
-                }
-
-                this.filteredPeople.filter(a => a.state_name).map(a => {
-                  if (!states.filters.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
-                    states.filters.push(
-                      {
-                        label: a.state_name,
-                        dataset: this.filteredPeople.filter(b => b.state_name && b.state_name.toLowerCase() === a.state_name.toLowerCase())
-                      },
-                    )
-                  }
-                })
-
-                items.push(states)
 
                 return items
 
@@ -1629,6 +1637,9 @@
               },
             },
             methods: {
+            // doSelect(e) {
+            //     if (e.target.value) this.filter = e.target.value
+            // },
               background(person, tag) {
 
                 if (tag && tag.toLowerCase() === "senator") return 

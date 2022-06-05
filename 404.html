@@ -535,6 +535,16 @@
           }
         }
 
+        @media screen and (max-width: 769px) {
+        
+        .job-explain .date {
+            top: 150px !important;
+            right: 18px !important;
+                zoom: 1.4;
+        }
+
+        }
+
         .job-card {
           padding: 20px 16px;
           background-color: var(--header-bg-color);
@@ -946,14 +956,18 @@
           margin-top: 20px;
         }
         .overview-text-item:before {
-             content: "";
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    margin-right: 8px;
-    flex-shrink: 0;
-    margin-top: 6px;
+            content: "";
+            border: 2px solid #000000;
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            margin-right: 8px;
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+
+        .dark-mode .overview-text-item:before {
+            border: 2px solid #ffffff;
         }
 
         .detail-page .job-overview {
@@ -1339,7 +1353,14 @@
                         <div class="searched-show">Showing {{ filteredPeople.length }}</div>
                         <div class="searched-sort ghost">
                           <select name="" id="">
-                            <option value="newest">Newest</option>
+                            <option value="newest">National</option>
+                            <option value="newest">Senators</option>
+                            <option value="newest">Representatives</option>
+                            <option disabled>------------</option>
+                            <option value="newest">Democrat</option>
+                            <option value="newest">Republican</option>
+                            <option disabled>------------</option>
+                            <option v-for="state in states">{{ state.label }}</option>
                           </select>
                           Sort by: <span class="post-time">Newest </span><span class="menu-icon">▼</span>
                         </div>
@@ -1402,7 +1423,7 @@
                             </div>
                         </div>
                         <div class="job-explain" v-if="active">
-                            <div @click="show(person)" class="traitor" v-if="active.accused_treason">Traitor</div>
+                            <!-- <div @click="show(person)" class="traitor" v-if="active.accused_treason">Traitor</div> -->
                             <div class="back" @click="logoClick">
                               <img src="assets/back.svg" alt="" style=" margin-right: 10px; max-width: 40px">
                               BACK
@@ -1546,6 +1567,25 @@
               // }
             },
             computed: {
+
+              states() {
+
+                var states = []
+
+                this.filteredPeople.filter(a => a.state_name).map(a => {
+                  if (!states.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
+                    states.push(
+                      {
+                        label: a.state_name,
+                      },
+                    )
+                  }
+                })
+
+                return states
+
+              },
+
               recommended() {
                 return _.sampleSize(this.people, 30)
               },
@@ -1581,24 +1621,6 @@
                   }
                 ]
 
-                var states = {
-                  id: 1,
-                  label: "Filter by State",
-                  filters: []
-                }
-
-                this.filteredPeople.filter(a => a.state_name).map(a => {
-                  if (!states.filters.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
-                    states.filters.push(
-                      {
-                        label: a.state_name,
-                        dataset: this.filteredPeople.filter(b => b.state_name && b.state_name.toLowerCase() === a.state_name.toLowerCase())
-                      },
-                    )
-                  }
-                })
-
-                items.push(states)
 
                 return items
 
@@ -1658,7 +1680,7 @@
                 this.$forceUpdate()
               },
               github() {
-                var check = window.confirm('This website is Open Source and is completly hosted on Github. You can download the entire database and images for free. Click OK to continue to Github.')
+                var check = window.confirm('This website is not endorsed by any candidate. It is decentralised journalism, hosted on Github. You can download the entire website and dataset for free. Click OK to continue to Github.')
                 if (check) {
                   window.open('https://github.com/305dev/adios', '_blank').focus();
                 }
