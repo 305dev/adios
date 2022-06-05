@@ -1,1700 +1,1696 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-     <meta name="apple-mobile-web-app-title" content="Bank">
-     <link rel="apple-touch-icon" href="/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Bank">
+    <link rel="apple-touch-icon" href="/icon.png">
 
-        <meta charset="UTF-8">
-        <title>Adios.to</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios@0.26.0"></script>
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-            * {
-              outline: none;
-              box-sizing: border-box;
-            }
+    <meta charset="UTF-8">
+    <title>Adios.to</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.26.0"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        * {
+          outline: none;
+          box-sizing: border-box;
+        }
 
-            :root {
-              --body-bg-color: #e5ecef;
-              --theme-bg-color: #ececec;
-              --body-font: "Poppins", sans-serif;
-              --body-color: #2f2f33;
-              --active-color: #0162ff;
-              --active-light-color: #e1ebfb;
-              --header-bg-color: #fff;
-              --search-border-color: #efefef;
-              --border-color: #d8d8d8;
-              --alert-bg-color: #e8f2ff;
-              --subtitle-color: #83838e;
-              --inactive-color: #f0f0f0;
-              --placeholder-color: #9b9ba5;
-              --time-button: #fc5757;
-              --level-button: #5052d5;
-              --button-color: #fff;
-            }
+        :root {
+          --body-bg-color: #e5ecef;
+          --theme-bg-color: #ececec;
+          --body-font: "Poppins", sans-serif;
+          --body-color: #2f2f33;
+          --active-color: #0162ff;
+          --active-light-color: #e1ebfb;
+          --header-bg-color: #fff;
+          --search-border-color: #efefef;
+          --border-color: #d8d8d8;
+          --alert-bg-color: #e8f2ff;
+          --subtitle-color: #83838e;
+          --inactive-color: #f0f0f0;
+          --placeholder-color: #9b9ba5;
+          --time-button: #fc5757;
+          --level-button: #5052d5;
+          --button-color: #fff;
+        }
 
-            .dark-mode {
-              --body-bg-color: #1d1d1d;
-              --theme-bg-color: #13131a;
-              --header-bg-color: #1c1c24;
-              --alert-bg-color: #292932;
-              --body-color: #fff;
-              --inactive-color: #292932;
-              --time-button: #fff;
-              --level-button: #fff;
-              --active-light-color: #263d63;
-              --border-color: #26262f;
-              --search-border-color: #26262f;
-            }
+        .dark-mode {
+          --body-bg-color: #1d1d1d;
+          --theme-bg-color: #13131a;
+          --header-bg-color: #1c1c24;
+          --alert-bg-color: #292932;
+          --body-color: #fff;
+          --inactive-color: #292932;
+          --time-button: #fff;
+          --level-button: #fff;
+          --active-light-color: #263d63;
+          --border-color: #26262f;
+          --search-border-color: #26262f;
+        }
 
-            ::-moz-placeholder {
-              color: var(--placeholder-color);
-            }
+        ::-moz-placeholder {
+          color: var(--placeholder-color);
+        }
 
-            :-ms-input-placeholder {
-              color: var(--placeholder-color);
-            }
+        :-ms-input-placeholder {
+          color: var(--placeholder-color);
+        }
 
-            ::placeholder {
-              color: var(--placeholder-color);
-            }
+        ::placeholder {
+          color: var(--placeholder-color);
+        }
 
-            img {
-              max-width: 100%;
-            }
+        img {
+          max-width: 100%;
+        }
 
-            html {
-              box-sizing: border-box;
-              -webkit-font-smoothing: antialiased;
-            }
+        html {
+          box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+        }
 
-            body {
-              background-color: var(--body-bg-color);
-              font-family: var(--body-font);
-              font-size: 15px;
-              color: var(--body-color);
-            }
+        body {
+          background-color: var(--body-bg-color);
+          font-family: var(--body-font);
+          font-size: 15px;
+          color: var(--body-color);
+        }
 
-            .dark-light svg {
-              margin-right: 8px;
-              width: 22px;
-              cursor: pointer;
-              fill: black;
-              transition: 0.5s;
-              margin-right: 0;
-              opacity: 0.6;
-            }
+        .dark-light svg {
+          margin-right: 8px;
+          width: 22px;
+          cursor: pointer;
+          fill: black;
+          transition: 0.5s;
+          margin-right: 0;
+          opacity: 0.6;
+        }
 
-            .dark-mode .dark-light svg {
-              fill: #fefefe;
-              stroke: #ffce45;
-              margin-right: 0;
-              opacity: 0.6;
-            }
-            .dark-mode .job-card svg {
-              box-shadow: none;
-            }
-            .dark-mode .search.item {
-              color: var(--body-color);
-              border-color: var(--body-color);
-            }
-            .dark-mode .search-location svg,
-            .dark-mode .search-job svg,
-            .dark-mode .search-salary svg {
-              color: var(--body-color);
-            }
-            .dark-mode .detail-button {
-              background-color: var(--inactive-color);
-              color: var(--subtitle-color);
-            }
+        .dark-mode .dark-light svg {
+          fill: #fefefe;
+          stroke: #ffce45;
+          margin-right: 0;
+          opacity: 0.6;
+        }
+        .dark-mode .job-card svg {
+          box-shadow: none;
+        }
+        .dark-mode .search.item {
+          color: var(--body-color);
+          border-color: var(--body-color);
+        }
+        .dark-mode .search-location svg,
+        .dark-mode .search-job svg,
+        .dark-mode .search-salary svg {
+          color: var(--body-color);
+        }
 
-            .job {
-              display: flex;
-              flex-direction: column;
-              max-width: 1400px;
-              height: 100vh;
-              margin: 0 auto;
-              overflow: hidden;
-              background-color: var(--theme-bg-color);
-            }
+        .job-explain-content .detail-button {
+            zoom: 1.2;
+            margin-right: 4px;
+        }
 
-            .logo {
+        .dark-mode .detail-button {
+          background-color: var(--inactive-color);
+          color: var(--subtitle-color);
+        }
+
+        .job {
+          display: flex;
+          flex-direction: column;
+          max-width: 1400px;
+          height: 100vh;
+          margin: 0 auto;
+          overflow: hidden;
+          background-color: var(--theme-bg-color);
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          font-size: 18px;
+          cursor: pointer;
+          color: #2483ff;
+          filter: hue-rotate(-6deg);
+        }
+
+        .logo svg {
+          width: 24px;
+          margin-right: 0px;
+          animation: 1s all;
+          transition: 1s all;
+          margin-left: -1px;
+          margin-bottom: 5px;
+        }
+
+        .header {
+          display: flex;
+          align-items: center;
+          transition: box-shadow 0.3s;
+          flex-shrink: 0;
+          padding: 0 40px;
+          white-space: nowrap;
+          background-color: var(--header-bg-color);
+          height: 60px;
+          width: 100%;
+          font-size: 14px;
+          justify-content: space-between;
+        }
+        .header-menu a {
+          text-decoration: none;
+          color: var(--body-color);
+          font-weight: 500;
+        }
+        .header-menu a:hover {
+          color: var(--active-color);
+        }
+        .header-menu a:not(:first-child) {
+          margin-left: 30px;
+        }
+        .header-menu a.active {
+          color: var(--active-color);
+        }
+
+        .user-settings {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+        }
+        .user-settings svg {
+          width: 35px;
+          color: #94949f;
+        }
+
+        .user-menu {
+          position: relative;
+          margin-right: 8px;
+          padding-right: 8px;
+          border-right: 2px solid #d6d6db;
+        }
+        .user-menu:before {
+          position: absolute;
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          border: 2px solid var(--header-bg-color);
+          right: 6px;
+          top: -1px;
+          background-color: var(--active-color);
+        }
+
+        .user-profile {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          -o-object-fit: cover;
+             object-fit: cover;
+          margin-right: 10px;
+        }
+
+        .wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          scroll-behavior: smooth;
+          padding: 30px 40px;
+          overflow: auto;
+        }
+
+        .search-menu {
+          height: 56px;
+          white-space: nowrap;
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          background-color: var(--header-bg-color);
+          border-radius: 8px;
+          width: 100%;
+          padding-left: 20px;
+        }
+        .search-menu div:not(:last-of-type) {
+          border-right: 1px solid var(--search-border-color);
+        }
+
+        .search-bar {
+          height: 55px;
+          width: 100%;
+          position: relative;
+        }
+        .search-bar input {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: transparent;
+          border: none;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%230162ff'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
+          background-repeat: no-repeat;
+          background-size: 14px;
+          background-position: 0 50%;
+          padding: 10px 40px;
+        }
+        .dark-mode .search-bar input {
+          color:  #FFF;
+        }
+        .search-location,
+        .search-job,
+        .search-salary {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 0 25px;
+          height: 100%;
+        }
+        .dark-mode input {
+          color: #FFF
+        }
+        .search-location input,
+        .search-job input,
+        .search-salary input {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: transparent;
+          border: none;
+        }
+        .search-location svg,
+        .search-job svg,
+        .search-salary svg {
+          margin-right: 8px;
+          width: 18px;
+          color: var(--active-color);
+          flex-shrink: 0;
+        }
+
+        .search-button {
+          background-color: var(--active-color);
+          height: 55px;
+          border: none;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 0 15px;
+          border-radius: 0 8px 8px 0;
+          color: var(--button-color);
+          cursor: pointer;
+          margin-left: auto;
+          color: #FFF !important;
+          font-weight: bold;
+          /* font-family: inherit; */
+        }
+
+        .detail-button {
+          font-size: 14px !important;
+          color: #FFF !important
+        }
+
+        .warn {
+          background: #c0392b !important;
+        }
+
+        .search.item {
+          position: absolute;
+          top: 10px;
+          left: 25px;
+          font-size: 13px;
+          color: var(--active-color);
+          border: 1px solid var(--search-border-color);
+          padding: 8px 10px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+        }
+        .search.item svg {
+          width: 12px;
+          margin-left: 5px;
+        }
+        .search.item:last-child {
+          left: 185px;
+        }
+
+        .main-container {
+          display: flex;
+          flex-grow: 1;
+          padding-top: 35px;
+        }
+
+        .search-type {
+          width: 270px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          flex-shrink: 0;
+        }
+
+        .alert {
+          background-color: var(--alert-bg-color);
+          padding: 24px 18px;
+          border-radius: 8px;
+        }
+        .alert-title {
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+        .alert-subtitle {
+          font-size: 13px;
+          color: var(--subtitle-color);
+          line-height: 1.6em;
+          margin-bottom: 20px;
+        }
+        .alert input {
+          width: 100%;
+          padding: 10px;
+          display: block;
+          border-radius: 6px;
+          background-color: var(--header-bg-color);
+          border: none;
+          font-size: 13px;
+        }
+
+        .search-buttons {
+          border: none;
+          color: var(--button-color);
+          background-color: var(--active-color);
+          padding: 8px 10px;
+          border-radius: 6px;
+          font-size: 13px;
+          font-weight: 600;
+          margin-top: 7px;
+
+              font-weight: bold !important;
+              /* zoom: 1.11; */
+              letter-spacing: 0.2px;
+
+        }
+
+        .search-buttons.rep {
+          background: #cb0000;
+        }
+
+        .search-buttons.dem {
+          background: #0878f7;
+        }
+
+        .job-wrapper {
+          padding-top: 20px;
+        }
+
+        .job-time {
+          padding-top: 20px;
+        }
+        .job-time-title {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .type-container {
+          display: flex;
+          align-items: center;
+          color: var(--subtitle-color);
+          font-size: 13px;
+        }
+        .type-container label {
+          margin-left: 2px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .type-container + .type-container {
+          margin-top: 10px;
+        }
+
+        .job-number {
+          margin-left: auto;
+          background-color: var(--inactive-color);
+          color: var(--subtitle-color);
+          font-size: 10px;
+          font-weight: 500;
+          padding: 5px;
+          border-radius: 4px;
+        }
+
+        .job-style {
+          display: none;
+        }
+
+        .job-style + label:before {
+          content: "";
+          margin-right: 10px;
+          width: 16px;
+          height: 16px;
+          border: 1px solid var(--subtitle-color);
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .job-style:checked + label:before {
+          background-color: var(--active-color);
+          border-color: var(--active-color);
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
+          background-position: 50%;
+          background-size: 14px;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+        }
+
+        .job-style:checked + label + span {
+          background-color: var(--active-light-color);
+          color: var(--active-color);
+        }
+
+        .searched-jobs {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          padding-left: 40px;
+        }
+
+        @-webkit-keyframes slideY {
+          0% {
+            opacity: 0;
+            transform: translateY(200px);
+          }
+        }
+
+        @keyframes slideY {
+          0% {
+            opacity: 0;
+            transform: translateY(200px);
+          }
+        }
+        .searched-bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          -webkit-animation: slideY 0.6s both;
+                  animation: slideY 0.6s both;
+        }
+        .searched-show {
+          font-size: 19px;
+          font-weight: 600;
+        }
+        .searched-sort {
+          font-size: 14px;
+          color: var(--subtitle-color);
+        }
+        .searched-sort .post-time {
+          font-weight: 600;
+          color: var(--subtitle-color);
+        }
+        .searched-sort .menu-icon {
+          font-size: 9px;
+          color: var(--placeholder-color);
+          margin-left: 6px;
+        }
+
+        .job-cards {
+          padding-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 25px;
+          grid-row-gap: 25px;
+          -webkit-animation: slideY 0.6s both;
+                  animation: slideY 0.6s both;
+                  overflow: hidden;
+        }
+        @media screen and (max-width: 1212px) {
+          .job-cards {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media screen and (max-width: 930px) {
+          .job-cards {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+
+        .job-card {
+          padding: 20px 16px;
+          background-color: var(--header-bg-color);
+          border-radius: 8px;
+          cursor: pointer;
+          transition: 0.2s;
+        }
+        .job-card:hover {
+          transform: scale(1.02);
+        }
+        .job-card svg {
+          width: 46px;
+          padding: 10px;
+          border-radius: 8px;
+        }
+        .job-card-name {
+          font-size: 22px;
+          margin-bottom: 5px;
+          margin-top: 17px;
+          letter-spacing: 0.5px;
+          font-weight: bold;
+          color:
+        }
+        .job-card-title {
+            max-width: 200px;
+            color: #0861ff;
+            margin: 0;
+            font-size: 18px;
+            margin-bottom: 2px;
+            letter-spacing: 0.2px;
+            font-weight: bold;
+        }
+        .job-card-subtitle {
+          color: var(--subtitle-color);
+          font-size: 16px;
+          margin-top: 14px;
+          line-height: 1.6em;
+        }
+        .job-card-header {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .overview-card:hover {
+          background: #2b2ecf;
+          transition: none;
+          transform: scale(1);
+        }
+        .overview-card:hover svg {
+          box-shadow: none;
+        }
+        .overview-card:hover .job-overview-buttons .search-buttons.time-button,
+        .overview-card:hover .job-overview-buttons .search-buttons.level-button {
+          background-color: #575ad8;
+          color: #fff;
+        }
+        .overview-card:hover .job-card-title,
+        .overview-card:hover .job-stat {
+          color: #fff;
+        }
+        .overview-card:hover .job-card-subtitle,
+        .overview-card:hover .job-day {
+          color: #dedede;
+        }
+        .overview-card:hover .overview-wrapper .heart {
+          color: #fff;
+          border-color: #fff;
+        }
+        .overview-card:hover .overview-wrapper .heart:hover {
+          fill: red;
+          stroke: red;
+          transform: scale(1.1);
+        }
+
+        .detail-button {
+          background-color: #000;
+          color: var(--active-color);
+          font-size: 11px;
+          font-weight: 500;
+          padding: 6px 8px;
+          border-radius: 4px;
+        }
+
+
+        .detail-button + .detail-button {
+          margin-left: 6px;
+        }
+
+        .job-card-buttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 4px;
+        }
+
+        .card-buttons,
+        .card-buttons-msg {
+          padding: 10px;
+          width: 100%;
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        .card-buttons {
+          margin-right: 12px;
+        }
+        .card-buttons-msg {
+          background-color: var(--inactive-color);
+          color: var(--subtitle-color);
+        }
+
+        .menu-dot {
+          background-color: var(--placeholder-color);
+          box-shadow: -6px 0 0 0 var(--placeholder-color), 6px 0 0 0 var(--placeholder-color);
+          width: 4px;
+          height: 4px;
+          border: 0;
+          padding: 0;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: 8px;
+        }
+
+        .header-shadow {
+          box-shadow: 0 4px 20px rgba(88, 99, 148, 0.17);
+          z-index: 1;
+        }
+
+        @-webkit-keyframes slide {
+          0% {
+            opacity: 0;
+            transform: translateX(300px);
+          }
+        }
+
+        @keyframes slide {
+          0% {
+            opacity: 0;
+            transform: translateX(300px);
+          }
+        }
+        .job-overview {
+          display: flex;
+          flex-grow: 1;
+          display: none;
+          -webkit-animation: slide 0.6s both;
+                  animation: slide 0.6s both;
+        }
+        .job-overview-cards {
+          display: flex;
+          flex-direction: column;
+          width: 330px;
+          height: 100%;
+          flex-shrink: 0;
+        }
+        .job-overview-card + .job-overview-card {
+          margin-top: 20px;
+        }
+        .job-overview-buttons {
+          display: flex;
+          align-items: center;
+          margin-top: 12px;
+        }
+        .job-overview-buttons .search-buttons {
+          background-color: var(--inactive-color);
+          font-size: 11px;
+          padding: 6px 8px;
+          margin-top: 0;
+          font-weight: 500;
+        }
+        .job-overview-buttons .search-buttons.time-button {
+          color: var(--time-button);
+          margin-right: 8px;
+        }
+        .job-overview-buttons .search-buttons.level-button {
+          color: var(--level-button);
+        }
+        .job-overview-buttons .job-stat {
+          color: var(--active-color);
+          font-size: 12px;
+          font-weight: 500;
+          margin-left: auto;
+        }
+        .job-overview-buttons .job-day {
+          color: var(--subtitle-color);
+          font-size: 12px;
+          margin-left: 8px;
+          font-weight: 500;
+        }
+        .job-overview .overview-wrapper {
+          display: flex;
+          align-items: center;
+        }
+        .job-overview .overview-wrapper svg:first-child {
+          width: 42px;
+          margin-right: 10px;
+        }
+        .job-overview .overview-wrapper .heart {
+          background: none;
+          box-shadow: none;
+          width: 24px;
+          padding: 4px;
+          color: var(--subtitle-color);
+          border: 1px solid var(--border-color);
+          margin-left: auto;
+          margin-bottom: auto;
+        }
+
+        .overview-detail .job-card-title,
+        .overview-detail .job-card-subtitle {
+          margin-top: 4px;
+        }
+        .overview-detail .job-card-subtitle {
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .job-explain {
+          background-color: var(--header-bg-color);
+          margin-left: 40px;
+          border-radius: 0 0 8px 8px;
+          width: 100%;
+        }
+
+
+        .job-bg-wr {
+          min-height: 180px;
+          background-size: cover;
+        }
+
+        .job-bg {
+          border-radius: 8px 8px 0 0;
+          -o-object-fit: cover;
+             object-fit: cover;
+          width: 100%;
+          transition: 0.3s;
+          position: relative;
+        }
+
+        .job-logos {
+          margin-top: -30px;
+          position: relative;
+          margin-bottom: -36px;
+          padding: 0 20px;
+        }
+        .job-logos svg {
+          width: 66px;
+          padding: 12px;
+          background-color: #fff;
+          border-radius: 10px;
+          border: 4px solid var(--header-bg-color);
+        }
+
+        .job-title-wrapper {
+          display: flex;
+          align-items: center;
+        }
+        .job-title-wrapper .job-card-title {
+          font-size: 20px;
+          margin-top: 0;
+          font-weight: 600;
+        }
+
+        .job-action {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+        }
+        .job-action svg {
+          width: 32px;
+          border: 1px solid var(--border-color);
+          color: var(--subtitle-color);
+          border-radius: 8px;
+          padding: 6px;
+        }
+        .job-action svg + svg {
+          margin-left: 12px;
+        }
+
+        .job-explain-content {
+          padding: 50px 25px 30px;
+        }
+        .h-body {
+          font-size: 17px;
+          letter-spacing: 1px;
+          opacity: 0.9;
+          margin-bottom: 10px;
+          margin-top: 8px;
+          font-weight: 300;
+        }
+        .h-title {
+          font-size: 34px;
+          color: #0861ff;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+        .job-subtitle-wrapper {
+          /* display: flex; */
+          align-items: center;
+          margin-top: 5px;
+          /*margin-bottom: 18px;*/
+        }
+        .job-subtitle-wrapper .posted {
+          margin-left: auto;
+        }
+        .job-subtitle-wrapper .company-name {
+          color: var(--active-color);
+          font-weight: 600;
+          font-size: 14px;
+          zoom: 1.3;
+            color: #e9e9e9;
+        }
+        .job-subtitle-wrapper .comp-location,
+        .job-subtitle-wrapper .posted {
+          color: var(--subtitle-color);
+          font-size: 12px;
+          font-weight: 500;
+        }
+        .job-subtitle-wrapper .comp-location {
+          position: relative;
+          margin-left: 10px;
+        }
+        .job-subtitle-wrapper .comp-location:before {
+          content: "";
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: var(--placeholder-color);
+          top: 49%;
+          left: -8px;
+          position: absolute;
+        }
+        .job-subtitle-wrapper .app-number {
+          color: var(--body-color);
+          position: relative;
+          margin-left: 12px;
+        }
+        .job-subtitle-wrapper .app-number:before {
+          content: "";
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: var(--placeholder-color);
+          top: 50%;
+          left: -7px;
+          position: absolute;
+        }
+
+        .explain-bar {
+          margin-top: 20px;
+          border: 1px solid var(--border-color);
+          border-radius: 8px;
+          display: flex;
+          height: 66px;
+          padding: 0 16px;
+          align-items: center;
+          justify-content: space-between;
+          zoom: 1.2
+        }
+        .explain-title {
+          color: var(--subtitle-color);
+          font-size: 12px;
+          line-height: 40px;
+          white-space: nowrap;
+        }
+        .explain-subtitle {
+          font-size: 13px;
+          font-weight: 500;
+          margin-top: -2px;
+          white-space: nowrap;
+        }
+        .explain-contents {
+          height: 66px;
+        }
+        .explain-contents + .explain-contents {
+          border-left: 1px solid var(--border-color);
+          padding-left: 16px;
+        }
+
+        .overview-text {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .overview-text-header {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 35px;
+        }
+        .overview-text-subheader {
+          font-size: 18px;
+          line-height: 2em;
+        }
+        .overview-text-item {
+            font-size: 18px;
+            position: relative;
+            display: flex;
+            text-decoration: none;
+        }
+        .overview-text-item a {
+      text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: bold;
+    /*color: #ffffff;*/
+        }
+        .overview-text-item + .overview-text-item {
+          margin-top: 20px;
+        }
+        .overview-text-item:before {
+             content: "";
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    margin-top: 6px;
+        }
+
+        .detail-page .job-overview {
+          display: flex;
+        }
+        .detail-page .job-cards,
+        .detail-page .searched-bar {
+          display: none;
+        }
+        @media screen and (max-width: 1300px) {
+          .detail-page .search-type {
+            display: none;
+          }
+          .detail-page .searched-jobs {
+            padding-left: 0;
+          }
+        }
+
+        @media screen and (max-width: 990px) {
+          .explain-contents, .explain-bar {
+            height: auto;
+          }
+
+          .explain-bar {
+            flex-wrap: wrap;
+            padding-bottom: 14px;
+          }
+
+          .explain-contents {
+            width: 50%;
+          }
+
+          .explain-contents + .explain-contents {
+            padding: 0;
+            border: 0;
+          }
+
+          .explain-contents:nth-child(2) ~ .explain-contents {
+            margin-top: 16px;
+            border-top: 1px solid var(--border-color);
+          }
+
+          .job-subtitle-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .job-subtitle-wrapper .posted {
+            margin-left: 0;
+            margin-top: 6px;
+          }
+        }
+        @media screen and (max-width: 930px) {
+          .search-job, .search-salary {
+            display: none;
+          }
+
+          .search-bar {
+            /* width: auto; */
+          }
+        }
+        @media screen and (max-width: 760px) {
+          .detail-page .job-overview-cards {
+            display: none;
+          }
+
+          .user-name {
+            display: none;
+          }
+
+          .user-profile {
+            margin-right: 0;
+          }
+
+          .job-explain {
+            margin-left: 0;
+          }
+        }
+        @media screen and (max-width: 730px) {
+          .search-type {
+            display: none;
+          }
+
+          .searched-jobs {
+            padding-left: 0;
+          }
+
+          .search-menu div:not(:last-of-type) {
+            border: 0;
+          }
+
+          .job-cards {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .search-location {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 620px) {
+          .job-cards {
+            grid-template-columns: repeat(1, 1fr);
+          }
+
+          .header-menu a:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+        @media screen and (max-width: 590px) {
+          .header-menu {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 520px) {
+          .search.item {
+            display: none;
+          }
+
+          .search-bar {
+            flex-grow: 1;
+          }
+
+          .search-bar input {
+            padding: 0 0 0 30px;
+          }
+
+          .search-button {
+            margin-left: 16px;
+          }
+
+          .searched-bar {
+            flex-direction: row;
+            align-items: center;
+          }
+
+          .searched-sort {
+            margin-top: 5px;
+          }
+
+          .main-container {
+            padding-top: 20px;
+          }
+        }
+        @media screen and (max-width: 380px) {
+          .explain-contents {
+            width: 100%;
+            margin: 0;
+          }
+
+          .explain-contents:nth-child(2) ~ .explain-contents {
+            margin: 0;
+            border: 0;
+          }
+
+          .wrapper {
+            padding: 20px;
+          }
+
+          .header {
+            padding: 0 20px;
+          }
+        }
+        .ghost {
+          position: relative;
+        }
+        .ghost > select {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          opacity: 0;
+        }
+        .controlla {
+          max-width: 31px;
+          margin-left: 15px;
+        }
+        .controlla img {
+          width: 100%;
+        }
+        .bg-profile {
+          width: 100px;
+          height: 100px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 10px;
+        }
+        .job-overview-cards .bg-profile {
+          margin-right: 15px;
+          zoom: 0.6;
+        }
+        .job-logos .bg-profile {
+          zoom: 2;
+          margin-top: -40px;
+        }
+        .traitor {
+          color: red;
+          position: absolute;
+          right: 25px;
+          border: 2px solid;
+          padding: 5px 15px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          top: 20px;
+          right: 20px;
+          zoom: 1.1;
+
+          color: red;
+          position: absolute;
+          border: 3px solid;
+          padding: 5px 15px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          top: 20px;
+          right: -5px;
+          zoom: 2.3;
+          transform: rotate(29deg);
+          opacity: 0.4;
+          z-index: 9
+
+        }
+        @media (max-width: 768px) {
+          .traitor {
+            /* zoom: 1.4; */
+          }
+          ul {
+            font-size: 14px;
+          }
+        }
+        .warned {
+          color: red;
+          border: 2px solid;
+          padding: 25px;
+          margin: 20px 0 27px 0;
+          border-radius: 7px;
+          font-size: 16px;
+          margin-top: 40px
+        }
+        .warned a {
+          text-decoration: none;
+          color: #000000;
+          word-break: break-all;
+        }
+        .dark-mode .warned a {
+          text-decoration: none;
+          color: #e0e0e0;
+          word-break: break-all;
+        }
+        ul {
+          padding-left: 15px;
+        }
+        .h-body {
+          font-weight: bold;
+          font-size: 20px;
+          opacity: 0.9;
+          margin-top: 10px;
+        }
+        .back {
+          position: fixed;
+              top: 0;
               display: flex;
               align-items: center;
-              font-weight: 600;
-              font-size: 18px;
-              cursor: pointer;
-              color: #2483ff;
-              filter: hue-rotate(-6deg);
-            }
-
-            .logo svg {
-              width: 24px;
-              margin-right: 0px;
-              animation: 1s all;
-              transition: 1s all;
-              margin-left: -1px;
-              margin-bottom: 5px;
-            }
-
-            .header {
-              display: flex;
-              align-items: center;
-              transition: box-shadow 0.3s;
-              flex-shrink: 0;
-              padding: 0 40px;
-              white-space: nowrap;
-              background-color: var(--header-bg-color);
-              height: 60px;
-              width: 100%;
-              font-size: 14px;
-              justify-content: space-between;
-            }
-            .header-menu a {
-              text-decoration: none;
-              color: var(--body-color);
-              font-weight: 500;
-            }
-            .header-menu a:hover {
-              color: var(--active-color);
-            }
-            .header-menu a:not(:first-child) {
-              margin-left: 30px;
-            }
-            .header-menu a.active {
-              color: var(--active-color);
-            }
-
-            .user-settings {
-              display: flex;
-              align-items: center;
-              font-weight: 500;
-            }
-            .user-settings svg {
-              width: 35px;
-              color: #94949f;
-            }
-
-            .user-menu {
-              position: relative;
-              margin-right: 8px;
-              padding-right: 8px;
-              border-right: 2px solid #d6d6db;
-            }
-            .user-menu:before {
-              position: absolute;
-              content: "";
-              width: 7px;
-              height: 7px;
-              border-radius: 50%;
-              border: 2px solid var(--header-bg-color);
-              right: 6px;
-              top: -1px;
-              background-color: var(--active-color);
-            }
-
-            .user-profile {
-              width: 32px;
-              height: 32px;
-              border-radius: 50%;
-              -o-object-fit: cover;
-                 object-fit: cover;
-              margin-right: 10px;
-            }
-
-            .wrapper {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              flex-grow: 1;
-              scroll-behavior: smooth;
-              padding: 30px 40px;
-              overflow: auto;
-            }
-
-            .search-menu {
-              height: 56px;
-              white-space: nowrap;
-              display: flex;
-              flex-shrink: 0;
-              align-items: center;
-              background-color: var(--header-bg-color);
-              border-radius: 8px;
-              width: 100%;
-              padding-left: 20px;
-            }
-            .search-menu div:not(:last-of-type) {
-              border-right: 1px solid var(--search-border-color);
-            }
-
-            .search-bar {
-              height: 55px;
-              width: 100%;
-              position: relative;
-            }
-            .search-bar input {
-              width: 100%;
-              height: 100%;
-              display: block;
-              background-color: transparent;
-              border: none;
-              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%230162ff'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
-              background-repeat: no-repeat;
-              background-size: 14px;
-              background-position: 0 50%;
-              padding: 10px 40px;
-            }
-            .dark-mode .search-bar input {
-              color:  #FFF;
-            }
-            .search-location,
-            .search-job,
-            .search-salary {
-              display: flex;
-              align-items: center;
-              width: 50%;
-              font-size: 14px;
-              font-weight: 500;
-              padding: 0 25px;
-              height: 100%;
-            }
-            .dark-mode input {
-              color: #FFF
-            }
-            .search-location input,
-            .search-job input,
-            .search-salary input {
-              width: 100%;
-              height: 100%;
-              display: block;
-              background-color: transparent;
-              border: none;
-            }
-            .search-location svg,
-            .search-job svg,
-            .search-salary svg {
-              margin-right: 8px;
-              width: 18px;
-              color: var(--active-color);
-              flex-shrink: 0;
-            }
-
-            .search-button {
-              background-color: var(--active-color);
-              height: 55px;
-              border: none;
-              font-weight: 600;
-              font-size: 14px;
-              padding: 0 15px;
-              border-radius: 0 8px 8px 0;
-              color: var(--button-color);
-              cursor: pointer;
-              margin-left: auto;
-              color: #FFF !important;
-              font-weight: bold;
-              /* font-family: inherit; */
-            }
-
-            .detail-button {
-              font-size: 14px !important;
-              color: #FFF !important
-            }
-
-            .warn {
-              background: #c0392b !important;
-            }
-
-            .search.item {
-              position: absolute;
-              top: 10px;
-              left: 25px;
-              font-size: 13px;
-              color: var(--active-color);
-              border: 1px solid var(--search-border-color);
-              padding: 8px 10px;
-              border-radius: 8px;
-              display: flex;
-              align-items: center;
-            }
-            .search.item svg {
-              width: 12px;
-              margin-left: 5px;
-            }
-            .search.item:last-child {
-              left: 185px;
-            }
-
-            .main-container {
-              display: flex;
-              flex-grow: 1;
-              padding-top: 35px;
-            }
-
-            .search-type {
-              width: 270px;
-              display: flex;
-              flex-direction: column;
-              height: 100%;
-              flex-shrink: 0;
-            }
-
-            .alert {
-              background-color: var(--alert-bg-color);
-              padding: 24px 18px;
-              border-radius: 8px;
-            }
-            .alert-title {
-              font-size: 14px;
-              font-weight: 500;
-              margin-bottom: 8px;
-            }
-            .alert-subtitle {
-              font-size: 13px;
-              color: var(--subtitle-color);
-              line-height: 1.6em;
-              margin-bottom: 20px;
-            }
-            .alert input {
-              width: 100%;
-              padding: 10px;
-              display: block;
-              border-radius: 6px;
-              background-color: var(--header-bg-color);
-              border: none;
-              font-size: 13px;
-            }
-
-            .search-buttons {
-              border: none;
-              color: var(--button-color);
-              background-color: var(--active-color);
-              padding: 8px 10px;
-              border-radius: 6px;
-              font-size: 13px;
-              font-weight: 600;
-              margin-top: 7px;
-
-                  font-weight: bold !important;
-                  /* zoom: 1.11; */
-                  letter-spacing: 0.2px;
-
-            }
-
-            .search-buttons.rep {
-              background: #cb0000;
-            }
-
-            .search-buttons.dem {
-              background: #0878f7;
-            }
-
-            .job-wrapper {
-              padding-top: 20px;
-            }
-
-            .job-time {
-              padding-top: 20px;
-            }
-            .job-time-title {
-              font-size: 14px;
-              font-weight: 500;
-            }
-
-            .type-container {
-              display: flex;
-              align-items: center;
-              color: var(--subtitle-color);
-              font-size: 13px;
-            }
-            .type-container label {
-              margin-left: 2px;
-              display: flex;
-              align-items: center;
-              cursor: pointer;
-            }
-            .type-container + .type-container {
-              margin-top: 10px;
-            }
-
-            .job-number {
-              margin-left: auto;
-              background-color: var(--inactive-color);
-              color: var(--subtitle-color);
-              font-size: 10px;
-              font-weight: 500;
-              padding: 5px;
-              border-radius: 4px;
-            }
-
-            .job-style {
-              display: none;
-            }
-
-            .job-style + label:before {
-              content: "";
-              margin-right: 10px;
-              width: 16px;
-              height: 16px;
-              border: 1px solid var(--subtitle-color);
-              border-radius: 4px;
-              cursor: pointer;
-            }
-
-            .job-style:checked + label:before {
-              background-color: var(--active-color);
-              border-color: var(--active-color);
-              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
-              background-position: 50%;
-              background-size: 14px;
-              background-repeat: no-repeat;
-              border-radius: 50%;
-            }
-
-            .job-style:checked + label + span {
-              background-color: var(--active-light-color);
-              color: var(--active-color);
-            }
-
-            .searched-jobs {
-              display: flex;
-              flex-direction: column;
-              flex-grow: 1;
-              padding-left: 40px;
-            }
-
-            @-webkit-keyframes slideY {
-              0% {
-                opacity: 0;
-                transform: translateY(200px);
-              }
-            }
-
-            @keyframes slideY {
-              0% {
-                opacity: 0;
-                transform: translateY(200px);
-              }
-            }
-            .searched-bar {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              -webkit-animation: slideY 0.6s both;
-                      animation: slideY 0.6s both;
-            }
-            .searched-show {
-              font-size: 19px;
-              font-weight: 600;
-            }
-            .searched-sort {
-              font-size: 14px;
-              color: var(--subtitle-color);
-            }
-            .searched-sort .post-time {
-              font-weight: 600;
-              color: var(--subtitle-color);
-            }
-            .searched-sort .menu-icon {
-              font-size: 9px;
-              color: var(--placeholder-color);
-              margin-left: 6px;
-            }
-
-            .job-cards {
-              padding-top: 20px;
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              grid-column-gap: 25px;
-              grid-row-gap: 25px;
-              -webkit-animation: slideY 0.6s both;
-                      animation: slideY 0.6s both;
-                      overflow: hidden;
-            }
-            @media screen and (max-width: 1212px) {
-              .job-cards {
-                grid-template-columns: repeat(2, 1fr);
-              }
-            }
-            @media screen and (max-width: 930px) {
-              .job-cards {
-                grid-template-columns: repeat(1, 1fr);
-              }
-            }
-
-            .job-card {
-              padding: 20px 16px;
-              background-color: var(--header-bg-color);
-              border-radius: 8px;
-              cursor: pointer;
-              transition: 0.2s;
-            }
-            .job-card:hover {
-              transform: scale(1.02);
-            }
-            .job-card svg {
-              width: 46px;
-              padding: 10px;
-              border-radius: 8px;
-            }
-            .job-card-name {
-              font-size: 22px;
-              margin-bottom: 5px;
-              margin-top: 17px;
-              letter-spacing: 0.5px;
-              font-weight: bold;
-              color:
-            }
-            .job-card-title {
-              color: #0861ff;
-                  margin: 0;
-                  font-size: 21px;
-                  margin-top: 3px;
-                  margin-bottom: 2px;
-                  letter-spacing: 0.2px;
-            }
-            .job-card-subtitle {
-              color: var(--subtitle-color);
-              font-size: 16px;
-              margin-top: 14px;
-              line-height: 1.6em;
-            }
-            .job-card-header {
-              display: flex;
-              align-items: flex-start;
-            }
-
-            .overview-card:hover {
-              background: #2b2ecf;
-              transition: none;
-              transform: scale(1);
-            }
-            .overview-card:hover svg {
-              box-shadow: none;
-            }
-            .overview-card:hover .job-overview-buttons .search-buttons.time-button,
-            .overview-card:hover .job-overview-buttons .search-buttons.level-button {
-              background-color: #575ad8;
-              color: #fff;
-            }
-            .overview-card:hover .job-card-title,
-            .overview-card:hover .job-stat {
-              color: #fff;
-            }
-            .overview-card:hover .job-card-subtitle,
-            .overview-card:hover .job-day {
-              color: #dedede;
-            }
-            .overview-card:hover .overview-wrapper .heart {
-              color: #fff;
-              border-color: #fff;
-            }
-            .overview-card:hover .overview-wrapper .heart:hover {
-              fill: red;
-              stroke: red;
-              transform: scale(1.1);
-            }
-
-            .detail-button {
-              background-color: #000;
-              color: var(--active-color);
-              font-size: 11px;
-              font-weight: 500;
-              padding: 6px 8px;
-              border-radius: 4px;
-            }
-
-
-            .detail-button + .detail-button {
-              margin-left: 6px;
-            }
-
-            .job-card-buttons {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              width: 100%;
-              margin-top: 4px;
-            }
-
-            .card-buttons,
-            .card-buttons-msg {
-              padding: 10px;
-              width: 100%;
-              font-size: 12px;
-              cursor: pointer;
-            }
-
-            .card-buttons {
-              margin-right: 12px;
-            }
-            .card-buttons-msg {
-              background-color: var(--inactive-color);
-              color: var(--subtitle-color);
-            }
-
-            .menu-dot {
-              background-color: var(--placeholder-color);
-              box-shadow: -6px 0 0 0 var(--placeholder-color), 6px 0 0 0 var(--placeholder-color);
-              width: 4px;
-              height: 4px;
-              border: 0;
-              padding: 0;
-              border-radius: 50%;
-              margin-left: auto;
-              margin-right: 8px;
-            }
-
-            .header-shadow {
-              box-shadow: 0 4px 20px rgba(88, 99, 148, 0.17);
-              z-index: 1;
-            }
-
-            @-webkit-keyframes slide {
-              0% {
-                opacity: 0;
-                transform: translateX(300px);
-              }
-            }
-
-            @keyframes slide {
-              0% {
-                opacity: 0;
-                transform: translateX(300px);
-              }
-            }
-            .job-overview {
-              display: flex;
-              flex-grow: 1;
-              display: none;
-              -webkit-animation: slide 0.6s both;
-                      animation: slide 0.6s both;
-            }
-            .job-overview-cards {
-              display: flex;
-              flex-direction: column;
-              width: 330px;
-              height: 100%;
-              flex-shrink: 0;
-            }
-            .job-overview-card + .job-overview-card {
-              margin-top: 20px;
-            }
-            .job-overview-buttons {
-              display: flex;
-              align-items: center;
-              margin-top: 12px;
-            }
-            .job-overview-buttons .search-buttons {
-              background-color: var(--inactive-color);
-              font-size: 11px;
-              padding: 6px 8px;
-              margin-top: 0;
-              font-weight: 500;
-            }
-            .job-overview-buttons .search-buttons.time-button {
-              color: var(--time-button);
-              margin-right: 8px;
-            }
-            .job-overview-buttons .search-buttons.level-button {
-              color: var(--level-button);
-            }
-            .job-overview-buttons .job-stat {
-              color: var(--active-color);
-              font-size: 12px;
-              font-weight: 500;
-              margin-left: auto;
-            }
-            .job-overview-buttons .job-day {
-              color: var(--subtitle-color);
-              font-size: 12px;
-              margin-left: 8px;
-              font-weight: 500;
-            }
-            .job-overview .overview-wrapper {
-              display: flex;
-              align-items: center;
-            }
-            .job-overview .overview-wrapper svg:first-child {
-              width: 42px;
-              margin-right: 10px;
-            }
-            .job-overview .overview-wrapper .heart {
-              background: none;
-              box-shadow: none;
-              width: 24px;
-              padding: 4px;
-              color: var(--subtitle-color);
-              border: 1px solid var(--border-color);
-              margin-left: auto;
-              margin-bottom: auto;
-            }
-
-            .overview-detail .job-card-title,
-            .overview-detail .job-card-subtitle {
-              margin-top: 4px;
-            }
-            .overview-detail .job-card-subtitle {
-              font-size: 12px;
-              font-weight: 500;
-            }
-
-            .job-explain {
-              background-color: var(--header-bg-color);
-              margin-left: 40px;
-              border-radius: 0 0 8px 8px;
-              width: 100%;
-            }
-
-
-            .job-bg-wr {
-              min-height: 180px;
-              background-size: cover;
-            }
-
-            .job-bg {
-              border-radius: 8px 8px 0 0;
-              -o-object-fit: cover;
-                 object-fit: cover;
-              width: 100%;
-              transition: 0.3s;
-              position: relative;
-            }
-
-            .job-logos {
-              margin-top: -30px;
-              position: relative;
-              margin-bottom: -36px;
-              padding: 0 20px;
-            }
-            .job-logos svg {
-              width: 66px;
-              padding: 12px;
-              background-color: #fff;
-              border-radius: 10px;
-              border: 4px solid var(--header-bg-color);
-            }
-
-            .job-title-wrapper {
-              display: flex;
-              align-items: center;
-            }
-            .job-title-wrapper .job-card-title {
-              font-size: 20px;
-              margin-top: 0;
-              font-weight: 600;
-            }
-
-            .job-action {
-              display: flex;
-              align-items: center;
-              margin-left: auto;
-            }
-            .job-action svg {
-              width: 32px;
-              border: 1px solid var(--border-color);
-              color: var(--subtitle-color);
-              border-radius: 8px;
-              padding: 6px;
-            }
-            .job-action svg + svg {
-              margin-left: 12px;
-            }
-
-            .job-explain-content {
-              padding: 50px 25px 30px;
-            }
-            .h-body {
-              font-size: 17px;
-              letter-spacing: 1px;
-              opacity: 0.9;
-              margin-bottom: 10px;
-              margin-top: 8px;
-              font-weight: 300;
-            }
-            .h-title {
-              font-size: 34px;
-              color: #0861ff;
-              letter-spacing: 1px;
-              font-weight: bold;
-            }
-            .job-subtitle-wrapper {
-              /* display: flex; */
-              align-items: center;
-              margin-top: 5px;
-              margin-bottom: 18px;
-            }
-            .job-subtitle-wrapper .posted {
-              margin-left: auto;
-            }
-            .job-subtitle-wrapper .company-name {
-              color: var(--active-color);
-              font-weight: 600;
-              font-size: 14px;
-              zoom: 1.3;
-color: #e9e9e9;
-            }
-            .job-subtitle-wrapper .comp-location,
-            .job-subtitle-wrapper .posted {
-              color: var(--subtitle-color);
-              font-size: 12px;
-              font-weight: 500;
-            }
-            .job-subtitle-wrapper .comp-location {
-              position: relative;
-              margin-left: 10px;
-            }
-            .job-subtitle-wrapper .comp-location:before {
-              content: "";
-              width: 3px;
-              height: 3px;
-              border-radius: 50%;
-              background-color: var(--placeholder-color);
-              top: 49%;
-              left: -8px;
-              position: absolute;
-            }
-            .job-subtitle-wrapper .app-number {
-              color: var(--body-color);
-              position: relative;
-              margin-left: 12px;
-            }
-            .job-subtitle-wrapper .app-number:before {
-              content: "";
-              width: 3px;
-              height: 3px;
-              border-radius: 50%;
-              background-color: var(--placeholder-color);
-              top: 50%;
-              left: -7px;
-              position: absolute;
-            }
-
-            .explain-bar {
-              margin-top: 20px;
-              border: 1px solid var(--border-color);
-              border-radius: 8px;
-              display: flex;
-              height: 66px;
-              padding: 0 16px;
-              align-items: center;
-              justify-content: space-between;
-              zoom: 1.2
-            }
-            .explain-title {
-              color: var(--subtitle-color);
-              font-size: 12px;
-              line-height: 40px;
-              white-space: nowrap;
-            }
-            .explain-subtitle {
-              font-size: 13px;
-              font-weight: 500;
-              margin-top: -2px;
-              white-space: nowrap;
-            }
-            .explain-contents {
-              height: 66px;
-            }
-            .explain-contents + .explain-contents {
-              border-left: 1px solid var(--border-color);
-              padding-left: 16px;
-            }
-
-            .overview-text {
-              margin-top: 30px;
-            }
-            .overview-text-header {
-              font-weight: 600;
-              margin-bottom: 25px;
-            }
-            .overview-text-subheader {
-              font-size: 16px;
-              line-height: 2em;
-            }
-            .overview-text-item {
-              font-size: 13px;
-              position: relative;
-              display: flex;
-            }
-            .overview-text-item + .overview-text-item {
-              margin-top: 20px;
-            }
-            .overview-text-item:before {
-              content: "";
-              border: 2px solid #61bcff;
-              border-radius: 50%;
-              height: 8px;
-              width: 8px;
-              margin-right: 8px;
-              flex-shrink: 0;
-            }
-
-            .detail-page .job-overview {
-              display: flex;
-            }
-            .detail-page .job-cards,
-            .detail-page .searched-bar {
-              display: none;
-            }
-            @media screen and (max-width: 1300px) {
-              .detail-page .search-type {
-                display: none;
-              }
-              .detail-page .searched-jobs {
-                padding-left: 0;
-              }
-            }
-
-            @media screen and (max-width: 990px) {
-              .explain-contents, .explain-bar {
-                height: auto;
-              }
-
-              .explain-bar {
-                flex-wrap: wrap;
-                padding-bottom: 14px;
-              }
-
-              .explain-contents {
-                width: 50%;
-              }
-
-              .explain-contents + .explain-contents {
-                padding: 0;
-                border: 0;
-              }
-
-              .explain-contents:nth-child(2) ~ .explain-contents {
-                margin-top: 16px;
-                border-top: 1px solid var(--border-color);
-              }
-
-              .job-subtitle-wrapper {
-                flex-direction: column;
-                align-items: flex-start;
-              }
-
-              .job-subtitle-wrapper .posted {
-                margin-left: 0;
-                margin-top: 6px;
-              }
-            }
-            @media screen and (max-width: 930px) {
-              .search-job, .search-salary {
-                display: none;
-              }
-
-              .search-bar {
-                /* width: auto; */
-              }
-            }
-            @media screen and (max-width: 760px) {
-              .detail-page .job-overview-cards {
-                display: none;
-              }
-
-              .user-name {
-                display: none;
-              }
-
-              .user-profile {
-                margin-right: 0;
-              }
-
-              .job-explain {
-                margin-left: 0;
-              }
-            }
-            @media screen and (max-width: 730px) {
-              .search-type {
-                display: none;
-              }
-
-              .searched-jobs {
-                padding-left: 0;
-              }
-
-              .search-menu div:not(:last-of-type) {
-                border: 0;
-              }
-
-              .job-cards {
-                grid-template-columns: repeat(2, 1fr);
-              }
-
-              .search-location {
-                display: none;
-              }
-            }
-            @media screen and (max-width: 620px) {
-              .job-cards {
-                grid-template-columns: repeat(1, 1fr);
-              }
-
-              .header-menu a:not(:first-child) {
-                margin-left: 10px;
-              }
-            }
-            @media screen and (max-width: 590px) {
-              .header-menu {
-                display: none;
-              }
-            }
-            @media screen and (max-width: 520px) {
-              .search.item {
-                display: none;
-              }
-
-              .search-bar {
-                flex-grow: 1;
-              }
-
-              .search-bar input {
-                padding: 0 0 0 30px;
-              }
-
-              .search-button {
-                margin-left: 16px;
-              }
-
-              .searched-bar {
-                flex-direction: row;
-                align-items: center;
-              }
-
-              .searched-sort {
-                margin-top: 5px;
-              }
-
-              .main-container {
-                padding-top: 20px;
-              }
-            }
-            @media screen and (max-width: 380px) {
-              .explain-contents {
-                width: 100%;
-                margin: 0;
-              }
-
-              .explain-contents:nth-child(2) ~ .explain-contents {
-                margin: 0;
-                border: 0;
-              }
-
-              .wrapper {
-                padding: 20px;
-              }
-
-              .header {
-                padding: 0 20px;
-              }
-            }
-            .ghost {
-              position: relative;
-            }
-            .ghost > select {
-              position: absolute;
-              right: 0;
-              width: 100%;
-              opacity: 0;
-            }
-            .controlla {
-              max-width: 31px;
-              margin-left: 15px;
-            }
-            .controlla img {
-              width: 100%;
-            }
-            .bg-profile {
-              width: 100px;
-              height: 100px;
-              background-size: cover;
-              background-position: center;
-              border-radius: 10px;
-            }
-            .job-overview-cards .bg-profile {
-              margin-right: 15px;
+              font-size: 28px;
+              color: #000;
               zoom: 0.6;
-            }
-            .job-logos .bg-profile {
-              zoom: 2;
-              margin-top: -40px;
-            }
-            .traitor {
-              color: red;
-              position: absolute;
-              right: 25px;
-              border: 2px solid;
-              padding: 5px 15px;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-              top: 20px;
-              right: 20px;
-              zoom: 1.1;
+              z-index: 9;
+              background: #ffffffd6;
+              padding: 15px 40px 15px 35px;
+              filter: invert(1);
+              cursor: pointer;
+        }
+        .job-overview-card .search-buttons {
+          zoom: 0.9
+        }
+        .date {
+            zoom: 1.2;
+            position: absolute;
+            right: 21px;
+            text-align: center;
+            background: #0878f7;
+            padding: 7px;
+            border-radius: 3px;
+        }
+        .date {
+            background: #000;
+            color: #FFF;
+        }
+        .dark-mode .date {
+            background: #ffffff;
+            color: #000;
+        }
 
-              color: red;
-              position: absolute;
-              border: 3px solid;
-              padding: 5px 15px;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-              top: 20px;
-              right: -5px;
-              zoom: 2.3;
-              transform: rotate(29deg);
-              opacity: 0.4;
-              z-index: 9
+        .job-overview-card {
+            position: relative;
+        }
 
-            }
-            @media (max-width: 768px) {
-              .traitor {
-                /* zoom: 1.4; */
-              }
-              ul {
-                font-size: 14px;
-              }
-            }
-            .warned {
-              color: red;
-              border: 2px solid;
-              padding: 25px;
-              margin: 20px 0 27px 0;
-              border-radius: 7px;
-              font-size: 16px;
-              margin-top: 40px
-            }
-            .warned a {
-              text-decoration: none;
-              color: #e0e0e0;
-              word-break: break-all;
-            }
-            ul {
-              padding-left: 15px;
-            }
-            .h-body {
-              font-weight: bold;
-              font-size: 20px;
-              opacity: 0.9;
-              margin-top: 10px;
-            }
-            .back {
-              position: fixed;
-                  top: 0;
-                  display: flex;
-                  align-items: center;
-                  font-size: 28px;
-                  color: #000;
-                  zoom: 0.6;
-                  z-index: 9;
-                  background: #ffffffd6;
-                  padding: 15px 40px 15px 35px;
-                  filter: invert(1);
-                  cursor: pointer;
-            }
-            .job-overview-card .search-buttons {
-              zoom: 0.9
-            }
-            .date {
-              zoom: 1.2;
-position: absolute;
-right: 21px;
-text-align: center;
-background: #0878f7;
-padding: 7px;
-border-radius: 3px;
-            }
-        </style>
-    </head>
+        .job-overview-card .date {
+            zoom: 1;
+            top: 15px;
+            right: 20px;
+            font-weight: bold;
+        }
 
-    <body class="">
-        <!-- partial:index.partial.html -->
-        <div id="app" class="job">
-            <div class="header">
-                <div @click="logoClick" class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path xmlns="http://www.w3.org/2000/svg" d="M512 503.5H381.7a48 48 0 01-45.3-32.1L265 268.1l-9-25.5 2.7-124.6L338.2 8.5l23.5 67.1L512 503.5z"
-                        fill="#0473ff" data-original="#28b446" />
-                        <path xmlns="http://www.w3.org/2000/svg" fill="#0473ff" data-original="#219b38"
-                        d="M361.7 75.6L265 268.1l-9-25.5 2.7-124.6L338.2 8.5z" />
-                        <path xmlns="http://www.w3.org/2000/svg" d="M338.2 8.5l-82.2 234-80.4 228.9a48 48 0 01-45.3 32.1H0l173.8-495h164.4z"
-                        fill="#0473ff" data-original="#518ef8" />
-                    </svg>dios.to
-                  </div>
-                <div class="user-settings">
-                  <div @click="toggleDark()" class="dark-light controlla" style="max-width: 30px;">
-                    <img src="assets/dark.png" alt="">
-                  </div>
-                  <div class="controlla" @click="github()">
-                    <img src="assets/github.png" alt="" >
-                  </div>
-                  <div class="controlla" style="max-width: 28px;" @click="share()">
-                    <img src="assets/share3.png" alt="">
-                  </div>
-                </div>
+    </style>
+
+</head>
+
+<body>
+    <div id="app" class="job">
+        <div class="header">
+            <div @click="logoClick" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M512 503.5H381.7a48 48 0 01-45.3-32.1L265 268.1l-9-25.5 2.7-124.6L338.2 8.5l23.5 67.1L512 503.5z"
+                    fill="#0473ff" data-original="#28b446" />
+                    <path xmlns="http://www.w3.org/2000/svg" fill="#0473ff" data-original="#219b38"
+                    d="M361.7 75.6L265 268.1l-9-25.5 2.7-124.6L338.2 8.5z" />
+                    <path xmlns="http://www.w3.org/2000/svg" d="M338.2 8.5l-82.2 234-80.4 228.9a48 48 0 01-45.3 32.1H0l173.8-495h164.4z"
+                    fill="#0473ff" data-original="#518ef8" />
+                </svg>dios.to
+              </div>
+            <div class="user-settings">
+              <div @click="toggleDark()" class="dark-light controlla" style="max-width: 30px;">
+                <img src="assets/dark.png" alt="">
+              </div>
+              <div class="controlla" @click="github()">
+                <img src="assets/github.png" alt="" >
+              </div>
+              <div class="controlla" style="max-width: 28px;" @click="share()">
+                <img src="assets/share3.png" alt="">
+              </div>
             </div>
-            <div class="wrapper">
-                <div class="search-menu">
-                    <div class="search-bar">
-                        <input type="text" class="search-box" placeholder="Search by Keyword" autofocus v-model="filter"/>
-                    </div>
-                    <div v-if="false" class="search-location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-map-pin">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>  <input type="text" placeholder="Search by Location" v-model="filterLocation"></div>
-                    <div v-if="false" class="search-job">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-briefcase">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-                        </svg>
-                        <input type="text" placeholder="Job Type">
-                    </div>
-                    <div v-if="false" class="search-salary">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
-                        fill="currentColor" stroke-width=".4">
-                            <path d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z"
-                            stroke="currentColor" />
-                            <path d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z"
-                            stroke="currentColor" />
-                            <path d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z"
-                            stroke="currentColor" />
-                            <path d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z" stroke="currentColor"
-                            />
-                        </svg>
-                        <input type="text" placeholder="Salary Range">
-                    </div>
-                    <button @click="clickSearch()" class="search-button">{{ this.filter ? 'Clear' : 'Search' }}</button>
+        </div>
+        <div class="wrapper">
+            <div class="search-menu">
+                <div class="search-bar">
+                    <input type="text" class="search-box" placeholder="Search by Keyword" autofocus v-model="filter"/>
                 </div>
-                <div class="main-container">
-                    <div class="search-type">
-                        <div v-for="(_filter, group) in filters" class="job-time">
-                            <div class="job-time-title">{{ _filter.label }}</div>
-                            <div class="job-wrapper">
-                                <div class="type-container" v-for="(__filter, index) in _filter.filters">
-                                    <input type="radio" :id="'filterBy-' + index + '-' + group" class="job-style" @click="filterBy(__filter)" :checked="checked.includes(__filter.label) || filter.includes(__filter.label)">
-                                    <label :for="'filterBy-' + index + '-' + group">{{ __filter.label }}</label> <span class="job-number">{{ __filter.dataset.length }}</span>
-                                </div>
+                <div v-if="false" class="search-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-map-pin">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>  <input type="text" placeholder="Search by Location" v-model="filterLocation"></div>
+                <div v-if="false" class="search-job">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-briefcase">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+                    </svg>
+                    <input type="text" placeholder="Job Type">
+                </div>
+                <div v-if="false" class="search-salary">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+                    fill="currentColor" stroke-width=".4">
+                        <path d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z"
+                        stroke="currentColor" />
+                        <path d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z"
+                        stroke="currentColor" />
+                        <path d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z"
+                        stroke="currentColor" />
+                        <path d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z" stroke="currentColor"
+                        />
+                    </svg>
+                    <input type="text" placeholder="Salary Range">
+                </div>
+                <button @click="clickSearch()" class="search-button">{{ this.filter ? 'Clear' : 'Search' }}</button>
+            </div>
+            <div class="main-container">
+                <!-- Needs fine tuning -->
+                <div class="search-type" v-if="false">
+                    <div v-for="(_filter, group) in filters" class="job-time">
+                        <div class="job-time-title">{{ _filter.label }}</div>
+                        <div class="job-wrapper">
+                            <div class="type-container" v-for="(__filter, index) in _filter.filters">
+                                <input type="radio" :id="'filterBy-' + index + '-' + group" class="job-style" @click="filterBy(__filter)" :checked="checked.includes(__filter.label) || filter.includes(__filter.label)">
+                                <label :for="'filterBy-' + index + '-' + group">{{ __filter.label }}</label> <span class="job-number">{{ __filter.dataset.length }}</span>
                             </div>
                         </div>
                     </div>
-                    <div class="searched-jobs">
-                        <div class="searched-bar">
-                            <div class="searched-show">Showing {{ filteredPeople.length }}</div>
-                            <div class="searched-sort ghost">
-                              <select name="" id="">
-                                <option value="newest">Newest</option>
-                              </select>
-                              Sort by: <span class="post-time">Newest </span><span class="menu-icon">▼</span>
+                </div>
+                <div class="searched-jobs">
+                    <div class="searched-bar">
+                        <div class="searched-show">Showing {{ filteredPeople.length }}</div>
+                        <div class="searched-sort ghost">
+                          <select name="" id="">
+                            <option value="newest">Newest</option>
+                          </select>
+                          Sort by: <span class="post-time">Newest </span><span class="menu-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="job-cards">
+                        <div v-for="person in filteredPeople" class="job-card" style="position: relative">
+                          <div class="date" :style="">
+                            <div class="">APR</div>
+                            <div style=" font-size: 11px; font-weight: bold; ">2022</div>
+                          </div>
+                            <!-- <div @click="show(person)" class="traitor" v-if="person.accused_treason">Traitor</div> -->
+                            <div @click="show(person)" class="job-card-header">
+                                <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
+                                <!-- <div class="menu-dot"></div> -->
+                            </div>
+                            <div @click="show(person)" class="job-card-name" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
+                            <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`">{{ person.state_name }} {{ person.title }}</div> -->
+                            <!-- <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div> -->
+                            <div class="job-detail-buttons">
+                                <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                            </div>
+                            <div v-if="false" class="job-card-buttons">
+                                <button class="search-buttons card-buttons">Apply Now</button>
+                                <button class="search-buttons card-buttons-msg">Messages</button>
                             </div>
                         </div>
-                        <div class="job-cards">
-                            <div v-for="person in filteredPeople" class="job-card" style="position: relative">
-                              <div class="date" :style="`background-color: ${background(person)}`">
-                                <div class="">APR</div>
-                                <div style=" font-size: 11px; font-weight: bold; ">2022</div>
-                              </div>
-                                <!-- <div @click="show(person)" class="traitor" v-if="person.accused_treason">Traitor</div> -->
-                                <div @click="show(person)" class="job-card-header">
-                                    <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
-                                    <!-- <div class="menu-dot"></div> -->
-                                </div>
-                                <div @click="show(person)" class="job-card-name" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
-                                <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`">{{ person.state_name }} {{ person.title }}</div> -->
-                                <!-- <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div> -->
-                                <div class="job-detail-buttons">
-                                    <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
-                                </div>
-                                <div v-if="false" class="job-card-buttons">
-                                    <button class="search-buttons card-buttons">Apply Now</button>
-                                    <button class="search-buttons card-buttons-msg">Messages</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-overview">
-                            <div class="job-overview-cards">
-                                <div class="job-overview-card" v-for="person in recommended" @click="show(person)">
-                                    <div class="job-card overview-card">
-                                        <div class="overview-wrapper">
-                                            <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
-                                            <div class="overview-detail">
-                                                <div class="job-card-title" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
-                                                <!-- <div class="job-card-subtitle">{{ person.title }}</div> -->
-                                                <!-- <div class="job-card-subtitle">{{ person.state_name }}</div> -->
-                                                <div class="job-detail-buttons">
-                                                  <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
-                                                </div>
-                                            </div>
-                                            <svg v-if="false" class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" class="feather feather-heart">
-                                                <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <div v-if="false" class="job-overview-buttons">
-                                            <div class="search-buttons time-button">Full Time</div>
-                                            <div class="search-buttons level-button">Senior Level</div>
-                                            <div class="job-stat">New</div>
-                                            <div class="job-day">4d</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-explain" v-if="active">
-                                <div @click="show(person)" class="traitor" v-if="active.accused_treason">Traitor</div>
-                                <div class="back" @click="logoClick">
-                                  <img src="assets/back.svg" alt="" style=" margin-right: 10px; max-width: 40px">
-                                  BACK
-                                </div>
-                                <div class="date" :style="`background-color: ${color(active.party)}; top: 170px;right: 15px;`">
-                                  <div class="">APR</div>
-                                  <div style=" font-size: 11px; font-weight: bold; ">2022</div>
-                                </div>
-                                <div class="job-bg-wr" :style="`background-image: url('${active.cover_url || 'assets/us-flag.jpeg'}'); ${active.accused_treason ? 'filter: grayscale(1)' : ''}`"></div>
-                                <div class="job-logos">
-                                    <div class="bg-profile" :style="`background-image: url('${active.photo_url || 'assets/missing.jpg'}')`"></div>
-                                </div>
-                                <div class="job-explain-content">
-                                    <div class="job-title-wrapper">
-                                        <div v-if="false" class="job-action">
-                                            <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" class="feather feather-heart">
-                                                <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"
-                                                />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-share-2">
-                                                <circle cx="18" cy="5" r="3" />
-                                                <circle cx="6" cy="12" r="3" />
-                                                <circle cx="18" cy="19" r="3" />
-                                                <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="job-subtitle-wrapper">
-                                      <div class="h-title" :style="`color: ${color(active.party)}`">{{ active.name }}</div>
-                                      <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`"></div> -->
-                                      <div class="job-detail-buttons">
-                                          <button :style="`background-color: ${color(active.party)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
+                    </div>
+                    <div class="job-overview">
+                        <div class="job-overview-cards">
+                            <div class="job-overview-card" v-for="person in recommended" @click="show(person)">
+                                <div class="job-card overview-card">
+                                    <div class="overview-wrapper">
+                                        <div class="date" :style="">
+                                        <div class="">APR</div>
+                                        <div style=" font-size: 11px; font-weight: bold; ">2022</div>
                                       </div>
-                                    </div>
-                                    <div class="warned" v-if="active.accused_treason" style="zoom: 0.8;">
-                                      <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://www.law.cornell.edu/uscode/text/5/3331" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
-                                      <ul>
-                                        <li><a :href="active.accused_treason" target="_blank">
-                                          <b style="font-size: 25px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
-                                          <br>
-                                          <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
-                                        </a></li>
-                                      </ul>
-                                    </div>
-                                    <div v-if="false" class="explain-bar">
-                                        <div class="explain-contents">
-                                            <div class="explain-title">Experience</div>
-                                            <div class="explain-subtitle">Minimum 1 Year</div>
+                                        <div class="bg-profile" :style="`background-image: url('${person.photo_url || 'assets/missing.jpg'}')`"></div>
+                                        <div class="overview-detail">
+                                            <div class="job-card-title" :style="`color: ${color(person.party)}`">{{ person.name }}</div>
+                                            <!-- <div class="job-card-subtitle">{{ person.title }}</div> -->
+                                            <!-- <div class="job-card-subtitle">{{ person.state_name }}</div> -->
+                                            <div class="job-detail-buttons">
+                                              <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                            </div>
                                         </div>
-                                        <div class="explain-contents">
-                                            <div class="explain-title">Work Level</div>
-                                            <div class="explain-subtitle">Senior level</div>
-                                        </div>
-                                        <div class="explain-contents">
-                                            <div class="explain-title">Employee Type</div>
-                                            <div class="explain-subtitle">Full Time Jobs</div>
-                                        </div>
-                                        <div class="explain-contents">
-                                            <div class="explain-title">Offer Salary</div>
-                                            <div class="explain-subtitle">{{ active.salary ? active.salary + ' / Year' : 'N/A' }}</div>
-                                        </div>
+                                        <svg v-if="false" class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-heart">
+                                            <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"
+                                            />
+                                        </svg>
                                     </div>
-                                    <div class="overview-text">
-                                        <!-- <div class="overview-text-header">About</div> -->
-                                        <div class="overview-text-subheader">{{ active.description }}</div>
+                                    <div v-if="false" class="job-overview-buttons">
+                                        <div class="search-buttons time-button">Full Time</div>
+                                        <div class="search-buttons level-button">Senior Level</div>
+                                        <div class="job-stat">New</div>
+                                        <div class="job-day">4d</div>
                                     </div>
-                                    <div v-if="false" class="overview-text">
-                                        <div class="overview-text-header">Job Description</div>
-                                        <div class="overview-text-item">3+ years working as a product designer.</div>
-                                        <div class="overview-text-item">A portfolio that highlights your approach to problem solving, as well
-                                            as you skills in UI.</div>
-                                        <div class="overview-text-item">Experience conducting research and building out smooth flows.</div>
-                                        <div
-                                        class="overview-text-item">Excellent communication skills with a well-defined design process.</div>
-                                    <div
-                                    class="overview-text-item">Familiarity with design tools like Sketch and Figma</div>
-                                <div class="overview-text-item">Up-level our overall design and bring consistency to end-user facing properties</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="job-explain" v-if="active">
+                            <div @click="show(person)" class="traitor" v-if="active.accused_treason">Traitor</div>
+                            <div class="back" @click="logoClick">
+                              <img src="assets/back.svg" alt="" style=" margin-right: 10px; max-width: 40px">
+                              BACK
+                            </div>
+                            <div class="date" :style="`top: 170px;right: 15px;`">
+                              <div class="">APR</div>
+                              <div style=" font-size: 11px; font-weight: bold; ">2022</div>
+                            </div>
+                            <div class="job-bg-wr" :style="`background-image: url('${active.cover_url || 'assets/us-flag.jpeg'}'); ${active.accused_treason ? 'filter: grayscale(1)' : ''}`"></div>
+                            <div class="job-logos">
+                                <div class="bg-profile" :style="`background-image: url('${active.photo_url || 'assets/missing.jpg'}')`"></div>
+                            </div>
+                            <div class="job-explain-content">
+                                <div class="job-title-wrapper">
+                                    <div v-if="false" class="job-action">
+                                        <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-heart">
+                                            <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"
+                                            />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-share-2">
+                                            <circle cx="18" cy="5" r="3" />
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="19" r="3" />
+                                            <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="job-subtitle-wrapper">
+                                  <div class="h-title" :style="`color: ${color(active.party)}`">{{ active.name }}</div>
+                                  <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`"></div> -->
+                                </div>
+                                <div class="warned" v-if="active.accused_treason" style="zoom: 0.8;">
+                                  <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://www.law.cornell.edu/uscode/text/5/3331" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
+                                  <ul>
+                                    <li><a :href="active.accused_treason" target="_blank">
+                                      <b style="font-size: 25px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
+                                      <br>
+                                      <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
+                                    </a></li>
+                                  </ul>
+                                </div>
+                                <div v-if="false" class="explain-bar">
+                                    <div class="explain-contents">
+                                        <div class="explain-title">Experience</div>
+                                        <div class="explain-subtitle">Minimum 1 Year</div>
+                                    </div>
+                                    <div class="explain-contents">
+                                        <div class="explain-title">Work Level</div>
+                                        <div class="explain-subtitle">Senior level</div>
+                                    </div>
+                                    <div class="explain-contents">
+                                        <div class="explain-title">Employee Type</div>
+                                        <div class="explain-subtitle">Full Time Jobs</div>
+                                    </div>
+                                    <div class="explain-contents">
+                                        <div class="explain-title">Offer Salary</div>
+                                        <div class="explain-subtitle">{{ active.salary ? active.salary + ' / Year' : 'N/A' }}</div>
+                                    </div>
+                                </div>
+                                <div class="overview-text">
+                                    <!-- <div class="overview-text-header">About</div> -->
+                                    <div class="overview-text-subheader">{{ active.description }}</div>
+                                </div>
+                                <div class="job-detail-buttons">
+                                  <button :style="`background-color: ${color(active.party)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                </div>
+                                <div v-if="active.in_the_news.length" class="overview-text">
+                                    <div class="overview-text-header">In The News</div>
+                                    <div v-for="i in active.in_the_news" class="overview-text-item">
+                                        <a :href="i.url" target="_blank">{{ i.title }}</a>
+                                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        <!-- partial -->
-        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
-        <script>
-            //$(document).ready(function() {
-            //$('.search-box').focus();
-            //});
+    </div>
+    </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                filter: '',
+                people: [],
+                checked: [],
+                dataset: false,
+                active: false,
+                message: 'Hello',
+            },
+            mounted() {
 
-            // const wrapper = document.querySelector(".wrapper");
-            // const header = document.querySelector(".header");
-
-            // wrapper.addEventListener("scroll", (e) => {
-            //  e.target.scrollTop > 30
-            //   ? header.classList.add("header-shadow")
-            //   : header.classList.remove("header-shadow");
-            // });
-
-            // const toggleButton = document.querySelector(".dark-light");
-
-            // toggleButton.addEventListener("click", () => {
-            //  document.body.classList.toggle("dark-mode");
-            // });
-
-            // const jobCards = document.querySelectorAll(".job-card");
-            // const logo = document.querySelector(".logo");
-            // const jobLogos = document.querySelector(".job-logos");
-            // const jobDetailTitle = document.querySelector(
-            //  ".job-explain-content .job-card-title"
-            // );
-            // const jobBg = document.querySelector(".job-bg");
-
-            // jobCards.forEach((jobCard) => {
-            //  jobCard.addEventListener("click", () => {
-
-            //  });
-            // });
-
-
-        </script>
-
-        <script>
-          var app = new Vue({
-        el: '#app',
-        data: {
-          // filterLocation: '',
-          filter: '',
-          people: [],
-          checked: [],
-          // acive: false,
-          dataset: false,
-          active: false,
-          message: 'Hello',
-        },
-        mounted() {
-
-          // if (window.location.pathname !== '/') {
-          //   this.filter = window.location.pathname.replace('/', '')
-          // }
-
-          axios.get('/dataset.json').then((res) => {
-            this.people = res.data
-          })
-
-          // if (!localStorage.getItem('darkMode'))
-          var hours = new Date().getHours();
-
-          if (localStorage.getItem('darkMode')) {
-             document.body.classList.add('dark-mode');
-          }
-
-          if((hours >= 19 || hours <= 7)) {
-              document.body.classList.add('dark-mode');
-          } else {
-            if (!localStorage.getItem('darkMode')) document.body.className = document.body.className.replace("dark-mode","");
-          }
-        },
-        watch: {
-          filter() {
-            const jobBg = document.querySelector(".job-bg");
-            const wrapper = document.querySelector(".wrapper");
-            wrapper.classList.remove("detail-page");
-            wrapper.scrollTop = 0;
-            this.active = false
-            this.$forceUpdate()
-          },
-          // filterLocation() {
-          //   const jobBg = document.querySelector(".job-bg");
-          //   const wrapper = document.querySelector(".wrapper");
-          //   wrapper.classList.remove("detail-page");
-          //   wrapper.scrollTop = 0;
-          //   this.active = false
-          //   this.$forceUpdate()
-          // }
-        },
-        computed: {
-          recommended() {
-            return _.sampleSize(this.people, 30)
-          },
-          senators() {
-            return this.filteredPeople.filter(a => a.title && a.title.toLowerCase() === 'senator')
-          },
-          representatives() {
-            return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('representative'))
-          },
-          commissioners() {
-            return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('commissioner'))
-          },
-          filters() {
-
-            var items = [
-              {
-                id: 0,
-                label: "Goverment Level",
-                filters: [
-                  // { label: 'Presi', dataset: this.people.filter(a => a.party && a.party.toLowerCase() === 'democrat') },
-                  { label: 'Senator', dataset: this.senators },
-                  { label: 'Representative', dataset: this.representatives },
-                  { label: 'Commissioner', dataset: this.commissioners },
-                ]
-              },
-              {
-                id: 0,
-                label: "Party Affiliation",
-                filters: [
-                  { label: 'Democrat', dataset: this.filteredPeople.filter(a => a.party && a.party.toLowerCase() === 'democrat') },
-                  { label: 'Republican', dataset: this.filteredPeople.filter(a => a.party && a.party.toLowerCase() === 'republican') },
-                ]
-              }
-            ]
-
-            var states = {
-              id: 1,
-              label: "Filter by State",
-              filters: []
-            }
-
-            this.filteredPeople.filter(a => a.state_name).map(a => {
-              if (!states.filters.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
-                states.filters.push(
-                  {
-                    label: a.state_name,
-                    dataset: this.filteredPeople.filter(b => b.state_name && b.state_name.toLowerCase() === a.state_name.toLowerCase())
-                  },
-                )
-              }
-            })
-
-            items.push(states)
-
-            return items
-
-          },
-          filteredPeople() {
-
-            return this.people.filter(a => {
-              var string = ''
-              Object.keys(a).map(b => string += String(a[b]))
-              return this.filter.toLowerCase().split(' ').every(substring => string.toLowerCase().includes(substring.toLowerCase()))
-              // return this.filter.toLowerCase().split(' ').some(substring => string.toLowerCase().includes(substring.toLowerCase()))
-            })
-
-          },
-        },
-        methods: {
-          background(person) {
-            if (!party) return
-            if (person.party && person.party.toLowerCase() === 'democrat') return '#0861ff'
-            if (person.party && person.party.toLowerCase() === 'republican') return '#cb0000'
-            if (person.party && person.party.toLowerCase() === 'independent') return '#00b053'
-            // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
-          },
-          color(party) {
-            if (!party) return
-            if (party.toLowerCase() === 'democrat') return '#0861ff'
-            if (party.toLowerCase() === 'republican') return '#cb0000'
-            if (party.toLowerCase() === 'independent') return '#00b053'
-            // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
-          },
-          navTo(string) {
-            this.logoClick()
-            this.filter = string
-            // window.history.pushState('page2', string, '/' + string);
-          },
-          clickSearch() {
-              this.filter ? this.filter = '' : ''
-              this.$forceUpdate();
-          },
-          filterBy(i) {
-            this.checked.includes(i.label) ? this.checked = this.checked.filter(a => a !== i.label) : this.checked.push(i.label)
-            !this.filter.includes(i.label) ? this.filter += ' ' + i.label : this.filter = this.filter.split(i.label).join('')
-            this.filter = this.filter.trim()
-            this.$forceUpdate()
-          },
-          github() {
-            var check = window.confirm('This website is Open Source and is completly hosted on Github. You can download the entire database and images for free. Click OK to continue to Github.')
-            if (check) {
-              window.open('https://github.com/305dev/adios', '_blank').focus();
-            }
-            // alert("Lol")
-          },
-          share() {
-            if (navigator.share) {
-              navigator.share({
-               title: 'Scumbag McGee',
-               text: 'Adios.to/Scumbag - Corrupt Politician Database.',
-               url: 'https://adios.to/scumbag'
+              axios.get('/dataset.json').then((res) => {
+                this.people = res.data
               })
-            } else {
-              alert("Looks like you're on Desktop. Sharing works best on Mobile. Just copy the URL from the browser bar.")
-            }
-          },
-          logoClick() {
-            const jobBg = document.querySelector(".job-bg");
-            const wrapper = document.querySelector(".wrapper");
-            wrapper.classList.remove("detail-page");
-            wrapper.scrollTop = 0;
-            // jobBg.style.background = bg;
-            this.active = false
-            this.filter = ''
-            this.$forceUpdate()
-          },
-          show(person) {
-            // console.log( e.parentNode )
-             const wrapper = document.querySelector(".wrapper");
-            // const jobBg = document.querySelector(".job-bg");
-            // const jobCards = document.querySelectorAll(".job-card");
-            // const number = Math.floor(Math.random() * 10);
-            // const url = `https://unsplash.it/640/425?image=${number}`;
-            // jobBg.src = url;
-            // const logo = e.target.parentNode.querySelector("svg");
-            // // const bg = logo.style.backgroundColor;
-            // // console.log(bg);
-            // // jobBg.style.background = bg;
-            // // const title = e.target.parentNode.querySelector(".job-card-title");
-            // // jobDetailTitle.textContent = title.textContent;
-            // // jobLogos.innerHTML = logo.outerHTML;
-            wrapper.classList.add("detail-page");
-            wrapper.scrollTop = 0;
-            this.active = person
-          },
-          toggleDark() {
-            if (localStorage.getItem('darkMode')) {
-              localStorage.removeItem('darkMode')
-            }
-            if (!localStorage.getItem('darkMode')) {
-              localStorage.setItem('darkMode', true)
-            }
-            document.body.classList.toggle("dark-mode")
-          }
-        },
-      })
-        </script>
 
-    </body>
+              var hours = new Date().getHours();
+
+              if (localStorage.getItem('darkMode')) {
+                 document.body.classList.add('dark-mode');
+              }
+
+              if((hours >= 19 || hours <= 7)) {
+                  document.body.classList.add('dark-mode');
+              } else {
+                if (!localStorage.getItem('darkMode')) document.body.className = document.body.className.replace("dark-mode","");
+              }
+            },
+            watch: {
+              filter() {
+                const jobBg = document.querySelector(".job-bg");
+                const wrapper = document.querySelector(".wrapper");
+                wrapper.classList.remove("detail-page");
+                wrapper.scrollTop = 0;
+                this.active = false
+                this.$forceUpdate()
+              },
+              // filterLocation() {
+              //   const jobBg = document.querySelector(".job-bg");
+              //   const wrapper = document.querySelector(".wrapper");
+              //   wrapper.classList.remove("detail-page");
+              //   wrapper.scrollTop = 0;
+              //   this.active = false
+              //   this.$forceUpdate()
+              // }
+            },
+            computed: {
+              recommended() {
+                return _.sampleSize(this.people, 30)
+              },
+              senators() {
+                return this.filteredPeople.filter(a => a.title && a.title.toLowerCase() === 'senator')
+              },
+              representatives() {
+                return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('representative'))
+              },
+              commissioners() {
+                return this.filteredPeople.filter(a => a.title && a.title.toLowerCase().includes('commissioner'))
+              },
+              filters() {
+
+                var items = [
+                  {
+                    id: 0,
+                    label: "Goverment Level",
+                    filters: [
+                      // { label: 'Presi', dataset: this.people.filter(a => a.party && a.party.toLowerCase() === 'democrat') },
+                      { label: 'Senator', dataset: this.senators },
+                      { label: 'Representative', dataset: this.representatives },
+                      { label: 'Commissioner', dataset: this.commissioners },
+                    ]
+                  },
+                  {
+                    id: 0,
+                    label: "Party Affiliation",
+                    filters: [
+                      { label: 'Democrat', dataset: this.filteredPeople.filter(a => a.party && a.party.toLowerCase() === 'democrat') },
+                      { label: 'Republican', dataset: this.filteredPeople.filter(a => a.party && a.party.toLowerCase() === 'republican') },
+                    ]
+                  }
+                ]
+
+                var states = {
+                  id: 1,
+                  label: "Filter by State",
+                  filters: []
+                }
+
+                this.filteredPeople.filter(a => a.state_name).map(a => {
+                  if (!states.filters.find(b => b.label.toLowerCase() === a.state_name.toLowerCase())) {
+                    states.filters.push(
+                      {
+                        label: a.state_name,
+                        dataset: this.filteredPeople.filter(b => b.state_name && b.state_name.toLowerCase() === a.state_name.toLowerCase())
+                      },
+                    )
+                  }
+                })
+
+                items.push(states)
+
+                return items
+
+              },
+              filteredPeople() {
+
+                return this.people.filter(a => {
+                  var string = ''
+                  Object.keys(a).map(b => string += String(a[b]))
+                  return this.filter.toLowerCase().split(' ').every(substring => string.toLowerCase().includes(substring.toLowerCase()))
+                  // return this.filter.toLowerCase().split(' ').some(substring => string.toLowerCase().includes(substring.toLowerCase()))
+                })
+
+              },
+            },
+            methods: {
+              background(person) {
+                if (!person.party) return
+                if (person.party && person.party.toLowerCase() === 'democrat') return '#0861ff'
+                if (person.party && person.party.toLowerCase() === 'republican') return '#cb0000'
+                if (person.party && person.party.toLowerCase() === 'independent') return '#00b053'
+                // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
+              },
+              color(party) {
+                if (!party) return
+                if (party.toLowerCase() === 'democrat') return '#0861ff'
+                if (party.toLowerCase() === 'republican') return '#cb0000'
+                if (party.toLowerCase() === 'independent') return '#00b053'
+                // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
+              },
+              navTo(string) {
+                this.logoClick()
+                this.filter = string
+                // window.history.pushState('page2', string, '/' + string);
+              },
+              clickSearch() {
+                  this.filter ? this.filter = '' : ''
+                  this.$forceUpdate();
+              },
+              filterBy(i) {
+                this.checked.includes(i.label) ? this.checked = this.checked.filter(a => a !== i.label) : this.checked.push(i.label)
+                !this.filter.includes(i.label) ? this.filter += ' ' + i.label : this.filter = this.filter.split(i.label).join('')
+                this.filter = this.filter.trim()
+                this.$forceUpdate()
+              },
+              github() {
+                var check = window.confirm('This website is Open Source and is completly hosted on Github. You can download the entire database and images for free. Click OK to continue to Github.')
+                if (check) {
+                  window.open('https://github.com/305dev/adios', '_blank').focus();
+                }
+                // alert("Lol")
+              },
+              share() {
+                if (navigator.share) {
+                  navigator.share({
+                   title: 'Scumbag McGee',
+                   text: 'Adios.to/Scumbag - Corrupt Politician Database.',
+                   url: 'https://adios.to/scumbag'
+                  })
+                } else {
+                  alert("Looks like you're on Desktop. Sharing works best on Mobile. Just copy the URL from the browser bar.")
+                }
+              },
+              logoClick() {
+                const jobBg = document.querySelector(".job-bg");
+                const wrapper = document.querySelector(".wrapper");
+                wrapper.classList.remove("detail-page");
+                wrapper.scrollTop = 0;
+                // jobBg.style.background = bg;
+                this.active = false
+                this.filter = ''
+                this.$forceUpdate()
+              },
+              show(person) {
+                // console.log( e.parentNode )
+                 const wrapper = document.querySelector(".wrapper");
+                // const jobBg = document.querySelector(".job-bg");
+                // const jobCards = document.querySelectorAll(".job-card");
+                // const number = Math.floor(Math.random() * 10);
+                // const url = `https://unsplash.it/640/425?image=${number}`;
+                // jobBg.src = url;
+                // const logo = e.target.parentNode.querySelector("svg");
+                // // const bg = logo.style.backgroundColor;
+                // // console.log(bg);
+                // // jobBg.style.background = bg;
+                // // const title = e.target.parentNode.querySelector(".job-card-title");
+                // // jobDetailTitle.textContent = title.textContent;
+                // // jobLogos.innerHTML = logo.outerHTML;
+                wrapper.classList.add("detail-page");
+                wrapper.scrollTop = 0;
+                this.active = person
+              },
+              toggleDark() {
+                if (localStorage.getItem('darkMode')) {
+                  localStorage.removeItem('darkMode')
+                }
+                if (!localStorage.getItem('darkMode')) {
+                  localStorage.setItem('darkMode', true)
+                }
+                document.body.classList.toggle("dark-mode")
+              }
+            },
+        })
+    </script>
+
+</body>
 
 </html>

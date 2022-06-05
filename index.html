@@ -920,29 +920,40 @@
             margin-bottom: 10px;
         }
         .overview-text-header {
-          font-weight: 600;
-          margin-bottom: 25px;
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 35px;
         }
         .overview-text-subheader {
           font-size: 18px;
           line-height: 2em;
         }
         .overview-text-item {
-          font-size: 13px;
-          position: relative;
-          display: flex;
+            font-size: 18px;
+            position: relative;
+            display: flex;
+            text-decoration: none;
+        }
+        .overview-text-item a {
+      text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: bold;
+    /*color: #ffffff;*/
         }
         .overview-text-item + .overview-text-item {
           margin-top: 20px;
         }
         .overview-text-item:before {
-          content: "";
-          border: 2px solid #61bcff;
-          border-radius: 50%;
-          height: 8px;
-          width: 8px;
-          margin-right: 8px;
-          flex-shrink: 0;
+             content: "";
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    margin-top: 6px;
         }
 
         .detail-page .job-overview {
@@ -1181,6 +1192,11 @@
         }
         .warned a {
           text-decoration: none;
+          color: #000000;
+          word-break: break-all;
+        }
+        .dark-mode .warned a {
+          text-decoration: none;
           color: #e0e0e0;
           word-break: break-all;
         }
@@ -1238,7 +1254,7 @@
             right: 20px;
             font-weight: bold;
         }
-        
+
     </style>
 
 </head>
@@ -1457,18 +1473,11 @@
                                 <div class="job-detail-buttons">
                                   <button :style="`background-color: ${color(active.party)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
                                 </div>
-                                <div v-if="false" class="overview-text">
-                                    <div class="overview-text-header">Job Description</div>
-                                    <div class="overview-text-item">3+ years working as a product designer.</div>
-                                    <div class="overview-text-item">A portfolio that highlights your approach to problem solving, as well
-                                        as you skills in UI.</div>
-                                    <div class="overview-text-item">Experience conducting research and building out smooth flows.</div>
-                                    <div
-                                    class="overview-text-item">Excellent communication skills with a well-defined design process.</div>
-                                <div
-                                class="overview-text-item">Familiarity with design tools like Sketch and Figma</div>
-                            <div class="overview-text-item">Up-level our overall design and bring consistency to end-user facing properties</div>
-                        </div>
+                                <div v-if="active.in_the_news.length" class="overview-text">
+                                    <div class="overview-text-header">In The News</div>
+                                    <div v-for="i in active.in_the_news" class="overview-text-item">
+                                        <a :href="i.url" target="_blank">{{ i.title }}</a>
+                                    </div>
                     </div>
                 </div>
             </div>
