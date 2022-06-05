@@ -1359,7 +1359,7 @@
                             <!-- <div class="h-title" :style="`color: ${person.party && person.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`">{{ person.state_name }} {{ person.title }}</div> -->
                             <!-- <div @click="show(person)" v-if="person.description" class="job-card-subtitle">{{ person.description ? person.description.slice(0, 100) : '' }}</div> -->
                             <div class="job-detail-buttons">
-                                <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                <button :style="`background-color: ${background(person, tag)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
                             </div>
                             <div v-if="false" class="job-card-buttons">
                                 <button class="search-buttons card-buttons">Apply Now</button>
@@ -1382,7 +1382,7 @@
                                             <!-- <div class="job-card-subtitle">{{ person.title }}</div> -->
                                             <!-- <div class="job-card-subtitle">{{ person.state_name }}</div> -->
                                             <div class="job-detail-buttons">
-                                              <button :style="`background-color: ${background(person)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                              <button :style="`background-color: ${background(person, tag)}`" @click="navTo(tag)" v-for="tag in person.tags" :class="`search-buttons detail-button`">{{ tag }}</button>
                                             </div>
                                         </div>
                                         <svg v-if="false" class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -1492,15 +1492,24 @@
                 filter: '',
                 people: [],
                 checked: [],
+                statistics: [],
                 dataset: false,
                 active: false,
                 message: 'Hello',
             },
             mounted() {
 
-              axios.get('/dataset.json').then((res) => {
-                this.people = res.data
+              axios.get('/statistics.json').then((res) => {
+
+                this.statistics = res.data[0].array
+
+                 axios.get('/dataset.json').then((res) => {
+                    this.people = res.data
+                  })
+
               })
+
+              
 
               var hours = new Date().getHours();
 
@@ -1602,7 +1611,14 @@
               },
             },
             methods: {
-              background(person) {
+              background(person, tag) {
+                var majority = this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase())
+                if (majority) {
+                    return majority === 'Democrat' ? '#0861ff' : '#cb0000'
+                    // return 'pink'
+                    // person.party = this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()).majority
+                    // console.log(tag, this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()))
+                }
                 if (!person.party) return
                 if (person.party && person.party.toLowerCase() === 'democrat') return '#0861ff'
                 if (person.party && person.party.toLowerCase() === 'republican') return '#cb0000'
