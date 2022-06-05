@@ -4,9 +4,9 @@
         "array": [
             {
                 "name": "New Mexico",
-                "majority": "Democrat",
+                "majority": "Republican",
                 "players": {
-                    "Democrat": 2,
+                    "Democrat": 0,
                     "Republican": 0
                 }
             },
@@ -15,7 +15,7 @@
                 "majority": "Republican",
                 "players": {
                     "Democrat": 0,
-                    "Republican": 2
+                    "Republican": 0
                 }
             },
             {
@@ -23,7 +23,7 @@
                 "majority": "Republican",
                 "players": {
                     "Democrat": 0,
-                    "Republican": 2
+                    "Republican": 0
                 }
             },
             {
@@ -31,30 +31,22 @@
                 "majority": "Republican",
                 "players": {
                     "Democrat": 0,
-                    "Republican": 2
+                    "Republican": 0
                 }
             },
             {
                 "name": "Arizona",
-                "majority": "Democrat",
+                "majority": "Republican",
                 "players": {
-                    "Democrat": 2,
+                    "Democrat": 0,
                     "Republican": 0
                 }
             },
             {
                 "name": "California",
-                "majority": "Democrat",
+                "majority": "Republican",
                 "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Colorado",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
+                    "Democrat": 0,
                     "Republican": 0
                 }
             },
@@ -63,342 +55,6 @@
                 "majority": "Republican",
                 "players": {
                     "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Georgia",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Iowa",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Idaho",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Illinois",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Indiana",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Kansas",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Kentucky",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Louisiana",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Maryland",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Michigan",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Minnesota",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Missouri",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Mississippi",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Montana",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "North Carolina",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "North Dakota",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Nebraska",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "New Jersey",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Nevada",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "New York",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Ohio",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "Oklahoma",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Oregon",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Pennsylvania",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "South Carolina",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "South Dakota",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Tennessee",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Texas",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Utah",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Virginia",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Washington",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Wisconsin",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "West Virginia",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "Wyoming",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 2
-                }
-            },
-            {
-                "name": "Maine",
-                "majority": "Republican",
-                "players": {
-                    "Democrat": 0,
-                    "Republican": 1
-                }
-            },
-            {
-                "name": "Vermont",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 1,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Connecticut",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Delaware",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Hawaii",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Massachusetts",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "New Hampshire",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
-                    "Republican": 0
-                }
-            },
-            {
-                "name": "Rhode Island",
-                "majority": "Democrat",
-                "players": {
-                    "Democrat": 2,
                     "Republican": 0
                 }
             }

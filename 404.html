@@ -1478,7 +1478,7 @@
                                 </div>
                                 <div class="overview-text">
                                     <!-- <div class="overview-text-header">About</div> -->
-                                    <div class="overview-text-subheader">{{ active.description }}</div>
+                                    <div class="overview-text-subheader" v-html="rendered(active.description)"></div>
                                 </div>
                                 <div class="job-detail-buttons">
                                   <button :style="`background-color: ${background(active, tag)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
@@ -1637,9 +1637,16 @@
               },
             },
             methods: {
-            // doSelect(e) {
-            //     if (e.target.value) this.filter = e.target.value
-            // },
+                rendered(markdown) {
+                    if (!markdown) return
+                    return markdown.replace(/^### (.*$)/gim, '<h3>$1</h3>')
+                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+                    .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
+                    .replace(/\*(.*)\*/gim, '<i>$1</i>')
+                    .replace(/\r\n|\r|\n/gim, '<br>')
+                    .replace(/\[([^\[]+)\](\(([^)]*))\)/gim, '<a href="$3">$1</a>');
+                },
               background(person, tag) {
 
                 if (tag && tag.toLowerCase() === "senator") return 
@@ -1692,9 +1699,9 @@
               share() {
                 if (navigator.share) {
                   navigator.share({
-                   title: 'Scumbag McGee',
-                   text: 'Adios.to/Scumbag - Corrupt Politician Database.',
-                   url: 'https://adios.to/scumbag'
+                   title: this.active ? this.active.name : 'Adios.to',
+                   text: this.active ? this.active.title : 'Political Database',
+                   url: this.active ? 'https://adios.to/' + (this.filter ? this.filter : this.active.slug) : 'https://adios.to'
                   })
                 } else {
                   alert("Looks like you're on Desktop. Sharing works best on Mobile. Just copy the URL from the browser bar.")
