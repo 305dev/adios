@@ -1617,8 +1617,8 @@
             methods: {
               background(person, tag) {
 
-                // if (tag && tag.toLowerCase() === "senator") return 
-                // if (tag && tag.toLowerCase() === "representative") return 
+                if (tag && tag.toLowerCase() === "senator") return 
+                if (tag && tag.toLowerCase() === "representative") return 
 
                 if (this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()) ) {
                     // console.log(Tag)

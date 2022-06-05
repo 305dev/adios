@@ -535,6 +535,16 @@
           }
         }
 
+        @media screen and (max-width: 769px) {
+        
+        .job-explain .date {
+            top: 150px !important;
+            right: 18px !important;
+                zoom: 1.4;
+        }
+
+        }
+
         .job-card {
           padding: 20px 16px;
           background-color: var(--header-bg-color);
@@ -946,14 +956,18 @@
           margin-top: 20px;
         }
         .overview-text-item:before {
-             content: "";
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    margin-right: 8px;
-    flex-shrink: 0;
-    margin-top: 6px;
+            content: "";
+            border: 2px solid #000000;
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            margin-right: 8px;
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+
+        .dark-mode .overview-text-item:before {
+            border: 2px solid #ffffff;
         }
 
         .detail-page .job-overview {
