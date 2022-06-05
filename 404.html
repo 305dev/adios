@@ -559,7 +559,7 @@
           color:
         }
         .job-card-title {
-            max-width: 200px;
+            max-width: 170px;
             color: #0861ff;
             margin: 0;
             font-size: 18px;
@@ -1249,7 +1249,7 @@
         }
 
         .job-overview-card .date {
-            zoom: 1;
+            zoom: 0.9;
             top: 15px;
             right: 20px;
             font-weight: bold;
@@ -1436,17 +1436,6 @@
                                 </div>
                                 <div class="job-subtitle-wrapper">
                                   <div class="h-title" :style="`color: ${color(active.party)}`">{{ active.name }}</div>
-                                  <!-- <div class="h-body" :style="`color: ${active.party && active.party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'}`"></div> -->
-                                </div>
-                                <div class="warned" v-if="active.accused_treason" style="zoom: 0.8;">
-                                  <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://www.law.cornell.edu/uscode/text/5/3331" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
-                                  <ul>
-                                    <li><a :href="active.accused_treason" target="_blank">
-                                      <b style="font-size: 25px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
-                                      <br>
-                                      <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
-                                    </a></li>
-                                  </ul>
                                 </div>
                                 <div v-if="false" class="explain-bar">
                                     <div class="explain-contents">
@@ -1471,7 +1460,17 @@
                                     <div class="overview-text-subheader">{{ active.description }}</div>
                                 </div>
                                 <div class="job-detail-buttons">
-                                  <button :style="`background-color: ${color(active.party)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                  <button :style="`background-color: ${background(active, tag)}`" @click="navTo(tag)" v-for="tag in active.tags.filter(a => a !== 'Traitor')" :class="`search-buttons detail-button`">{{ tag }}</button>
+                                </div>
+                                <div class="warned" v-if="active.accused_treason" style="zoom: 0.8;">
+                                  <b style=" font-size: 23px; opacity: 0.8; ">This individual has betrayed their <a href="https://www.law.cornell.edu/uscode/text/5/3331" target="_blank" style=" font-size: 25px; border-bottom: 1px solid #515151; ">Oath of Office </a>and should be removed from office as soon as possible.</b>
+                                  <ul>
+                                    <li><a :href="active.accused_treason" target="_blank">
+                                      <b style="font-size: 25px">"The 147 Republicans Who Voted to Overturn Election Results"</b>
+                                      <br>
+                                      <small style="font-size: 17px;opacity: 0.7;">{{ active.accused_treason }}</small>
+                                    </a></li>
+                                  </ul>
                                 </div>
                                 <div v-if="active.in_the_news.length" class="overview-text">
                                     <div class="overview-text-header">In The News</div>
@@ -1499,6 +1498,11 @@
             },
             mounted() {
 
+              if (window.location.pathname !== '/') {
+                var string = window.location.pathname.replace('/', '')
+                this.filter =  string.charAt(0).toUpperCase() + string.slice(1);
+              }
+
               axios.get('/statistics.json').then((res) => {
 
                 this.statistics = res.data[0].array
@@ -1509,7 +1513,6 @@
 
               })
 
-              
 
               var hours = new Date().getHours();
 
@@ -1522,6 +1525,7 @@
               } else {
                 if (!localStorage.getItem('darkMode')) document.body.className = document.body.className.replace("dark-mode","");
               }
+
             },
             watch: {
               filter() {
@@ -1612,17 +1616,23 @@
             },
             methods: {
               background(person, tag) {
-                var majority = this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase())
-                if (majority) {
-                    return majority === 'Democrat' ? '#0861ff' : '#cb0000'
-                    // return 'pink'
-                    // person.party = this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()).majority
-                    // console.log(tag, this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()))
+
+                // if (tag && tag.toLowerCase() === "senator") return 
+                // if (tag && tag.toLowerCase() === "representative") return 
+
+                if (this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()) ) {
+                    // console.log(Tag)
+                    return this.statistics.find(a => a.name.toLowerCase() === tag.toLowerCase()).majority === 'Democrat' ? '#0861ff' : '#cb0000'
                 }
+                
                 if (!person.party) return
+
                 if (person.party && person.party.toLowerCase() === 'democrat') return '#0861ff'
+                
                 if (person.party && person.party.toLowerCase() === 'republican') return '#cb0000'
+
                 if (person.party && person.party.toLowerCase() === 'independent') return '#00b053'
+
                 // return party && party.toLowerCase() === 'democrat' ? '#0861ff' : '#cb0000'
               },
               color(party) {
@@ -1634,7 +1644,7 @@
               },
               navTo(string) {
                 this.logoClick()
-                this.filter = string
+                this.filter += ' ' + string
                 // window.history.pushState('page2', string, '/' + string);
               },
               clickSearch() {

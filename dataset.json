@@ -8,11 +8,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/lauren-boebert.jpg",
         "slug": "lauren-boebert",
         "tags": [
             "Colorado",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -148,6 +149,7 @@
         "slug": "ilhan-omar",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -242,11 +244,12 @@
         "next_election": "",
         "district": "",
         "party": "democrat",
-        "accused_treason": "https://www.theguardian.com/us-news/2021/nov/06/kyrsten-sinema-filibuster-betrayed-arizona-voting-rights",
+        "accused_treason": "[Arizona voters baffled by Kyrsten Sinema: ‘She betrayed us’](https://www.theguardian.com/us-news/2021/nov/06/kyrsten-sinema-filibuster-betrayed-arizona-voting-rights)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/kyrsten-sinema.jpg",
         "slug": "kyrsten-sinema",
         "tags": [
             "Arizona",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": [
@@ -337,11 +340,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/ted-cruz.jpg",
         "slug": "ted-cruz",
         "tags": [
             "Texas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -412,11 +416,12 @@
         "next_election": "",
         "district": "23",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/kevin-mccarthy.jpg",
         "slug": "kevin-mccarthy",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -497,6 +502,7 @@
         "slug": "ron-desantis",
         "tags": [
             "Florida",
+            "Republican",
             "Governor"
         ],
         "in_the_news": [
@@ -568,6 +574,7 @@
         "slug": "joe-manchin",
         "tags": [
             "West Virginia",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": [
@@ -711,6 +718,7 @@
         "slug": "elizabeth-warren",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": [
@@ -770,6 +778,7 @@
         "slug": "mitch-mcconnell",
         "tags": [
             "Kentucky",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -824,11 +833,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/paul-gosar.jpg",
         "slug": "paul-gosar",
         "tags": [
             "Arizona",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -888,6 +898,7 @@
         "slug": "nancy-pelosi",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -935,6 +946,7 @@
         "slug": "ron-johnson",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -982,6 +994,7 @@
         "slug": "liz-cheney",
         "tags": [
             "Wyoming",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1029,6 +1042,7 @@
         "slug": "alexandria-ocasio-cortez",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1063,11 +1077,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/matt-gaetz.jpg",
         "slug": "matt-gaetz",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1107,6 +1122,7 @@
         "slug": "adam-kinzinger",
         "tags": [
             "Illinois",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1142,6 +1158,7 @@
         "slug": "jamie-raskin",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1173,6 +1190,7 @@
         "slug": "ed-case",
         "tags": [
             "Hawaii",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1204,6 +1222,7 @@
         "slug": "adam-schiff",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1230,11 +1249,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/josh-hawley.jpg",
         "slug": "josh-hawley",
         "tags": [
             "Missouri",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1266,6 +1286,7 @@
         "slug": "susan-collins",
         "tags": [
             "Maine",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1297,6 +1318,7 @@
         "slug": "rand-paul",
         "tags": [
             "Kentucky",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1328,6 +1350,7 @@
         "slug": "jim-jordan",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1354,11 +1377,12 @@
         "next_election": "",
         "district": "22",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/devin-nunes.jpg",
         "slug": "devin-nunes",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1390,6 +1414,7 @@
         "slug": "mark-kelly",
         "tags": [
             "Arizona",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": [
@@ -1417,6 +1442,7 @@
         "slug": "henry-cuellar",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1444,6 +1470,7 @@
         "slug": "ayanna-pressley",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1471,6 +1498,7 @@
         "slug": "mitt-romney",
         "tags": [
             "Utah",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1498,6 +1526,7 @@
         "slug": "nancy-mace",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1525,6 +1554,7 @@
         "slug": "mondaire-jones",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1548,6 +1578,7 @@
         "slug": "bill-pascrell",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1571,6 +1602,7 @@
         "slug": "charlie-crist",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1594,6 +1626,7 @@
         "slug": "katie-porter",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1617,6 +1650,7 @@
         "slug": "jackie-speier",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1640,6 +1674,7 @@
         "slug": "ruben-gallego",
         "tags": [
             "Arizona",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": [
@@ -1663,6 +1698,7 @@
         "slug": "lindsey-graham",
         "tags": [
             "South Carolina",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1686,6 +1722,7 @@
         "slug": "tom-cotton",
         "tags": [
             "Arkansas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1704,11 +1741,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/tommy-tuberville.jpg",
         "slug": "tommy-tuberville",
         "tags": [
             "Alabama",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1732,6 +1770,7 @@
         "slug": "lisa-murkowski",
         "tags": [
             "Alaska",
+            "Republican",
             "Senator"
         ],
         "in_the_news": [
@@ -1755,6 +1794,7 @@
         "slug": "ronny-jackson",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1778,6 +1818,7 @@
         "slug": "michael-mccaul",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1801,6 +1842,7 @@
         "slug": "dan-crenshaw",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -1824,6 +1866,7 @@
         "slug": "thomas-massie",
         "tags": [
             "Kentucky",
+            "Republican",
             "Representative"
         ],
         "in_the_news": [
@@ -3143,6 +3186,7 @@
         "slug": "annette-taddeo",
         "tags": [
             "Florida",
+            "Democrat",
             "State Senator (District 40)"
         ],
         "in_the_news": []
@@ -3166,6 +3210,7 @@
         "slug": "ana-maria-rodriguez",
         "tags": [
             "Florida",
+            "Republican",
             "State Senator (District 39)"
         ],
         "in_the_news": []
@@ -3189,6 +3234,7 @@
         "slug": "jason-pizzo",
         "tags": [
             "Florida",
+            "Democrat",
             "State Senator (District 38)"
         ],
         "in_the_news": []
@@ -3212,6 +3258,7 @@
         "slug": "ileana-garcia",
         "tags": [
             "Florida",
+            "Republican",
             "State Senator (District 37)"
         ],
         "in_the_news": []
@@ -3235,6 +3282,7 @@
         "slug": "manny-diaz-jr",
         "tags": [
             "Florida",
+            "Republican",
             "State Senator (District 36)"
         ],
         "in_the_news": []
@@ -3258,6 +3306,7 @@
         "slug": "shevrin-d-jones",
         "tags": [
             "Florida",
+            "Democrat",
             "State Senator (District 35)"
         ],
         "in_the_news": []
@@ -3315,6 +3364,7 @@
         "slug": "nicole-fried",
         "tags": [
             "Florida",
+            "Democrat",
             "Commissioner of Agriculture"
         ],
         "in_the_news": []
@@ -3361,6 +3411,7 @@
         "slug": "jimmy-patronis",
         "tags": [
             "Florida",
+            "Republican",
             "Chief Financial Officer"
         ],
         "in_the_news": []
@@ -3384,6 +3435,7 @@
         "slug": "ashley-moody",
         "tags": [
             "Florida",
+            "Republican",
             "Attorney General"
         ],
         "in_the_news": []
@@ -3407,6 +3459,7 @@
         "slug": "cord-byrd",
         "tags": [
             "Florida",
+            "Republican",
             "Acting Secretary of State"
         ],
         "in_the_news": []
@@ -3430,6 +3483,7 @@
         "slug": "jeanette-m-nunez",
         "tags": [
             "Florida",
+            "Republican",
             "Lt. Governor"
         ],
         "in_the_news": []
@@ -3448,6 +3502,7 @@
         "slug": "tammy-baldwin",
         "tags": [
             "Wisconsin",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3466,6 +3521,7 @@
         "slug": "patty-murray",
         "tags": [
             "Washington",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3484,6 +3540,7 @@
         "slug": "maria-cantwell",
         "tags": [
             "Washington",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3502,6 +3559,7 @@
         "slug": "patrick-leahy",
         "tags": [
             "Vermont",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3520,6 +3578,7 @@
         "slug": "tim-kaine",
         "tags": [
             "Virginia",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3538,6 +3597,7 @@
         "slug": "mark-warner",
         "tags": [
             "Virginia",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3556,6 +3616,7 @@
         "slug": "sheldon-whitehouse",
         "tags": [
             "Rhode Island",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3574,6 +3635,7 @@
         "slug": "jack-reed",
         "tags": [
             "Rhode Island",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3592,6 +3654,7 @@
         "slug": "robert-casey",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3610,6 +3673,7 @@
         "slug": "ron-wyden",
         "tags": [
             "Oregon",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3628,6 +3692,7 @@
         "slug": "jeff-merkley",
         "tags": [
             "Oregon",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3646,6 +3711,7 @@
         "slug": "sherrod-brown",
         "tags": [
             "Ohio",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3664,6 +3730,7 @@
         "slug": "kirsten-gillibrand",
         "tags": [
             "New York",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3682,6 +3749,7 @@
         "slug": "charles-schumer",
         "tags": [
             "New York",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3700,6 +3768,7 @@
         "slug": "jacky-rosen",
         "tags": [
             "Nevada",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3718,6 +3787,7 @@
         "slug": "catherine-cortez-masto",
         "tags": [
             "Nevada",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3736,6 +3806,7 @@
         "slug": "ben-lujan",
         "tags": [
             "New Mexico",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3754,6 +3825,7 @@
         "slug": "martin-heinrich",
         "tags": [
             "New Mexico",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3772,6 +3844,7 @@
         "slug": "robert-menendez",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3790,6 +3863,7 @@
         "slug": "cory-booker",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3808,6 +3882,7 @@
         "slug": "margaret-hassan",
         "tags": [
             "New Hampshire",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3826,6 +3901,7 @@
         "slug": "jeanne-shaheen",
         "tags": [
             "New Hampshire",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3844,6 +3920,7 @@
         "slug": "jon-tester",
         "tags": [
             "Montana",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3862,6 +3939,7 @@
         "slug": "amy-klobuchar",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3880,6 +3958,7 @@
         "slug": "tina-smith",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3898,6 +3977,7 @@
         "slug": "gary-peters",
         "tags": [
             "Michigan",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3916,6 +3996,7 @@
         "slug": "debbie-stabenow",
         "tags": [
             "Michigan",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3934,6 +4015,7 @@
         "slug": "chris-van-hollen",
         "tags": [
             "Maryland",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3952,6 +4034,7 @@
         "slug": "benjamin-cardin",
         "tags": [
             "Maryland",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3970,6 +4053,7 @@
         "slug": "edward-markey",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -3988,6 +4072,7 @@
         "slug": "tammy-duckworth",
         "tags": [
             "Illinois",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4006,6 +4091,7 @@
         "slug": "richard-durbin",
         "tags": [
             "Illinois",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4024,6 +4110,7 @@
         "slug": "mazie-hirono",
         "tags": [
             "Hawaii",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4042,6 +4129,7 @@
         "slug": "brian-schatz",
         "tags": [
             "Hawaii",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4060,6 +4148,7 @@
         "slug": "raphael-warnock",
         "tags": [
             "Georgia",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4078,6 +4167,7 @@
         "slug": "jon-ossoff",
         "tags": [
             "Georgia",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4096,6 +4186,7 @@
         "slug": "thomas-carper",
         "tags": [
             "Delaware",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4114,6 +4205,7 @@
         "slug": "christopher-coons",
         "tags": [
             "Delaware",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4132,6 +4224,7 @@
         "slug": "richard-blumenthal",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4150,6 +4243,7 @@
         "slug": "christopher-murphy",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4168,6 +4262,7 @@
         "slug": "michael-bennet",
         "tags": [
             "Colorado",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4186,6 +4281,7 @@
         "slug": "john-hickenlooper",
         "tags": [
             "Colorado",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4204,6 +4300,7 @@
         "slug": "alejandro-padilla",
         "tags": [
             "California",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4222,6 +4319,7 @@
         "slug": "dianne-feinstein",
         "tags": [
             "California",
+            "Democrat",
             "Senator"
         ],
         "in_the_news": []
@@ -4240,6 +4338,7 @@
         "slug": "gwen-moore",
         "tags": [
             "Wisconsin",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4258,6 +4357,7 @@
         "slug": "ron-kind",
         "tags": [
             "Wisconsin",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4276,6 +4376,7 @@
         "slug": "mark-pocan",
         "tags": [
             "Wisconsin",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4294,6 +4395,7 @@
         "slug": "marilyn-strickland",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4312,6 +4414,7 @@
         "slug": "adam-smith",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4330,6 +4433,7 @@
         "slug": "kim-schrier",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4348,6 +4452,7 @@
         "slug": "pramila-jayapal",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4366,6 +4471,7 @@
         "slug": "derek-kilmer",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4384,6 +4490,7 @@
         "slug": "rick-larsen",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4402,6 +4509,7 @@
         "slug": "suzan-delbene",
         "tags": [
             "Washington",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4420,6 +4528,7 @@
         "slug": "peter-welch",
         "tags": [
             "Vermont",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4438,6 +4547,7 @@
         "slug": "jennifer-wexton",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4456,6 +4566,7 @@
         "slug": "gerald-connolly",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4474,6 +4585,7 @@
         "slug": "don-beyer",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4492,6 +4604,7 @@
         "slug": "abigail-spanberger",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4510,6 +4623,7 @@
         "slug": "donald-mceachin",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4528,6 +4642,7 @@
         "slug": "robert-scott",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4546,6 +4661,7 @@
         "slug": "elaine-luria",
         "tags": [
             "Virginia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4564,6 +4680,7 @@
         "slug": "lloyd-doggett",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4582,6 +4699,7 @@
         "slug": "filemon-vela",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4600,6 +4718,7 @@
         "slug": "marc-veasey",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4618,6 +4737,7 @@
         "slug": "colin-allred",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4636,6 +4756,7 @@
         "slug": "eddie-bernice-johnson",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4654,6 +4775,7 @@
         "slug": "sylvia-garcia",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4672,6 +4794,7 @@
         "slug": "joaquin-castro",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4690,6 +4813,7 @@
         "slug": "shelia-jackson-lee",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4708,6 +4832,7 @@
         "slug": "veronica-escobar",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4726,6 +4851,7 @@
         "slug": "vicente-gonzalez",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4744,6 +4870,7 @@
         "slug": "al-green",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4762,6 +4889,7 @@
         "slug": "lizzie-fletcher",
         "tags": [
             "Texas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4780,6 +4908,7 @@
         "slug": "steve-cohen",
         "tags": [
             "Tennessee",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4798,6 +4927,7 @@
         "slug": "jim-cooper",
         "tags": [
             "Tennessee",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4816,6 +4946,7 @@
         "slug": "james-clyburn",
         "tags": [
             "South Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4834,6 +4965,7 @@
         "slug": "jim-langevin",
         "tags": [
             "Rhode Island",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4852,6 +4984,7 @@
         "slug": "david-cicilline",
         "tags": [
             "Rhode Island",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4870,6 +5003,7 @@
         "slug": "mike-doyle",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4888,6 +5022,7 @@
         "slug": "conor-lamb",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4906,6 +5041,7 @@
         "slug": "matthew-cartwright",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4924,6 +5060,7 @@
         "slug": "susan-wild",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4942,6 +5079,7 @@
         "slug": "chrissy-houlahan",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4960,6 +5098,7 @@
         "slug": "mary-gay-scanlon",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4978,6 +5117,7 @@
         "slug": "madeleine-dean",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -4996,6 +5136,7 @@
         "slug": "dwight-evans",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5014,6 +5155,7 @@
         "slug": "brendan-boyle",
         "tags": [
             "Pennsylvania",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5032,6 +5174,7 @@
         "slug": "kurt-schrader",
         "tags": [
             "Oregon",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5050,6 +5193,7 @@
         "slug": "peter-defazio",
         "tags": [
             "Oregon",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5068,6 +5212,7 @@
         "slug": "earl-blumenauer",
         "tags": [
             "Oregon",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5086,6 +5231,7 @@
         "slug": "suzanne-bonamici",
         "tags": [
             "Oregon",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5104,6 +5250,7 @@
         "slug": "tim-ryan",
         "tags": [
             "Ohio",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5122,6 +5269,7 @@
         "slug": "marcia-fudge",
         "tags": [
             "Ohio",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5140,6 +5288,7 @@
         "slug": "marcy-kaptur",
         "tags": [
             "Ohio",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5158,6 +5307,7 @@
         "slug": "joyce-beatty",
         "tags": [
             "Ohio",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5176,6 +5326,7 @@
         "slug": "brian-higgins",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5194,6 +5345,7 @@
         "slug": "joseph-morelle",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5212,6 +5364,7 @@
         "slug": "anthony-brindisi",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5230,6 +5383,7 @@
         "slug": "paul-tonko",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5248,6 +5402,7 @@
         "slug": "antonio-delgado",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5266,6 +5421,7 @@
         "slug": "sean-patrick-maloney",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5284,6 +5440,7 @@
         "slug": "jamaal-bowman",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5302,6 +5459,7 @@
         "slug": "ritchie-torres",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5320,6 +5478,7 @@
         "slug": "adriano-espaillat",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5338,6 +5497,7 @@
         "slug": "carolyn-maloney",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5356,6 +5516,7 @@
         "slug": "jerrold-nadler",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5374,6 +5535,7 @@
         "slug": "yvette-clarke",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5392,6 +5554,7 @@
         "slug": "nydia-velazquez",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5410,6 +5573,7 @@
         "slug": "hakeem-jeffries",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5428,6 +5592,7 @@
         "slug": "grace-meng",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5446,6 +5611,7 @@
         "slug": "gregory-meeks",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5464,6 +5630,7 @@
         "slug": "kathleen-rice",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5482,6 +5649,7 @@
         "slug": "thomas-suozzi",
         "tags": [
             "New York",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5500,6 +5668,7 @@
         "slug": "steven-horsford",
         "tags": [
             "Nevada",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5518,6 +5687,7 @@
         "slug": "susie-lee",
         "tags": [
             "Nevada",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5536,6 +5706,7 @@
         "slug": "dina-titus",
         "tags": [
             "Nevada",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5554,6 +5725,7 @@
         "slug": "teresa-fernandez",
         "tags": [
             "New Mexico",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5572,6 +5744,7 @@
         "slug": "debra-haaland",
         "tags": [
             "New Mexico",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5590,6 +5763,7 @@
         "slug": "bonnie-watson-coleman",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5608,6 +5782,7 @@
         "slug": "mikie-sherrill",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5626,6 +5801,7 @@
         "slug": "donald-payne",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5644,6 +5820,7 @@
         "slug": "albio-sires",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5662,6 +5839,7 @@
         "slug": "tom-malinowski",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5680,6 +5858,7 @@
         "slug": "frank-pallone",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5698,6 +5877,7 @@
         "slug": "josh-gottheimer",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5716,6 +5896,7 @@
         "slug": "andrew-kim",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5729,11 +5910,12 @@
         "next_election": "",
         "district": "2",
         "party": "democrat",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jefferson-van-drew.jpg",
         "slug": "jeff-van-drew",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5752,6 +5934,7 @@
         "slug": "donald-norcross",
         "tags": [
             "New Jersey",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5770,6 +5953,7 @@
         "slug": "annie-kuster",
         "tags": [
             "New Hampshire",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5788,6 +5972,7 @@
         "slug": "chris-pappas",
         "tags": [
             "New Hampshire",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5806,6 +5991,7 @@
         "slug": "alma-adams",
         "tags": [
             "North Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5824,6 +6010,7 @@
         "slug": "kathy-manning",
         "tags": [
             "North Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5842,6 +6029,7 @@
         "slug": "david-price",
         "tags": [
             "North Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5860,6 +6048,7 @@
         "slug": "deborah-ross",
         "tags": [
             "North Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5878,6 +6067,7 @@
         "slug": "gk-butterfield",
         "tags": [
             "North Carolina",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5896,6 +6086,7 @@
         "slug": "bennie-thompson",
         "tags": [
             "Mississippi",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5914,6 +6105,7 @@
         "slug": "emanuel-cleaver",
         "tags": [
             "Missouri",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5932,6 +6124,7 @@
         "slug": "cori-bush",
         "tags": [
             "Missouri",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5950,6 +6143,7 @@
         "slug": "betty-mccollum",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5968,6 +6162,7 @@
         "slug": "dean-phillips",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -5986,6 +6181,7 @@
         "slug": "angie-craig",
         "tags": [
             "Minnesota",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6004,6 +6200,7 @@
         "slug": "brenda-lawrence",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6022,6 +6219,7 @@
         "slug": "rashida-tlaib",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6040,6 +6238,7 @@
         "slug": "debbie-dingell",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6058,6 +6257,7 @@
         "slug": "haley-stevens",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6076,6 +6276,7 @@
         "slug": "andy-levin",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6094,6 +6295,7 @@
         "slug": "elissa-slotkin",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6112,6 +6314,7 @@
         "slug": "daniel-kildee",
         "tags": [
             "Michigan",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6130,6 +6333,7 @@
         "slug": "jared-golden",
         "tags": [
             "Maine",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6148,6 +6352,7 @@
         "slug": "chellie-pingree",
         "tags": [
             "Maine",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6166,6 +6371,7 @@
         "slug": "kweisi-mfume",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6184,6 +6390,7 @@
         "slug": "david-trone",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6202,6 +6409,7 @@
         "slug": "steny-hoyer",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6220,6 +6428,7 @@
         "slug": "anthony-brown",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6238,6 +6447,7 @@
         "slug": "john-sarbanes",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6256,6 +6466,7 @@
         "slug": "dutch-ruppersberger",
         "tags": [
             "Maryland",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6274,6 +6485,7 @@
         "slug": "william-keating",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6292,6 +6504,7 @@
         "slug": "stephen-lynch",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6310,6 +6523,7 @@
         "slug": "seth-moulton",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6328,6 +6542,7 @@
         "slug": "katherine-clark",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6346,6 +6561,7 @@
         "slug": "jake-auchincloss",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6364,6 +6580,7 @@
         "slug": "lori-trahan",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6382,6 +6599,7 @@
         "slug": "james-mcgovern",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6400,6 +6618,7 @@
         "slug": "richard-neal",
         "tags": [
             "Massachusetts",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6418,6 +6637,7 @@
         "slug": "cedric-richmond",
         "tags": [
             "Louisiana",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6436,6 +6656,7 @@
         "slug": "john-yarmuth",
         "tags": [
             "Kentucky",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6454,6 +6675,7 @@
         "slug": "sharice-davids",
         "tags": [
             "Kansas",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6472,6 +6694,7 @@
         "slug": "andre-carson",
         "tags": [
             "Indiana",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6490,6 +6713,7 @@
         "slug": "frank-mrvan",
         "tags": [
             "Indiana",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6508,6 +6732,7 @@
         "slug": "cheri-bustos",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6526,6 +6751,7 @@
         "slug": "lauren-underwood",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6544,6 +6770,7 @@
         "slug": "bill-foster",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6562,6 +6789,7 @@
         "slug": "bradley-schneider",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6580,6 +6808,7 @@
         "slug": "janice-schakowsky",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6598,6 +6827,7 @@
         "slug": "raja-krishnamoorthi",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6616,6 +6846,7 @@
         "slug": "danny-davis",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6634,6 +6865,7 @@
         "slug": "sean-casten",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6652,6 +6884,7 @@
         "slug": "mike-quigley",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6670,6 +6903,7 @@
         "slug": "jesus-garcia",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6688,6 +6922,7 @@
         "slug": "marie-newman",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6706,6 +6941,7 @@
         "slug": "robin-kelly",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6724,6 +6960,7 @@
         "slug": "bobby-rush",
         "tags": [
             "Illinois",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6742,6 +6979,7 @@
         "slug": "cynthia-axne",
         "tags": [
             "Iowa",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6760,6 +6998,7 @@
         "slug": "kaialii-kahele",
         "tags": [
             "Hawaii",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6778,6 +7017,7 @@
         "slug": "david-scott",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6796,6 +7036,7 @@
         "slug": "carolyn-bourdeaux",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6814,6 +7055,7 @@
         "slug": "lucy-mcbath",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6832,6 +7074,7 @@
         "slug": "nikema-williams",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6850,6 +7093,7 @@
         "slug": "henry-johnson",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6868,6 +7112,7 @@
         "slug": "sanford-bishop",
         "tags": [
             "Georgia",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6886,6 +7131,7 @@
         "slug": "frederica-wilson",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6904,6 +7150,7 @@
         "slug": "debbie-wasserman-schultz",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6922,6 +7169,7 @@
         "slug": "ted-deutch",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6940,6 +7188,7 @@
         "slug": "lois-frankel",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6958,6 +7207,7 @@
         "slug": "alcee-hastings",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6976,6 +7226,7 @@
         "slug": "kathy-castor",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -6994,6 +7245,7 @@
         "slug": "val-demings",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7012,6 +7264,7 @@
         "slug": "darren-soto",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7030,6 +7283,7 @@
         "slug": "stephanie-murphy",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7048,6 +7302,7 @@
         "slug": "al-lawson",
         "tags": [
             "Florida",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7066,6 +7321,7 @@
         "slug": "lisa-blunt-rochester",
         "tags": [
             "Delaware",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7084,6 +7340,7 @@
         "slug": "jahana-hayes",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7102,6 +7359,7 @@
         "slug": "jim-himes",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7120,6 +7378,7 @@
         "slug": "rosa-delauro",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7138,6 +7397,7 @@
         "slug": "joe-courtney",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7156,6 +7416,7 @@
         "slug": "john-larson",
         "tags": [
             "Connecticut",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7174,6 +7435,7 @@
         "slug": "ed-perlmutter",
         "tags": [
             "Colorado",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7192,6 +7454,7 @@
         "slug": "jason-crow",
         "tags": [
             "Colorado",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7210,6 +7473,7 @@
         "slug": "joe-neguse",
         "tags": [
             "Colorado",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7228,6 +7492,7 @@
         "slug": "diana-degette",
         "tags": [
             "Colorado",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7246,6 +7511,7 @@
         "slug": "sara-jacobs",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7264,6 +7530,7 @@
         "slug": "scott-peters",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7282,6 +7549,7 @@
         "slug": "juan-vargas",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7300,6 +7568,7 @@
         "slug": "mike-levin",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7318,6 +7587,7 @@
         "slug": "alan-lowenthal",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7336,6 +7606,7 @@
         "slug": "luis-correa",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7354,6 +7625,7 @@
         "slug": "nanette-barragan",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7372,6 +7644,7 @@
         "slug": "maxine-waters",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7390,6 +7663,7 @@
         "slug": "mark-takano",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7408,6 +7682,7 @@
         "slug": "lucille-roybal-allard",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7426,6 +7701,7 @@
         "slug": "linda-sanchez",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7444,6 +7720,7 @@
         "slug": "karen-bass",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7462,6 +7739,7 @@
         "slug": "raul-ruiz",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7480,6 +7758,7 @@
         "slug": "norma-torres",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7498,6 +7777,7 @@
         "slug": "jimmy-gomez",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7516,6 +7796,7 @@
         "slug": "ted-lieu",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7534,6 +7815,7 @@
         "slug": "grace-napolitano",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7552,6 +7834,7 @@
         "slug": "pete-aguilar",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7570,6 +7853,7 @@
         "slug": "brad-sherman",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7588,6 +7872,7 @@
         "slug": "tony-cardenas",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7606,6 +7891,7 @@
         "slug": "judy-chu",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7624,6 +7910,7 @@
         "slug": "julia-brownley",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7642,6 +7929,7 @@
         "slug": "salud-carbajal",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7660,6 +7948,7 @@
         "slug": "jimmy-panetta",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7678,6 +7967,7 @@
         "slug": "zoe-lofgren",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7696,6 +7986,7 @@
         "slug": "anna-eshoo",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7714,6 +8005,7 @@
         "slug": "ro-khanna",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7732,6 +8024,7 @@
         "slug": "jim-costa",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7750,6 +8043,7 @@
         "slug": "eric-swalwell",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7768,6 +8062,7 @@
         "slug": "barbara-lee",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7786,6 +8081,7 @@
         "slug": "mark-desaulnier",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7804,6 +8100,7 @@
         "slug": "josh-harder",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7822,6 +8119,7 @@
         "slug": "jerry-mcnerney",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7840,6 +8138,7 @@
         "slug": "ami-bera",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7858,6 +8157,7 @@
         "slug": "doris-matsui",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7876,6 +8176,7 @@
         "slug": "mike-thompson",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7894,6 +8195,7 @@
         "slug": "john-garamendi",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7912,6 +8214,7 @@
         "slug": "jared-huffman",
         "tags": [
             "California",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7930,6 +8233,7 @@
         "slug": "greg-stanton",
         "tags": [
             "Arizona",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7948,6 +8252,7 @@
         "slug": "raul-grijalva",
         "tags": [
             "Arizona",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7966,6 +8271,7 @@
         "slug": "ann-kirkpatrick",
         "tags": [
             "Arizona",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -7984,6 +8290,7 @@
         "slug": "tom-ohalleran",
         "tags": [
             "Arizona",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -8002,6 +8309,7 @@
         "slug": "terri-sewell",
         "tags": [
             "Alabama",
+            "Democrat",
             "Representative"
         ],
         "in_the_news": []
@@ -8034,11 +8342,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/cynthia-lummis.jpg",
         "slug": "cynthia-lummis",
         "tags": [
             "Wyoming",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8057,6 +8366,7 @@
         "slug": "john-barrasso",
         "tags": [
             "Wyoming",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8075,6 +8385,7 @@
         "slug": "shelley-capito",
         "tags": [
             "West Virginia",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8093,6 +8404,7 @@
         "slug": "mike-lee",
         "tags": [
             "Utah",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8111,6 +8423,7 @@
         "slug": "john-cornyn",
         "tags": [
             "Texas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8129,6 +8442,7 @@
         "slug": "bill-hagerty",
         "tags": [
             "Tennessee",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8147,6 +8461,7 @@
         "slug": "marsha-blackburn",
         "tags": [
             "Tennessee",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8165,6 +8480,7 @@
         "slug": "mike-rounds",
         "tags": [
             "South Dakota",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8183,6 +8499,7 @@
         "slug": "john-thune",
         "tags": [
             "South Dakota",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8201,6 +8518,7 @@
         "slug": "tim-scott",
         "tags": [
             "South Carolina",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8219,6 +8537,7 @@
         "slug": "patrick-toomey",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8237,6 +8556,7 @@
         "slug": "james-lankford",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8255,6 +8575,7 @@
         "slug": "james-inhofe",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8273,6 +8594,7 @@
         "slug": "rob-portman",
         "tags": [
             "Ohio",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8291,6 +8613,7 @@
         "slug": "deb-fischer",
         "tags": [
             "Nebraska",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8309,6 +8632,7 @@
         "slug": "ben-sasse",
         "tags": [
             "Nebraska",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8327,6 +8651,7 @@
         "slug": "john-hoeven",
         "tags": [
             "North Dakota",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8345,6 +8670,7 @@
         "slug": "kevin-cramer",
         "tags": [
             "North Dakota",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8363,6 +8689,7 @@
         "slug": "thom-tillis",
         "tags": [
             "North Carolina",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8381,6 +8708,7 @@
         "slug": "richard-burr",
         "tags": [
             "North Carolina",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8399,6 +8727,7 @@
         "slug": "steve-daines",
         "tags": [
             "Montana",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8412,11 +8741,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/cindy-hyde-smith.jpg",
         "slug": "cindy-hyde-smith",
         "tags": [
             "Mississippi",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8435,6 +8765,7 @@
         "slug": "roger-wicker",
         "tags": [
             "Mississippi",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8453,6 +8784,7 @@
         "slug": "roy-blunt",
         "tags": [
             "Missouri",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8466,11 +8798,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/john-kennedy.jpg",
         "slug": "john-kennedy",
         "tags": [
             "Louisiana",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8489,6 +8822,7 @@
         "slug": "bill-cassidy",
         "tags": [
             "Louisiana",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8502,11 +8836,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/roger-marshall.jpg",
         "slug": "roger-marshall",
         "tags": [
             "Kansas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8525,6 +8860,7 @@
         "slug": "jerry-moran",
         "tags": [
             "Kansas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8543,6 +8879,7 @@
         "slug": "todd-young",
         "tags": [
             "Indiana",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8561,6 +8898,7 @@
         "slug": "mike-braun",
         "tags": [
             "Indiana",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8579,6 +8917,7 @@
         "slug": "mike-crapo",
         "tags": [
             "Idaho",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8597,6 +8936,7 @@
         "slug": "james-risch",
         "tags": [
             "Idaho",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8615,6 +8955,7 @@
         "slug": "joni-ernst",
         "tags": [
             "Iowa",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8633,6 +8974,7 @@
         "slug": "charles-grassley",
         "tags": [
             "Iowa",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8651,6 +8993,7 @@
         "slug": "marco-rubio",
         "tags": [
             "Florida",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8664,11 +9007,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/rick-scott.jpg",
         "slug": "rick-scott",
         "tags": [
             "Florida",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8687,6 +9031,7 @@
         "slug": "john-boozman",
         "tags": [
             "Arkansas",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8705,6 +9050,7 @@
         "slug": "richard-shelby",
         "tags": [
             "Alabama",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8723,6 +9069,7 @@
         "slug": "daniel-sullivan",
         "tags": [
             "Alaska",
+            "Republican",
             "Senator"
         ],
         "in_the_news": []
@@ -8741,6 +9088,7 @@
         "slug": "carol-miller",
         "tags": [
             "West Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8759,6 +9107,7 @@
         "slug": "alex-mooney",
         "tags": [
             "West Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8777,6 +9126,7 @@
         "slug": "david-mckinley",
         "tags": [
             "West Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8795,6 +9145,7 @@
         "slug": "mike-gallagher",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8813,6 +9164,7 @@
         "slug": "thomas-tiffany",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8831,6 +9183,7 @@
         "slug": "glenn-grothman",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8849,6 +9202,7 @@
         "slug": "scott-fitzgerald",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8867,6 +9221,7 @@
         "slug": "bryan-steil",
         "tags": [
             "Wisconsin",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8885,6 +9240,7 @@
         "slug": "cathy-mcmorris-rodgers",
         "tags": [
             "Washington",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8903,6 +9259,7 @@
         "slug": "dan-newhouse",
         "tags": [
             "Washington",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8921,6 +9278,7 @@
         "slug": "jaime-herrera-beutler",
         "tags": [
             "Washington",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8939,6 +9297,7 @@
         "slug": "morgan-griffith",
         "tags": [
             "Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8957,6 +9316,7 @@
         "slug": "ben-cline",
         "tags": [
             "Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8975,6 +9335,7 @@
         "slug": "robert-good",
         "tags": [
             "Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -8993,6 +9354,7 @@
         "slug": "clarence-owens",
         "tags": [
             "Utah",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9011,6 +9373,7 @@
         "slug": "robert-wittman",
         "tags": [
             "Virginia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9029,6 +9392,7 @@
         "slug": "john-curtis",
         "tags": [
             "Utah",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9047,6 +9411,7 @@
         "slug": "chris-stewart",
         "tags": [
             "Utah",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9065,6 +9430,7 @@
         "slug": "blake-moore",
         "tags": [
             "Utah",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9083,6 +9449,7 @@
         "slug": "brian-babin",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9101,6 +9468,7 @@
         "slug": "john-carter",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9119,6 +9487,7 @@
         "slug": "michael-cloud",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9137,6 +9506,7 @@
         "slug": "michael-burgess",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9155,6 +9525,7 @@
         "slug": "roger-williams",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9173,6 +9544,7 @@
         "slug": "beth-van-duyne",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9191,6 +9563,7 @@
         "slug": "ernest-gonzales",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9209,6 +9582,7 @@
         "slug": "troy-nehls",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9227,6 +9601,7 @@
         "slug": "chip-roy",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9245,6 +9620,7 @@
         "slug": "jodey-arrington",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9263,6 +9639,7 @@
         "slug": "pete-sessions",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9281,6 +9658,7 @@
         "slug": "randy-weber",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9299,6 +9677,7 @@
         "slug": "kay-granger",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9317,6 +9696,7 @@
         "slug": "august-pfluger",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9335,6 +9715,7 @@
         "slug": "kevin-brady",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9353,6 +9734,7 @@
         "slug": "ronald-wright",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9371,6 +9753,7 @@
         "slug": "lance-gooden",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9389,6 +9772,7 @@
         "slug": "patrick-fallon",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9407,6 +9791,7 @@
         "slug": "van-taylor",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9425,6 +9810,7 @@
         "slug": "louie-gohmert",
         "tags": [
             "Texas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9443,6 +9829,7 @@
         "slug": "david-kustoff",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9461,6 +9848,7 @@
         "slug": "mark-green",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9479,6 +9867,7 @@
         "slug": "john-rose",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9497,6 +9886,7 @@
         "slug": "scott-desjarlais",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9515,6 +9905,7 @@
         "slug": "chuck-fleischmann",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9533,6 +9924,7 @@
         "slug": "tim-burchett",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9551,6 +9943,7 @@
         "slug": "diana-harshbarger",
         "tags": [
             "Tennessee",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9569,6 +9962,7 @@
         "slug": "dusty-johnson",
         "tags": [
             "South Dakota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9587,6 +9981,7 @@
         "slug": "tom-rice",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9605,6 +10000,7 @@
         "slug": "ralph-norman",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9623,6 +10019,7 @@
         "slug": "william-timmons",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9641,6 +10038,7 @@
         "slug": "jeff-duncan",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9659,6 +10057,7 @@
         "slug": "joe-wilson",
         "tags": [
             "South Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9677,6 +10076,7 @@
         "slug": "mike-kelly",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9695,6 +10095,7 @@
         "slug": "glenn-thompson",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9713,6 +10114,7 @@
         "slug": "guy-reschenthaler",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9731,6 +10133,7 @@
         "slug": "john-joyce",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9749,6 +10152,7 @@
         "slug": "fred-keller",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9767,6 +10171,7 @@
         "slug": "lloyd-smucker",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9785,6 +10190,7 @@
         "slug": "scott-perry",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9803,6 +10209,7 @@
         "slug": "daniel-meuser",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9821,6 +10228,7 @@
         "slug": "brian-fitzpatrick",
         "tags": [
             "Pennsylvania",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9839,6 +10247,7 @@
         "slug": "cliff-bentz",
         "tags": [
             "Oregon",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9857,6 +10266,7 @@
         "slug": "stephanie-bice",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9875,6 +10285,7 @@
         "slug": "tom-cole",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9893,6 +10304,7 @@
         "slug": "frank-lucas",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9911,6 +10323,7 @@
         "slug": "markwayne-mullin",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9929,6 +10342,7 @@
         "slug": "kevin-hern",
         "tags": [
             "Oklahoma",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9947,6 +10361,7 @@
         "slug": "anthony-gonzalez",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9965,6 +10380,7 @@
         "slug": "steve-stivers",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -9983,6 +10399,7 @@
         "slug": "david-joyce",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10001,6 +10418,7 @@
         "slug": "troy-balderson",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10019,6 +10437,7 @@
         "slug": "michael-turner",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10037,6 +10456,7 @@
         "slug": "warren-davidson",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10055,6 +10475,7 @@
         "slug": "bob-gibbs",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10073,6 +10494,7 @@
         "slug": "bill-johnson",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10091,6 +10513,7 @@
         "slug": "robert-latta",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10109,6 +10532,7 @@
         "slug": "brad-wenstrup",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10127,6 +10551,7 @@
         "slug": "steve-chabot",
         "tags": [
             "Ohio",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10145,6 +10570,7 @@
         "slug": "christopher-jacobs",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10163,6 +10589,7 @@
         "slug": "john-katko",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10181,6 +10608,7 @@
         "slug": "tom-reed",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10199,6 +10627,7 @@
         "slug": "elise-stefanik",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10217,6 +10646,7 @@
         "slug": "nicole-malliotakis",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10235,6 +10665,7 @@
         "slug": "andrew-garbarino",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10253,6 +10684,7 @@
         "slug": "lee-zeldin",
         "tags": [
             "New York",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10271,6 +10703,7 @@
         "slug": "mark-amodei",
         "tags": [
             "Nevada",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10289,6 +10722,7 @@
         "slug": "stella-herrell",
         "tags": [
             "New Mexico",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10307,6 +10741,7 @@
         "slug": "christopher-smith",
         "tags": [
             "New Jersey",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10325,6 +10760,7 @@
         "slug": "adrian-smith",
         "tags": [
             "Nebraska",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10343,6 +10779,7 @@
         "slug": "don-bacon",
         "tags": [
             "Nebraska",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10361,6 +10798,7 @@
         "slug": "jeff-fortenberry",
         "tags": [
             "Nebraska",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10379,6 +10817,7 @@
         "slug": "kelly-armstrong",
         "tags": [
             "North Dakota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10392,11 +10831,12 @@
         "next_election": "",
         "district": "13",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ted-budd.jpg",
         "slug": "ted-budd",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10415,6 +10855,7 @@
         "slug": "david-cawthorn",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10433,6 +10874,7 @@
         "slug": "patrick-mchenry",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10446,11 +10888,12 @@
         "next_election": "",
         "district": "9",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/dan-bishop.jpg",
         "slug": "dan-bishop",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10464,11 +10907,12 @@
         "next_election": "",
         "district": "8",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/richard-hudson.jpg",
         "slug": "richard-hudson",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10482,11 +10926,12 @@
         "next_election": "",
         "district": "7",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-rouzer.jpg",
         "slug": "david-rouzer",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10500,11 +10945,12 @@
         "next_election": "",
         "district": "5",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/virginia-foxx.jpg",
         "slug": "virginia-foxx",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10518,11 +10964,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/gregory-murphy.jpg",
         "slug": "gregory-murphy",
         "tags": [
             "North Carolina",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10536,11 +10983,12 @@
         "next_election": "",
         "district": "",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/matthew-rosendale.jpg",
         "slug": "matthew-rosendale",
         "tags": [
             "Montana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10559,6 +11007,7 @@
         "slug": "steven-palazzo",
         "tags": [
             "Mississippi",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10577,6 +11026,7 @@
         "slug": "michael-guest",
         "tags": [
             "Mississippi",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10595,6 +11045,7 @@
         "slug": "trent-kelly",
         "tags": [
             "Mississippi",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10608,11 +11059,12 @@
         "next_election": "",
         "district": "8",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jason-smith.jpg",
         "slug": "jason-smith",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10626,11 +11078,12 @@
         "next_election": "",
         "district": "7",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/billy-long.jpg",
         "slug": "billy-long",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10644,11 +11097,12 @@
         "next_election": "",
         "district": "6",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/sam-graves.jpg",
         "slug": "sam-graves",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10662,11 +11116,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/vicky-hartzler.jpg",
         "slug": "vicky-hartzler",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10680,11 +11135,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/blaine-luetkemeyer.jpg",
         "slug": "blaine-luetkemeyer",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10703,6 +11159,7 @@
         "slug": "ann-wagner",
         "tags": [
             "Missouri",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10721,6 +11178,7 @@
         "slug": "pete-stauber",
         "tags": [
             "Minnesota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10739,6 +11197,7 @@
         "slug": "michelle-fischbach",
         "tags": [
             "Minnesota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10757,6 +11216,7 @@
         "slug": "tom-emmer",
         "tags": [
             "Minnesota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10775,6 +11235,7 @@
         "slug": "jim-hagedorn",
         "tags": [
             "Minnesota",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10793,6 +11254,7 @@
         "slug": "lisa-mcclain",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10811,6 +11273,7 @@
         "slug": "tim-walberg",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10829,6 +11292,7 @@
         "slug": "fred-upton",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10847,6 +11311,7 @@
         "slug": "john-moolenaar",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10865,6 +11330,7 @@
         "slug": "peter-meijer",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10883,6 +11349,7 @@
         "slug": "bill-huizenga",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10901,6 +11368,7 @@
         "slug": "jack-bergman",
         "tags": [
             "Michigan",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10919,6 +11387,7 @@
         "slug": "andy-harris",
         "tags": [
             "Maryland",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10932,11 +11401,12 @@
         "next_election": "",
         "district": "6",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/garret-graves.jpg",
         "slug": "garret-graves",
         "tags": [
             "Louisiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10955,6 +11425,7 @@
         "slug": "ralph-abraham",
         "tags": [
             "Louisiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10973,6 +11444,7 @@
         "slug": "mike-johnson",
         "tags": [
             "Louisiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -10991,6 +11463,7 @@
         "slug": "clay-higgins",
         "tags": [
             "Louisiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11009,6 +11482,7 @@
         "slug": "steve-scalise",
         "tags": [
             "Louisiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11027,6 +11501,7 @@
         "slug": "andy-barr",
         "tags": [
             "Kentucky",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11040,11 +11515,12 @@
         "next_election": "",
         "district": "5",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/harold-rogers.jpg",
         "slug": "harold-rogers",
         "tags": [
             "Kentucky",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11063,6 +11539,7 @@
         "slug": "brett-guthrie",
         "tags": [
             "Kentucky",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11081,6 +11558,7 @@
         "slug": "james-comer",
         "tags": [
             "Kentucky",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11094,11 +11572,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ron-estes.jpg",
         "slug": "ron-estes",
         "tags": [
             "Kansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11112,11 +11591,12 @@
         "next_election": "",
         "district": "2",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jacob-laturner.jpg",
         "slug": "jacob-laturner",
         "tags": [
             "Kansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11130,11 +11610,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/tracey-mann.jpg",
         "slug": "tracey-mann",
         "tags": [
             "Kansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11153,6 +11634,7 @@
         "slug": "trey-hollingsworth",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11171,6 +11653,7 @@
         "slug": "larry-bucshon",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11184,11 +11667,12 @@
         "next_election": "",
         "district": "6",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/greg-pence.jpg",
         "slug": "greg-pence",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11207,6 +11691,7 @@
         "slug": "victoria-spartz",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11220,11 +11705,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/james-baird.jpg",
         "slug": "james-baird",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11238,11 +11724,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jim-banks.jpg",
         "slug": "jim-banks",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11256,11 +11743,12 @@
         "next_election": "",
         "district": "2",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jackie-walorski.jpg",
         "slug": "jackie-walorski",
         "tags": [
             "Indiana",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11279,6 +11767,7 @@
         "slug": "darin-lahood",
         "tags": [
             "Illinois",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11297,6 +11786,7 @@
         "slug": "mary-miller",
         "tags": [
             "Illinois",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11315,6 +11805,7 @@
         "slug": "rodney-davis",
         "tags": [
             "Illinois",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11328,11 +11819,12 @@
         "next_election": "",
         "district": "12",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-bost.jpg",
         "slug": "mike-bost",
         "tags": [
             "Illinois",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11351,6 +11843,7 @@
         "slug": "mike-simpson",
         "tags": [
             "Idaho",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11364,11 +11857,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/russ-fulcher.jpg",
         "slug": "russ-fulcher",
         "tags": [
             "Idaho",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11387,6 +11881,7 @@
         "slug": "randy-feenstra",
         "tags": [
             "Iowa",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11405,6 +11900,7 @@
         "slug": "mariannette-miller-meeks",
         "tags": [
             "Iowa",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11423,6 +11919,7 @@
         "slug": "ashley-hinson",
         "tags": [
             "Iowa",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11436,11 +11933,12 @@
         "next_election": "",
         "district": "14",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/marjorie-greene.jpg",
         "slug": "marjorie-greene",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11459,6 +11957,7 @@
         "slug": "rick-allen",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11472,11 +11971,12 @@
         "next_election": "",
         "district": "11",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/barry-loudermilk.jpg",
         "slug": "barry-loudermilk",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11490,7 +11990,7 @@
         "next_election": "2022-11-08",
         "district": "91",
         "party": "",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rep._Barry_Moore_official_photo.jpg/440px-Rep._Barry_Moore_official_photo.jpg",
         "slug": "barry-moore",
         "tags": [
@@ -11508,11 +12008,12 @@
         "next_election": "",
         "district": "10",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jody-hice.jpg",
         "slug": "jody-hice",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11526,11 +12027,12 @@
         "next_election": "",
         "district": "9",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/andrew-clyde.jpg",
         "slug": "andrew-clyde",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11549,6 +12051,7 @@
         "slug": "austin-scott",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11567,6 +12070,7 @@
         "slug": "drew-ferguson",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11580,11 +12084,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/buddy-carter.jpg",
         "slug": "earl-carter",
         "tags": [
             "Georgia",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11603,6 +12108,7 @@
         "slug": "maria-salazar",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11616,11 +12122,12 @@
         "next_election": "",
         "district": "26",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/carlos-gimenez.jpg",
         "slug": "carlos-gimenez",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11634,11 +12141,12 @@
         "next_election": "",
         "district": "25",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mario-diaz-balart.jpg",
         "slug": "mario-diaz-balart",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11652,11 +12160,12 @@
         "next_election": "",
         "district": "19",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/byron-donalds.jpg",
         "slug": "byron-donalds",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11675,6 +12184,7 @@
         "slug": "brian-mast",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11688,11 +12198,12 @@
         "next_election": "",
         "district": "17",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/gregory-steube.jpg",
         "slug": "greg-steube",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11711,6 +12222,7 @@
         "slug": "vern-buchanan",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11724,11 +12236,12 @@
         "next_election": "",
         "district": "15",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/scott-franklin.jpg",
         "slug": "scott-franklin",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11747,6 +12260,7 @@
         "slug": "gus-bilirakis",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11760,11 +12274,12 @@
         "next_election": "",
         "district": "11",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/daniel-webster.jpg",
         "slug": "daniel-webster",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11778,11 +12293,12 @@
         "next_election": "",
         "district": "8",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/bill-posey.jpg",
         "slug": "bill-posey",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11801,6 +12317,7 @@
         "slug": "michael-waltz",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11814,11 +12331,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/john-rutherford.jpg",
         "slug": "john-rutherford",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11832,11 +12350,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/katherine-cammack.jpg",
         "slug": "katherine-cammack",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11850,11 +12369,12 @@
         "next_election": "",
         "district": "2",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/neal-dunn.jpg",
         "slug": "neal-dunn",
         "tags": [
             "Florida",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11868,11 +12388,12 @@
         "next_election": "",
         "district": "5",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/doug-lamborn.jpg",
         "slug": "doug-lamborn",
         "tags": [
             "Colorado",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11886,11 +12407,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ken-buck.jpg",
         "slug": "ken-buck",
         "tags": [
             "Colorado",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11904,11 +12426,12 @@
         "next_election": "",
         "district": "50",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/darrell-issa.jpg",
         "slug": "darrell-issa",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11927,6 +12450,7 @@
         "slug": "michelle-steel",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11940,11 +12464,12 @@
         "next_election": "",
         "district": "42",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ken-calvert.jpg",
         "slug": "ken-calvert",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11963,6 +12488,7 @@
         "slug": "young-kim",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11976,11 +12502,12 @@
         "next_election": "",
         "district": "25",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-garcia.jpg",
         "slug": "mike-garcia",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -11999,6 +12526,7 @@
         "slug": "david-valadao",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12012,11 +12540,12 @@
         "next_election": "",
         "district": "8",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jay-obernolte.jpg",
         "slug": "jay-obernolte",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12035,6 +12564,7 @@
         "slug": "tom-mcclintock",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12048,11 +12578,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/doug-lamalfa.jpg",
         "slug": "doug-lamalfa",
         "tags": [
             "California",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12066,11 +12597,12 @@
         "next_election": "",
         "district": "8",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/debbie-lesko.jpg",
         "slug": "debbie-lesko",
         "tags": [
             "Arizona",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12084,11 +12616,12 @@
         "next_election": "",
         "district": "6",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-schweikert.jpg",
         "slug": "david-schweikert",
         "tags": [
             "Arizona",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12102,11 +12635,12 @@
         "next_election": "",
         "district": "5",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/andy-biggs.jpg",
         "slug": "andy-biggs",
         "tags": [
             "Arizona",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12125,6 +12659,7 @@
         "slug": "bruce-westerman",
         "tags": [
             "Arkansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12143,6 +12678,7 @@
         "slug": "steve-womack",
         "tags": [
             "Arkansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12156,11 +12692,12 @@
         "next_election": "",
         "district": "2",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/french-hill.jpg",
         "slug": "french-hill",
         "tags": [
             "Arkansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12174,11 +12711,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/rick-crawford.jpg",
         "slug": "rick-crawford",
         "tags": [
             "Arkansas",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12192,11 +12730,12 @@
         "next_election": "",
         "district": "6",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/gary-palmer.jpg",
         "slug": "gary-palmer",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12210,11 +12749,12 @@
         "next_election": "",
         "district": "5",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mo-brooks.jpg",
         "slug": "mo-brooks",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12228,11 +12768,12 @@
         "next_election": "",
         "district": "4",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/robert-aderholt.jpg",
         "slug": "robert-aderholt",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12246,11 +12787,12 @@
         "next_election": "",
         "district": "3",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-rogers.jpg",
         "slug": "mike-rogers",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12269,6 +12811,7 @@
         "slug": "felix-moore",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12282,11 +12825,12 @@
         "next_election": "",
         "district": "1",
         "party": "republican",
-        "accused_treason": "https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html",
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
         "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jerry-carl.jpg",
         "slug": "jerry-carl",
         "tags": [
             "Alabama",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12305,6 +12849,7 @@
         "slug": "don-young",
         "tags": [
             "Alaska",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
@@ -12323,6 +12868,7 @@
         "slug": "yvette-herrell",
         "tags": [
             "New Mexico",
+            "Republican",
             "Representative"
         ],
         "in_the_news": []
