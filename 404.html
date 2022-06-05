@@ -629,8 +629,8 @@
         }
 
 
-        .detail-button + .detail-button {
-          margin-left: 6px;
+        .detail-button {
+          margin-right: 10px;
         }
 
         .job-card-buttons {
@@ -1352,17 +1352,17 @@
                     <div class="searched-bar">
                         <div class="searched-show">Showing {{ filteredPeople.length }}</div>
                         <div class="searched-sort ghost">
-                          <select name="" id="">
-                            <option value="newest">National</option>
-                            <option value="newest">Senators</option>
-                            <option value="newest">Representatives</option>
+                          <select v-model="filter">
+                            <option value="">National</option>
+                            <option value="Senator">Senators</option>
+                            <option value="Representative">Representatives</option>
                             <option disabled>------------</option>
-                            <option value="newest">Democrat</option>
-                            <option value="newest">Republican</option>
+                            <option value="Democrat">Democrat</option>
+                            <option value="Republican">Republican</option>
                             <option disabled>------------</option>
-                            <option v-for="state in states">{{ state.label }}</option>
+                            <option v-for="state in states" :value="state.label">{{ state.label }}</option>
                           </select>
-                          Sort by: <span class="post-time">Newest </span><span class="menu-icon">▼</span>
+                          Sort by: <span class="post-time">{{ filter || 'ALL' }} </span><span class="menu-icon">▼</span>
                         </div>
                     </div>
                     <div class="job-cards">
@@ -1637,6 +1637,9 @@
               },
             },
             methods: {
+            // doSelect(e) {
+            //     if (e.target.value) this.filter = e.target.value
+            // },
               background(person, tag) {
 
                 if (tag && tag.toLowerCase() === "senator") return 
