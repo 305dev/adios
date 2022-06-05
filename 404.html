@@ -1699,8 +1699,8 @@
               share() {
                 if (navigator.share) {
                   navigator.share({
-                   title: this.active ? this.active.name : 'Adios.to',
-                   text: this.active ? this.active.title : 'Political Database',
+                   title: this.active ? this.active.name : 'Adios.to - Vote Them Out',
+                   text: this.active ? this.active.title : 'Unforgetting political database.',
                    url: this.active ? 'https://adios.to/' + (this.filter ? this.filter : this.active.slug) : 'https://adios.to'
                   })
                 } else {
