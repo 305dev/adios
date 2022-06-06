@@ -3,6 +3,54 @@
         "label": "Map",
         "array": [
             {
+                "name": "New Mexico",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
+                "name": "Alaska",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
+                "name": "Alabama",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
+                "name": "Arkansas",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
+                "name": "Arizona",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
+                "name": "California",
+                "majority": "Republican",
+                "players": {
+                    "Democrat": 0,
+                    "Republican": 0
+                }
+            },
+            {
                 "name": "Florida",
                 "majority": "Republican",
                 "players": {

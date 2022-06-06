@@ -1,5 +1,81 @@
 [
     {
+        "name": "Kevin McCarthy",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2007-01-04",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "23",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/kevin-mccarthy.jpg",
+        "slug": "kevin-mccarthy",
+        "in_the_news": [
+            {
+                "title": "‘Too Stupid’ To Be Speaker: Critics Trash Kevin McCarthy Over New Trump Tape",
+                "url": "https://www.huffpost.com/entry/kevin-mccarthy-slammed-over-trump-audio_n_62622235e4b0ea625c051e5c"
+            },
+            {
+                "title": "27 House members sign letter asking Nancy Pelosi and Kevin McCarthy to bring stock trading ban to the floor: 'We came to Congress to serve our country, not turn a quick buck'",
+                "url": "https://www.businessinsider.com/house-members-ask-leadership-swiftly-bring-stock-trading-ban-pelosi-2022-1"
+            },
+            {
+                "title": "Ilhan Omar Calls Kevin McCarthy 'A Liar and a Coward' for Refusing to Condemn Boebert's Islamophobia",
+                "url": "https://www.commondreams.org/news/2021/12/05/ilhan-omar-calls-kevin-mccarthy-liar-and-coward-refusing-condemn-boeberts"
+            },
+            {
+                "title": "Ilhan Omar: Kevin McCarthy Is a 'Coward and a Liar' for Not Condemning Boebert's Islamophobic Comments",
+                "url": "https://www.rollingstone.com/politics/politics-news/ilhan-omar-mccarthy-boebert-coward-liar-1267123/"
+            },
+            {
+                "title": "Ilhan Omar calls Kevin McCarthy a \"coward and a liar\" for failing to condemn Islamophobic attacks on her",
+                "url": "https://www.independent.co.uk/news/world/americas/us-politics/ilhan-omar-calls-kevin-mccarthy-islamophobia-b1970120.html"
+            },
+            {
+                "title": "GOP Gov. Says Kevin McCarthy Should Condemn Lauren Boebert's Islamophobic Remarks | Arkansas Gov. Asa Hutchinson said this type of behavior \"has to be called out.\"",
+                "url": "https://www.huffpost.com/entry/asa-hutchinson-kevin-mccarthy-boebert_n_61a406f6e4b0451e5508f913"
+            },
+            {
+                "title": "Marjorie Taylor Greene hits out at Kevin McCarthy, says he ‘doesn’t have full support’ to be speaker",
+                "url": "https://www.independent.co.uk/news/world/americas/us-politics/marjorie-taylor-greene-kevin-mccarthy-b1964811.html"
+            },
+            {
+                "title": "GOP Gov. Hutchinson Says Kevin McCarthy Should Be 'Publicly Condemning' Gosar, Boebert",
+                "url": "https://www.newsweek.com/gop-gov-hutchinson-says-kevin-mccarthy-should-publicly-condemning-gosar-boebert-1653766"
+            },
+            {
+                "title": "In marathon speech, Kevin McCarthy makes dubious claims about Build Back Better bill",
+                "url": "https://www.politifact.com/factchecks/2021/nov/19/kevin-mccarthy/marathon-speech-kevin-mccarthy-makes-dubious-claim/"
+            },
+            {
+                "title": "All Republicans care about these days is trolling — and Kevin McCarthy is hilariously bad at it",
+                "url": "https://www.salon.com/2021/11/20/all-care-about-these-days-is-trolling--and-kevin-mccarthy-is-hilariously-at-it/"
+            },
+            {
+                "title": "Kevin McCarthy breaks record for longest-ever House speech, talking for more than 8 hours to obstruct Biden's social-spending bill",
+                "url": "https://www.businessinsider.com/mccarthy-breaks-house-record-8hr-speech-block-biden-spending-2021-11"
+            },
+            {
+                "title": "Kevin McCarthy Derided Over 'Unhinged' 8-Hour Speech Against Build Back Better Act | \"McCarthy has now shown more anger about making child care affordable than he has about the insurrection on January 6th,\" said Democratic Rep. Mondaire Jones",
+                "url": "https://www.commondreams.org/news/2021/11/19/kevin-mccarthy-derided-over-unhinged-8-hour-speech-against-build-back-better-act"
+            },
+            {
+                "title": "Kevin McCarthy said in an hours-long floor speech that no one elected Biden to be FDR, prompting AOC to shout 'I did!'",
+                "url": "https://www.businessinsider.com/kevin-mccarthy-no-one-elected-biden-fdr-aoc-i-did-2021-11"
+            },
+            {
+                "title": "Surprise: Kevin McCarthy Is Just Going to Let Paul Gosar Get Away With Video Depicting AOC’s Murder | Republican leadership once again okays violent death threats against Democrats.",
+                "url": "https://www.vanityfair.com/news/2021/11/kevin-mccarthy-paul-gosar-aoc"
+            }
+        ]
+    },
+    {
         "name": "Ron DeSantis",
         "title": "Governor",
         "entered_office": "2019",
@@ -74,6 +150,1287 @@
             "Florida",
             "Republican",
             "Governor"
+        ]
+    },
+    {
+        "name": "Paul Gosar",
+        "title": "Representative",
+        "state_name": "Arizona",
+        "entered_office": "2011-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "4",
+        "party": "republican",
+        "tags": [
+            "Arizona",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/paul-gosar.jpg",
+        "slug": "paul-gosar",
+        "in_the_news": [
+            {
+                "title": "Paul Gosar, Censured Over Anime Meme, Says 7 Siblings Are 'Horrific to Me'",
+                "url": "https://www.newsweek.com/paul-gosar-censured-siblings-horrible-cortez-sirius-1651181"
+            },
+            {
+                "title": "Paul Gosar said Trump called to support him after being censured for his anime video showing him attacking AOC",
+                "url": "https://www.businessinsider.com/gosar-says-trump-called-support-censure-aoc-anime-attack-video-2021-11"
+            },
+            {
+                "title": "Paul Gosar retweets same video aimed at AOC after House censures him",
+                "url": "https://www.theguardian.com/us-news/2021/nov/18/paul-gosar-retweets-video-aoc-twitter"
+            },
+            {
+                "title": "GOP Rep. Paul Gosar's sister celebrates his censure and says she hopes this is 'not the end' of his punishment",
+                "url": "https://www.businessinsider.com/gop-rep-paul-gosars-sister-celebrates-her-brothers-censure-2021-11"
+            },
+            {
+                "title": "ABC's Jonathan Karl Says Top Republicans Privately Bashed Paul Gosar As 'Not All There'",
+                "url": "https://www.huffpost.com/entry/jon-karl-paul-gosar-republicans-censure_n_6195c513e4b07fe2010644fc"
+            },
+            {
+                "title": "White House: \"Ironic\" that GOP condemns members for infrastructure vote but not Paul Gosar",
+                "url": "https://www.newsweek.com/white-house-ironic-that-gop-condemns-members-infrastructure-vote-not-paul-gosar-1650447"
+            },
+            {
+                "title": "Republicans don't care about death threats against colleagues — they are too busy seeking revenge | Republicans will find a reason to impeach Joe Biden — but can't be bothered by Paul Gosar's threats",
+                "url": "https://www.salon.com/2021/11/17/dont-care-about-against-colleagues--they-are-too-busy-seeking-revenge/"
+            },
+            {
+                "title": "Surprise: Kevin McCarthy Is Just Going to Let Paul Gosar Get Away With Video Depicting AOC’s Murder | Republican leadership once again okays violent death threats against Democrats.",
+                "url": "https://www.vanityfair.com/news/2021/11/kevin-mccarthy-paul-gosar-aoc"
+            },
+            {
+                "title": "Rep. Paul Gosar tells GOP colleagues 'I don't believe in violence against any member' after tweeting video of him killing AOC in violent anime clip",
+                "url": "https://www.businessinsider.com.au/paul-gosar-mccarthy-explain-himself-gop-colleagues-violent-aoc-video-2021-11"
+            },
+            {
+                "title": "House plans to vote Wednesday to censure Paul Gosar and strip him of 1 committee",
+                "url": "https://www.cnn.com/2021/11/16/politics/house-censure-vote-gosar/index.html?utm_source=dlvr.it&utm_medium=twitter"
+            }
+        ]
+    },
+    {
+        "name": "Devin Nunes",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2003-01-07",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "22",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative",
+            "Cow Expert"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/devin-nunes.jpg",
+        "slug": "devin-nunes",
+        "in_the_news": [
+            {
+                "title": "Devin Nunes is resigning from Congress to be CEO of new media company",
+                "url": "https://www.npr.org/2021/12/06/1061945602/devin-nunes-california-trump-media-truth-social"
+            },
+            {
+                "title": "Devin Nunes Quits on Constituents to Spend More Time With Trump",
+                "url": "https://www.rollingstone.com/politics/politics-news/devin-nunes-leaving-house-of-representatives-1267696/"
+            },
+            {
+                "title": "GOP Rep. Devin Nunes resigns from Congress to become CEO of Trump’s media company",
+                "url": "https://www.cnbc.com/2021/12/06/gop-rep-devin-nunes-resigns-from-congress-to-become-ceo-of-trumps-media-company.html"
+            }
+        ]
+    },
+    {
+        "name": "Jared Larsen",
+        "title": "Community Council Area/Subarea 16/161-F:",
+        "state_name": "Florida",
+        "slug": "jared-larsen",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-F:"
+        ]
+    },
+    {
+        "name": "Rafael Etzion",
+        "title": "Community Council Area/Subarea 16/161-E:",
+        "state_name": "Florida",
+        "slug": "rafael-etzion",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-E:"
+        ]
+    },
+    {
+        "name": "Omaida Rua",
+        "title": "Community Council Area/Subarea 16/161-D:",
+        "state_name": "Florida",
+        "slug": "omaida-rua",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-D:"
+        ]
+    },
+    {
+        "name": "Joy Spragens",
+        "title": "Community Council Area/Subarea 16/161-C:",
+        "state_name": "Florida",
+        "slug": "joy-spragens",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-C:"
+        ]
+    },
+    {
+        "name": "Laurie Melnick",
+        "title": "Community Council Area/Subarea 16/161-B:",
+        "state_name": "Florida",
+        "slug": "laurie-melnick",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-B:"
+        ]
+    },
+    {
+        "name": "Jose Acuna",
+        "title": "Community Council Area/Subarea 16/161-A:",
+        "state_name": "Florida",
+        "slug": "jose-acuna",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/161-A:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 16/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 16/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 15/156:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/156:"
+        ]
+    },
+    {
+        "name": "Ricardo Torres",
+        "title": "Community Council Area/Subarea 15/155:",
+        "state_name": "Florida",
+        "slug": "ricardo-torres",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/155:"
+        ]
+    },
+    {
+        "name": "Christina M. Farias",
+        "title": "Community Council Area/Subarea 15/154:",
+        "state_name": "Florida",
+        "slug": "christina-m-farias",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/154:"
+        ]
+    },
+    {
+        "name": "Marjorie Murillo",
+        "title": "Community Council Area/Subarea 15/153:",
+        "state_name": "Florida",
+        "slug": "marjorie-murillo",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/153:"
+        ]
+    },
+    {
+        "name": "Timothy Forbes",
+        "title": "Community Council Area/Subarea 15/152:",
+        "state_name": "Florida",
+        "slug": "timothy-forbes",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/152:"
+        ]
+    },
+    {
+        "name": "Enid W. Demps",
+        "title": "Community Council Area/Subarea 15/151:",
+        "state_name": "Florida",
+        "slug": "enid-w-demps",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/151:"
+        ]
+    },
+    {
+        "name": "Paul J. Morrow",
+        "title": "Community Council Area/Subarea 15/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "paul-j-morrow",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 15/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Steven M. Green",
+        "title": "Community Council Area/Subarea 14/146:",
+        "state_name": "Florida",
+        "slug": "steven-m-green",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/146:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 14/145:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/145:"
+        ]
+    },
+    {
+        "name": "Kelli Ann Thomas",
+        "title": "Community Council Area/Subarea 14/144:",
+        "state_name": "Florida",
+        "slug": "kelli-ann-thomas",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/144:"
+        ]
+    },
+    {
+        "name": "Wilbur B. Bell",
+        "title": "Community Council Area/Subarea 14/143:",
+        "state_name": "Florida",
+        "slug": "wilbur-b-bell",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/143:"
+        ]
+    },
+    {
+        "name": "Raul Gonzalez",
+        "title": "Community Council Area/Subarea 14/142:",
+        "state_name": "Florida",
+        "slug": "raul-gonzalez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/142:"
+        ]
+    },
+    {
+        "name": "Stanley Thompkins",
+        "title": "\nCommunity Council Area/Subarea 14/141:",
+        "state_name": "Florida",
+        "slug": "stanley-thompkins",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "\nCommunity Council Area/Subarea 14/141:"
+        ]
+    },
+    {
+        "name": "Curtis Lawrence",
+        "title": "Community Council Area/Subarea 14/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "curtis-lawrence",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 14/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Hugo V. Alvarez",
+        "title": "Community Council Area/Subarea 12/126:",
+        "state_name": "Florida",
+        "slug": "hugo-v-alvarez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/126:"
+        ]
+    },
+    {
+        "name": "Morgan Elizabeth Anderson",
+        "title": "Community Council Area/Subarea 12/125:",
+        "state_name": "Florida",
+        "slug": "morgan-elizabeth-anderson",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/125:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 12/124:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/124:"
+        ]
+    },
+    {
+        "name": "Alina Lago",
+        "title": "Community Council Area/Subarea 12/123:",
+        "state_name": "Florida",
+        "slug": "alina-lago",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/123:"
+        ]
+    },
+    {
+        "name": "Christopher Carbonell",
+        "title": "Community Council Area/Subarea 12/122:",
+        "state_name": "Florida",
+        "slug": "christopher-carbonell",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/122:"
+        ]
+    },
+    {
+        "name": "Patrick C. Kelly",
+        "title": "Community Council Area/Subarea 12/121:",
+        "state_name": "Florida",
+        "slug": "patrick-c-kelly",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/121:"
+        ]
+    },
+    {
+        "name": "Jose I. Valdes",
+        "title": "Community Council Area/Subarea 12/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "jose-i-valdes",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 12/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Jose Miguel Soto",
+        "title": "Community Council Area/Subarea 11/At Large:",
+        "state_name": "Florida",
+        "slug": "jose-miguel-soto",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/At Large:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 11/116:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/116:"
+        ]
+    },
+    {
+        "name": "Beatriz Suarez",
+        "title": "Community Council Area/Subarea 11/115:",
+        "state_name": "Florida",
+        "slug": "beatriz-suarez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/115:"
+        ]
+    },
+    {
+        "name": "Christian E. Cevallos",
+        "title": "Community Council Area/Subarea 11/114:",
+        "state_name": "Florida",
+        "slug": "christian-e-cevallos",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/114:"
+        ]
+    },
+    {
+        "name": "Martha Bueno",
+        "title": "Community Council Area/Subarea 11/113:",
+        "state_name": "Florida",
+        "slug": "martha-bueno",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/113:"
+        ]
+    },
+    {
+        "name": "Ashley Marie Alvarez",
+        "title": "Community Council Area/Subarea 11/112:",
+        "state_name": "Florida",
+        "slug": "ashley-marie-alvarez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/112:"
+        ]
+    },
+    {
+        "name": "Christopher Leal",
+        "title": "Community Council Area/Subarea 11/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "christopher-leal",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 11/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Gerardo \"Jerry\" Rodriguez",
+        "title": "Community Council Area/Subarea 10/At-Large:",
+        "state_name": "Florida",
+        "slug": "gerardo-jerry-rodriguez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/At-Large:"
+        ]
+    },
+    {
+        "name": "Anays B. Acuna",
+        "title": "Community Council Area/Subarea 10/106:",
+        "state_name": "Florida",
+        "slug": "anays-b-acuna",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/106:"
+        ]
+    },
+    {
+        "name": "Anthony David Trujillo",
+        "title": "Community Council Area/Subarea 10/105:",
+        "state_name": "Florida",
+        "slug": "anthony-david-trujillo",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/105:"
+        ]
+    },
+    {
+        "name": "Richard M. Gomez",
+        "title": "Community Council Area/Subarea 10/103:",
+        "state_name": "Florida",
+        "slug": "richard-m-gomez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/103:"
+        ]
+    },
+    {
+        "name": "Anthony F. Petisco",
+        "title": "Community Council Area/Subarea 10/102:",
+        "state_name": "Florida",
+        "slug": "anthony-f-petisco",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/102:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 10/101:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/101:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 10/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 10/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 08/At-Large:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/At-Large:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 08/85:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/85:"
+        ]
+    },
+    {
+        "name": "Joy Jerusha Davis",
+        "title": "Community Council Area/Subarea 08/84:",
+        "state_name": "Florida",
+        "slug": "joy-jerusha-davis",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/84:"
+        ]
+    },
+    {
+        "name": "Felix A. Montes",
+        "title": "Community Council Area/Subarea 08/83:",
+        "state_name": "Florida",
+        "slug": "felix-a-montes",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/83:"
+        ]
+    },
+    {
+        "name": "Alethia Emily Hinds",
+        "title": "Community Council Area/Subarea 08/82:",
+        "state_name": "Florida",
+        "slug": "alethia-emily-hinds",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/82:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 08/81:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/81:"
+        ]
+    },
+    {
+        "name": "Herman Willington Dorsett, II",
+        "title": "Community Council Area/Subarea 08/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "herman-willington-dorsett-ii",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 08/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 07/73-B:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/73-B:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 07/73-A:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/73-A:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 07/72-B:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/72-B:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 07/72-A:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/72-A:"
+        ]
+    },
+    {
+        "name": "Nina Laverne Rivera",
+        "title": "Community Council Area/Subarea 07/71-B:",
+        "state_name": "Florida",
+        "slug": "nina-laverne-rivera",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/71-B:"
+        ]
+    },
+    {
+        "name": "Diana Yvette Washington",
+        "title": "Community Council Area/Subarea 07/71-A:",
+        "state_name": "Florida",
+        "slug": "diana-yvette-washington",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/71-A:"
+        ]
+    },
+    {
+        "name": "Jana M. Rutherford",
+        "title": "Community Council Area/Subarea 07/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "jana-m-rutherford",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 07/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Carlo D. Marichal",
+        "title": "Community Council Area/Subarea 05/At-Large:",
+        "state_name": "Florida",
+        "slug": "carlo-d-marichal",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/At-Large:"
+        ]
+    },
+    {
+        "name": "Irene Torroella-Garcia",
+        "title": "Community Council Area/Subarea 05/55:",
+        "state_name": "Florida",
+        "slug": "irene-torroella-garcia",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/55:"
+        ]
+    },
+    {
+        "name": "Francisco Jimenez",
+        "title": "Community Council Area/Subarea 05/54:",
+        "state_name": "Florida",
+        "slug": "francisco-jimenez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/54:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 05/53:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/53:"
+        ]
+    },
+    {
+        "name": "Vanessa Fabricio",
+        "title": "Community Council Area/Subarea 05/52:",
+        "state_name": "Florida",
+        "slug": "vanessa-fabricio",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/52:"
+        ]
+    },
+    {
+        "name": "Joanne Carbana",
+        "title": "Community Council Area/Subarea 05/51:",
+        "state_name": "Florida",
+        "slug": "joanne-carbana",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/51:"
+        ]
+    },
+    {
+        "name": "Juan A. Garcia",
+        "title": "Community Council Area/Subarea 05/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "juan-a-garcia",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 05/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Charles Safdie",
+        "title": "Community Council Area/Subarea 02/At-Large:",
+        "state_name": "Florida",
+        "slug": "charles-safdie",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/At-Large:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 02/26:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/26:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 02/24:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/24:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "Community Council Area/Subarea 02/23:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/23:"
+        ]
+    },
+    {
+        "name": "Adrienne F. Promoff",
+        "title": "Community Council Area/Subarea 02/22:",
+        "state_name": "Florida",
+        "slug": "adrienne-f-promoff",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/22:"
+        ]
+    },
+    {
+        "name": "Kenneth Friedman",
+        "title": "Community Council Area/Subarea 02/21:",
+        "state_name": "Florida",
+        "slug": "kenneth-friedman",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/21:"
+        ]
+    },
+    {
+        "name": "Velvatia H. Wanton",
+        "title": "Community Council Area/Subarea 02/(Comm. Appointee):",
+        "state_name": "Florida",
+        "slug": "velvatia-h-wanton",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Community Council Area/Subarea 02/(Comm. Appointee):"
+        ]
+    },
+    {
+        "name": "Louise E. King",
+        "title": "South Dade Soil & Water Conservation District Seat 05:",
+        "state_name": "Florida",
+        "slug": "louise-e-king",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "South Dade Soil & Water Conservation District Seat 05:"
+        ]
+    },
+    {
+        "name": "S. Cooper McMillan",
+        "title": "South Dade Soil & Water Conservation District Seat 04:",
+        "state_name": "Florida",
+        "slug": "s-cooper-mcmillan",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "South Dade Soil & Water Conservation District Seat 04:"
+        ]
+    },
+    {
+        "name": "Vacant",
+        "title": "South Dade Soil & Water Conservation District Seat 03:",
+        "state_name": "Florida",
+        "slug": "vacant",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "South Dade Soil & Water Conservation District Seat 03:"
+        ]
+    },
+    {
+        "name": "Thomas Lee Davenport",
+        "title": "South Dade Soil & Water Conservation District Seat 02:",
+        "state_name": "Florida",
+        "slug": "thomas-lee-davenport",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "South Dade Soil & Water Conservation District Seat 02:"
+        ]
+    },
+    {
+        "name": "Lovey Clayton",
+        "title": "South Dade Soil & Water Conservation District Seat 01:",
+        "state_name": "Florida",
+        "slug": "lovey-clayton",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "South Dade Soil & Water Conservation District Seat 01:"
+        ]
+    },
+    {
+        "name": "Rene Garcia",
+        "title": "Board of County Commissioners District 13:",
+        "state_name": "Florida",
+        "slug": "rene-garcia",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 13:"
+        ]
+    },
+    {
+        "name": "Jose \"Pepe\" Diaz",
+        "title": "Board of County Commissioners District 12:",
+        "state_name": "Florida",
+        "slug": "jose-pepe-diaz",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 12:"
+        ]
+    },
+    {
+        "name": "Joe A. Martinez",
+        "title": "Board of County Commissioners District 11:",
+        "state_name": "Florida",
+        "slug": "joe-a-martinez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 11:"
+        ]
+    },
+    {
+        "name": "Javier D. Souto",
+        "title": "Board of County Commissioners District 10:",
+        "state_name": "Florida",
+        "slug": "javier-d-souto",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 10:"
+        ]
+    },
+    {
+        "name": "Kionne L. McGhee",
+        "title": "Board of County Commissioners District 09:",
+        "state_name": "Florida",
+        "slug": "kionne-l-mcghee",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 09:"
+        ]
+    },
+    {
+        "name": "Danielle Cohen Higgins",
+        "title": "Board of County Commissioners District 08:",
+        "state_name": "Florida",
+        "slug": "danielle-cohen-higgins",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 08:"
+        ]
+    },
+    {
+        "name": "Raquel Regalado",
+        "title": "Board of County Commissioners District 07:",
+        "state_name": "Florida",
+        "slug": "raquel-regalado",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 07:"
+        ]
+    },
+    {
+        "name": "Rebeca Sosa",
+        "title": "Board of County Commissioners District 06:",
+        "state_name": "Florida",
+        "slug": "rebeca-sosa",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 06:"
+        ]
+    },
+    {
+        "name": "Eileen Higgins",
+        "title": "Board of County Commissioners District 05:",
+        "state_name": "Florida",
+        "slug": "eileen-higgins",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 05:"
+        ]
+    },
+    {
+        "name": "Sally A. Heyman",
+        "title": "Board of County Commissioners District 04:",
+        "state_name": "Florida",
+        "slug": "sally-a-heyman",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 04:"
+        ]
+    },
+    {
+        "name": "Keon Hardemon",
+        "title": "Board of County Commissioners District 03:",
+        "state_name": "Florida",
+        "slug": "keon-hardemon",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 03:"
+        ]
+    },
+    {
+        "name": "Jean Monestime",
+        "title": "Board of County Commissioners District 02:",
+        "state_name": "Florida",
+        "slug": "jean-monestime",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 02:"
+        ]
+    },
+    {
+        "name": "Oliver Gilbert",
+        "title": "Board of County Commissioners District 01:",
+        "state_name": "Florida",
+        "slug": "oliver-gilbert",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Board of County Commissioners District 01:"
+        ]
+    },
+    {
+        "name": "Daniella Levine Cava",
+        "title": "Mayor",
+        "state_name": "Florida",
+        "slug": "daniella-levine-cava",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Mayor"
+        ]
+    },
+    {
+        "name": "Pedro J. Garcia",
+        "title": "Property Appraiser",
+        "state_name": "Florida",
+        "slug": "pedro-j-garcia",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Property Appraiser"
+        ]
+    },
+    {
+        "name": "Luisa Santos",
+        "title": "School Board Members District 09:",
+        "state_name": "Florida",
+        "slug": "luisa-santos",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 09:"
+        ]
+    },
+    {
+        "name": "Marta Pérez",
+        "title": "School Board Members District 08:",
+        "state_name": "Florida",
+        "slug": "marta-perez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 08:"
+        ]
+    },
+    {
+        "name": "Lubby Navarro",
+        "title": "School Board Members District 07:",
+        "state_name": "Florida",
+        "slug": "lubby-navarro",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 07:"
+        ]
+    },
+    {
+        "name": "Maria Teresa \"Mari Tere\" Rojas",
+        "title": "School Board Members District 06:",
+        "state_name": "Florida",
+        "slug": "maria-teresa-mari-tere-rojas",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 06:"
+        ]
+    },
+    {
+        "name": "Christi Fraga",
+        "title": "School Board Members District 05:",
+        "state_name": "Florida",
+        "slug": "christi-fraga",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 05:"
+        ]
+    },
+    {
+        "name": "Perla Tabares Hantman",
+        "title": "School Board Members District 04:",
+        "state_name": "Florida",
+        "slug": "perla-tabares-hantman",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 04:"
+        ]
+    },
+    {
+        "name": "Lucia Baez-Geller",
+        "title": "School Board Members District 03:",
+        "state_name": "Florida",
+        "slug": "lucia-baez-geller",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 03:"
+        ]
+    },
+    {
+        "name": "Dorothy Bendross-Mindingall",
+        "title": "School Board Members District 02:",
+        "state_name": "Florida",
+        "slug": "dorothy-bendross-mindingall",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 02:"
+        ]
+    },
+    {
+        "name": "Steve Gallon, III",
+        "title": "School Board Members District 01:",
+        "state_name": "Florida",
+        "slug": "steve-gallon-iii",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "School Board Members District 01:"
+        ]
+    },
+    {
+        "name": "Harvey Ruvin",
+        "title": "Clerk of the Circuit Court",
+        "state_name": "Florida",
+        "slug": "harvey-ruvin",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "Clerk of the Circuit Court"
+        ]
+    },
+    {
+        "name": "James Vernon \"Jim\" Mooney, Jr.",
+        "title": "State House of Representatives District 120:",
+        "state_name": "Florida",
+        "slug": "james-vernon-jim-mooney-jr",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 120:"
+        ]
+    },
+    {
+        "name": "Juan Alfonso Fernandez-Barquin",
+        "title": "State House of Representatives District 119:",
+        "state_name": "Florida",
+        "slug": "juan-alfonso-fernandez-barquin",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 119:"
+        ]
+    },
+    {
+        "name": "Anthony Rodriguez",
+        "title": "State House of Representatives District 118:",
+        "state_name": "Florida",
+        "slug": "anthony-rodriguez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 118:"
+        ]
+    },
+    {
+        "name": "Kevin Chambliss",
+        "title": "State House of Representatives District 117:",
+        "state_name": "Florida",
+        "slug": "kevin-chambliss",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 117:"
+        ]
+    },
+    {
+        "name": "Daniel Anthony Perez",
+        "title": "State House of Representatives District 116:",
+        "state_name": "Florida",
+        "slug": "daniel-anthony-perez",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 116:"
+        ]
+    },
+    {
+        "name": "Vance A. Aloupis, Jr.",
+        "title": "State House of Representatives District 115:",
+        "state_name": "Florida",
+        "slug": "vance-a-aloupis-jr",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 115:"
+        ]
+    },
+    {
+        "name": "Demi Busatta Cabrera",
+        "title": "State House of Representatives District 114:",
+        "state_name": "Florida",
+        "slug": "demi-busatta-cabrera",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 114:"
+        ]
+    },
+    {
+        "name": "Michael C. Grieco",
+        "title": "State House of Representatives District 113:",
+        "state_name": "Florida",
+        "slug": "michael-c-grieco",
+        "in_the_news": [],
+        "tags": [
+            "Florida",
+            "State House of Representatives District 113:"
         ]
     },
     {
@@ -499,5 +1856,423 @@
             "Republican",
             "Lt. Governor"
         ]
+    },
+    {
+        "name": "Ken Calvert",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "1993-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "42",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/ken-calvert.jpg",
+        "slug": "ken-calvert",
+        "in_the_news": []
+    },
+    {
+        "name": "Young Kim",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "39",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/young-kim.jpg",
+        "slug": "young-kim",
+        "in_the_news": []
+    },
+    {
+        "name": "Mike Garcia",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2020-05-12",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "25",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-garcia.jpg",
+        "slug": "mike-garcia",
+        "in_the_news": []
+    },
+    {
+        "name": "David Valadao",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "21",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-valadao.jpg",
+        "slug": "david-valadao",
+        "in_the_news": []
+    },
+    {
+        "name": "Jay Obernolte",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "8",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jay-obernolte.jpg",
+        "slug": "jay-obernolte",
+        "in_the_news": []
+    },
+    {
+        "name": "Tom McClintock",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2009-01-06",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "4",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/tom-mcclintock.jpg",
+        "slug": "tom-mcclintock",
+        "in_the_news": []
+    },
+    {
+        "name": "Doug LaMalfa",
+        "title": "Representative",
+        "state_name": "California",
+        "entered_office": "2013-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "1",
+        "party": "republican",
+        "tags": [
+            "California",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/doug-lamalfa.jpg",
+        "slug": "doug-lamalfa",
+        "in_the_news": []
+    },
+    {
+        "name": "Debbie Lesko",
+        "title": "Representative",
+        "state_name": "Arizona",
+        "entered_office": "2018-05-07",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "8",
+        "party": "republican",
+        "tags": [
+            "Arizona",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/debbie-lesko.jpg",
+        "slug": "debbie-lesko",
+        "in_the_news": []
+    },
+    {
+        "name": "David Schweikert",
+        "title": "Representative",
+        "state_name": "Arizona",
+        "entered_office": "2011-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "6",
+        "party": "republican",
+        "tags": [
+            "Arizona",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/david-schweikert.jpg",
+        "slug": "david-schweikert",
+        "in_the_news": []
+    },
+    {
+        "name": "Andy Biggs",
+        "title": "Representative",
+        "state_name": "Arizona",
+        "entered_office": "2017-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "5",
+        "party": "republican",
+        "tags": [
+            "Arizona",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/andy-biggs.jpg",
+        "slug": "andy-biggs",
+        "in_the_news": []
+    },
+    {
+        "name": "Bruce Westerman",
+        "title": "Representative",
+        "state_name": "Arkansas",
+        "entered_office": "2015-01-06",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "4",
+        "party": "republican",
+        "tags": [
+            "Arkansas",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/bruce-westerman.jpg",
+        "slug": "bruce-westerman",
+        "in_the_news": []
+    },
+    {
+        "name": "Steve Womack",
+        "title": "Representative",
+        "state_name": "Arkansas",
+        "entered_office": "2011-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "3",
+        "party": "republican",
+        "tags": [
+            "Arkansas",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/steve-womack.jpg",
+        "slug": "steve-womack",
+        "in_the_news": []
+    },
+    {
+        "name": "French Hill",
+        "title": "Representative",
+        "state_name": "Arkansas",
+        "entered_office": "2015-01-06",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "2",
+        "party": "republican",
+        "tags": [
+            "Arkansas",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/french-hill.jpg",
+        "slug": "french-hill",
+        "in_the_news": []
+    },
+    {
+        "name": "Rick Crawford",
+        "title": "Representative",
+        "state_name": "Arkansas",
+        "entered_office": "2011-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "1",
+        "party": "republican",
+        "tags": [
+            "Arkansas",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/rick-crawford.jpg",
+        "slug": "rick-crawford",
+        "in_the_news": []
+    },
+    {
+        "name": "Gary Palmer",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "2015-01-06",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "6",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/gary-palmer.jpg",
+        "slug": "gary-palmer",
+        "in_the_news": []
+    },
+    {
+        "name": "Mo Brooks",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "2011-01-05",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "5",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mo-brooks.jpg",
+        "slug": "mo-brooks",
+        "in_the_news": []
+    },
+    {
+        "name": "Robert Aderholt",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "1997-01-07",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "4",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/robert-aderholt.jpg",
+        "slug": "robert-aderholt",
+        "in_the_news": []
+    },
+    {
+        "name": "Mike Rogers",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "2003-01-07",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "3",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/mike-rogers.jpg",
+        "slug": "mike-rogers",
+        "in_the_news": []
+    },
+    {
+        "name": "Felix Moore",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "2",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/felix-moore.jpg",
+        "slug": "felix-moore",
+        "in_the_news": []
+    },
+    {
+        "name": "Jerry Carl",
+        "title": "Representative",
+        "state_name": "Alabama",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "1",
+        "party": "republican",
+        "tags": [
+            "Alabama",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "[The 147 Republicans Who Voted to Overturn Election Results](https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html)",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/jerry-carl.jpg",
+        "slug": "jerry-carl",
+        "in_the_news": []
+    },
+    {
+        "name": "Don Young",
+        "title": "Representative",
+        "state_name": "Alaska",
+        "entered_office": "1973-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "",
+        "party": "republican",
+        "tags": [
+            "Alaska",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://cdn.civil.services/us-house/headshots/512x512/don-young.jpg",
+        "slug": "don-young",
+        "in_the_news": []
+    },
+    {
+        "name": "Yvette Herrell",
+        "title": "Representative",
+        "state_name": "New Mexico",
+        "entered_office": "2021-01-03",
+        "term_end": "2023-01-03",
+        "next_election": "",
+        "district": "",
+        "party": "Republican",
+        "tags": [
+            "New Mexico",
+            "Republican",
+            "Representative"
+        ],
+        "accused_treason": "",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Yvette_Herrell_official_photo%2C_117th_Congress.jpg/440px-Yvette_Herrell_official_photo%2C_117th_Congress.jpg",
+        "slug": "yvette-herrell",
+        "in_the_news": []
     }
 ]
